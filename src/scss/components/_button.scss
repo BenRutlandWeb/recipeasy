@@ -1,0 +1,97 @@
+@mixin button-variant(
+  $background-color,
+  $color,
+  $focus-color: $color,
+  $border-color: transparent
+) {
+  --button-background-color: #{$background-color};
+  --button-color: #{$color};
+  --button-focus-color: #{$focus-color};
+  --button-border-color: #{$border-color};
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: text-bottom;
+  font: inherit;
+  color: var(--button-color, inherit);
+  text-decoration: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  background: var(--button-background-color, var(--grey-200));
+  cursor: pointer;
+  text-transform: uppercase;
+  position: relative;
+  box-shadow: 0 0 0 0.125rem var(--button-border-color, transparent) inset;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: currentColor;
+    opacity: var(--o, 0);
+  }
+  & > * {
+    padding: 0.5rem;
+    min-width: 2.5rem;
+    text-align: center;
+  }
+  &__label:first-child {
+    padding-inline-start: 1rem;
+    padding-inline-end: 0;
+  }
+  &__label:last-child {
+    padding-inline-start: 0;
+    padding-inline-end: 1rem;
+  }
+  &__label:only-child {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &:hover {
+    --o: 0.1;
+  }
+  &:focus {
+    outline: 2px dotted var(--button-focus-color, var(--grey-500));
+    outline-offset: 1px;
+  }
+  &:active {
+    --o: 0.2;
+  }
+  &[disabled] {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  &--primary {
+    @include button-variant(
+      var(--primary),
+      var(--primary-text),
+      var(--grey-400)
+    );
+  }
+  &--secondary {
+    @include button-variant(
+      var(--secondary),
+      var(--secondary-text),
+      var(--grey-400)
+    );
+  }
+  &--outline {
+    @include button-variant(
+      transparent,
+      inherit,
+      var(--grey-300),
+      var(--grey-300)
+    );
+  }
+  &--ghost {
+    @include button-variant(transparent, inherit, var(--grey-300));
+  }
+}

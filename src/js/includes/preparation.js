@@ -1,0 +1,15 @@
+export const PREPARATION = [
+  "beaten",
+  "chopped",
+  "crushed",
+  "deboned",
+  "descaled",
+  "diced",
+  "filleted",
+  "grated",
+  "gutted",
+  "halved",
+  "scaled",
+  "separated",
+  "sliced",
+];

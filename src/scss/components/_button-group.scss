@@ -1,0 +1,11 @@
+.button-group {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  &:first-of-type {
+    margin-inline-start: 0;
+  }
+  &:last-of-type {
+    margin-inline-end: 0;
+  }
+}
