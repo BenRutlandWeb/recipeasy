@@ -4,16 +4,16 @@
   "description": "recipeasy - the simplest way to manage your recipe book",
   "main": "index.js",
   "scripts": {
-    "build": "npx run-p compile-scss copy",
-    "compile-scss": "node-sass src/scss/app.scss public/assets/css/app.css",
+    "build": "npx run-s copy compile-scss",
+    "compile-scss": "node-sass src/scss/app.scss public/assets/css/app.css --output-style compressed",
     "copy": "npx run-p copy-root copy-assets",
     "copy-assets": "npx copy-and-watch --clean src/{img,js}/** public/assets",
     "copy-root": "npx copy-and-watch --clean src/{*,.*} public",
-    "watch": "npx run-p watch-scss copy-watch",
-    "watch-scss": "node-sass src/scss/app.scss public/assets/css/app.css -w -r",
+    "watch": "npx run-p copy-watch watch-scss",
+    "watch-scss": "node-sass src/scss/app.scss public/assets/css/app.css -w -r --source-map true",
     "copy-watch": "npx run-p copy-root-watch copy-assets-watch",
-    "copy-assets-watch": "npx copy-and-watch --clean --watch src/{img,js}/** public/assets",
-    "copy-root-watch": "npx copy-and-watch --clean --watch src/{*,.*} public"
+    "copy-assets-watch": "npx copy-and-watch --watch src/{img,js}/** public/assets",
+    "copy-root-watch": "npx copy-and-watch --watch src/{*,.*} public"
   },
   "author": "BenRutlandWeb",
   "license": "ISC",
