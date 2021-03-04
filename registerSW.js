@@ -1,1 +1,1 @@
-if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('https:/benrutlandweb.github.io/recipeasy/sw.js', { scope: 'https://benrutlandweb.github.io/recipeasy/' })})}
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/recipeasy/sw.js', { scope: '/recipeasy/' })})}
