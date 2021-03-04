@@ -7,9 +7,9 @@ import path from "path";
 import manifest from "./src/assets/manifest.json";
 
 export default {
+  base: "https://benrutlandweb.github.io/recipeasy/",
   plugins: [
     vue({
-      base: "/recipeasy/",
       pagesDir: "src/pages",
       include: [/\.vue$/, /\.md$/],
     }),
