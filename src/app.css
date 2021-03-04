@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Material+Icons");
+
+:root {
+  --text: #333;
+  --border: #d8d8d8;
+  --bg: #f8f8f8;
+  --link: #d71d4c;
+
+  --brand-primary: #7143b1;
+  --brand-secondary: #d71d4c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ccc;
+    --border: #383838;
+    --bg: #222;
+    --link: #7143b1;
+  }
+}
+:root[data-prefers-color-scheme="dark"] {
+  --text: #ccc;
+  --border: #383838;
+  --bg: #222;
+  --link: #7143b1;
+}
+
+.markdown-body table {
+  overflow-x: auto;
+  white-space: nowrap;
+  display: block;
+}
+
+.markdown-body table,
+.markdown-body table thead th,
+.markdown-body table tbody td {
+  border-color: var(--border);
+}

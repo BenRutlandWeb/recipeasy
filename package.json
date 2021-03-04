@@ -1,25 +1,22 @@
 {
-  "name": "recipeasy",
-  "version": "1.0.0",
-  "description": "recipeasy - the simplest way to manage your recipe book",
-  "main": "index.js",
+  "name": "vite-recipes",
+  "version": "0.0.0",
   "scripts": {
-    "build": "npx run-s copy compile-scss",
-    "compile-scss": "node-sass src/scss/app.scss public/assets/css/app.css --output-style compressed",
-    "copy": "npx run-p copy-root copy-assets",
-    "copy-assets": "npx copy-and-watch --clean src/{img,js}/** public/assets",
-    "copy-root": "npx copy-and-watch --clean src/{*,.*} public",
-    "watch": "npx run-p copy-watch watch-scss",
-    "watch-scss": "node-sass src/scss/app.scss public/assets/css/app.css -w -r --source-map true",
-    "copy-watch": "npx run-p copy-root-watch copy-assets-watch",
-    "copy-assets-watch": "npx copy-and-watch --watch src/{img,js}/** public/assets",
-    "copy-root-watch": "npx copy-and-watch --watch src/{*,.*} public"
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
   },
-  "author": "BenRutlandWeb",
-  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
-    "copy-and-watch": "^0.1.4",
-    "node-sass": "^4.14.1",
-    "npm-run-all": "^4.1.5"
+    "@vitejs/plugin-vue": "^1.1.5",
+    "@vue/compiler-sfc": "^3.0.5",
+    "marx-css": "^3.0.8",
+    "vite": "^2.0.5",
+    "vite-plugin-components": "^0.8.0",
+    "vite-plugin-md": "^0.6.0",
+    "vite-plugin-pwa": "^0.5.6",
+    "vite-plugin-voie": "^0.7.3",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.4"
   }
 }
