@@ -4,17 +4,17 @@
   "description": "Recipeasy - the simplest way to manage your recipe book",
   "icons": [
     {
-      "src": "/favicon-192.png",
+      "src": "/recipeasy/favicon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/favicon-512.png",
+      "src": "/recipeasy/favicon-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "/",
+  "start_url": "/recipeasy/",
   "background_color": "#fff",
   "display": "fullscreen",
   "scope": "/",
