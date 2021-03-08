@@ -25,14 +25,14 @@
   --link: #7143b1;
 }
 
-.markdown-body table {
+table {
   overflow-x: auto;
   white-space: nowrap;
   display: block;
 }
 
-.markdown-body table,
-.markdown-body table thead th,
-.markdown-body table tbody td {
+table,
+table thead th,
+table tbody td {
   border-color: var(--border);
 }

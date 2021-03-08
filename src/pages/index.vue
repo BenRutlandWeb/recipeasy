@@ -1,37 +1,50 @@
 <template>
-  <ul class="list">
-    <li v-for="recipe in recipes" :key="recipe.path">
-      <RouterLink :to="recipe.path" class="recipe-card">
-        <h2>{{ recipe.title }}</h2>
+  <input
+    type="search"
+    v-model="query"
+    placeholder="Search by name or ingredient..."
+  />
+  <ul class="list" v-if="queriedRecipes.length">
+    <li v-for="recipe in queriedRecipes" :key="recipe.slug">
+      <RouterLink :to="recipe.slug" class="recipe-card">
+        {{ recipe.title }}
       </RouterLink>
     </li>
   </ul>
+  <div class="list" v-else>
+    <p>No recipes found</p>
+  </div>
 </template>
 
 <script setup>
-  import routes from "voie-pages";
+  import { computed, ref } from "vue";
+  import jsonRecipes from "@/api/recipes.json";
 
-  function kebabToTitle(str) {
-    return str
-      .split("-")
-      .map((word) => word[0].toUpperCase() + word.substr(1).toLowerCase())
-      .join(" ");
-  }
+  const query = ref("");
 
-  const recipes = routes
-    .filter((route) => route.path !== "/")
-    .map((route) => {
-      route.title = kebabToTitle(route.name);
-      return route;
+  const recipes = jsonRecipes.sort((a, b) => a.title.localeCompare(b.title));
+
+  const queriedRecipes = computed(() => {
+    return recipes.filter((recipe) => {
+      const q = query.value.toLowerCase();
+
+      let titleMatches = recipe.title.toLowerCase().includes(q);
+
+      let ingredientMatches = recipe.ingredients.filter((ingredient) =>
+        ingredient.toLowerCase().includes(q)
+      ).length;
+
+      return titleMatches || ingredientMatches;
     });
+  });
 </script>
 
 <style>
   .list {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     list-style: none;
-    padding: 0;
+    padding: 1rem 0;
     margin: 0;
   }
   .recipe-card {

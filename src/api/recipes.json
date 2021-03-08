@@ -1,0 +1,106 @@
+[
+  {
+    "title": "Blueberry Muffins",
+    "slug": "blueberry-muffins",
+    "description": "",
+    "tags": ["breakfast", "snack", "dessert", "baking"],
+    "img": "",
+    "meta": {
+      "Prep": "20 mins",
+      "Cook": "25 mins",
+      "Difficulty": "Easy",
+      "Makes": "20 muffins"
+    },
+    "nutrition": {
+      "label": "per muffin",
+      "stats": {
+        "kcal": "205",
+        "fat": "9g",
+        "saturates": "2g",
+        "carbs": "28g",
+        "sugars": "13g",
+        "fibre": "1g",
+        "protein": "3g",
+        "salt": "0.5g"
+      }
+    },
+    "ingredients": [
+      "2 medium eggs",
+      "125ml vegetable oil",
+      "250ml semi-skimmed milk",
+      "250g golden caster sugar",
+      "400g self-raising flour",
+      "1 tsp salt",
+      "150g blueberries"
+    ],
+    "method": [
+      "Heat oven to 200C/180C fan/gas 6. Line 2 muffin trays with paper muffin cases. In a large bowl beat 2 medium eggs lightly with a handheld electric mixer for 1 min.",
+      "Add 125ml vegetable oil and 250ml semi-skimmed milk and beat until just combined then add 250g golden caster sugar and whisk until you have a smooth batter.",
+      "Sift in 400g self-raising flour and 1 tsp salt (or 400g plain flour and 3 tsp baking powder if using) then mix until just smooth. Be careful not to over-mix the batter as this will make the muffins tough.",
+      "Stir in 150g blueberries.",
+      "Fill muffin cases two-thirds full and bake for 20-25 mins, until risen, firm to the touch and a skewer inserted in the middle comes out clean. If the trays will not fit on 1 shelf, swap the shelves around after 15 mins of cooking.",
+      "Leave the muffins in the tin to cool for a few mins and transfer to a wire rack to cool completely."
+    ]
+  },
+  {
+    "title": "Chilli Con Carne",
+    "slug": "chilli-con-carne",
+    "description": "",
+    "tags": ["dinner", "spicy"],
+    "img": "",
+    "meta": {
+      "Prep": "10 mins",
+      "Cook": "1 hour",
+      "Difficulty": "Easy",
+      "Makes": "6 portions"
+    },
+    "ingredients": [
+      "2 Large Onions",
+      "1 Red Pepper",
+      "500g Minced Beef",
+      "400g Kidney Beans",
+      "400g Chopped Tomatoes",
+      "3 tbsp Tomato Puree",
+      "2-3 Chilli Peppers",
+      "3 tsp chilli powder",
+      "390g long grain rice"
+    ],
+    "method": [
+      "On a medium heat, fry the onions and red pepper in a tbsp of olive oil for 5 minutes or until soft. Add the mince and fry until browned.",
+      "Stir in the kidney beans, chopped tomatoes, chilli powder, chilli peppers and tomato puree. Leave to simmer for 30 minutes, stirring occasionally.",
+      "Turn the heat down to medium-low. Meanwhile, cook the rice according to the packet instructions.",
+      "Serve the chilli on a bed of rice, or alternatively, you can serve over a baked potato or nachos."
+    ]
+  },
+  {
+    "title": "Burger bowls",
+    "slug": "burger-bowls",
+    "description": "",
+    "tags": ["dinner"],
+    "img": "",
+    "meta": {
+      "Prep": "10 mins",
+      "Cook": "45 mins",
+      "Difficulty": "Easy"
+    },
+    "ingredients": [
+      "2 lb extra lean beef",
+      "2.5 teaspoons Lawry’s Seasoned Salt",
+      "1 teaspoon Garlic Powder",
+      "1/2 teaspoon Black Pepper, Ground",
+      "3 teaspoon Worcestershire sauce",
+      "4 TB butter",
+      "2 cups sliced mushrooms",
+      "2 cups of cheddar cheese. shredded, divided",
+      "10 slices of bacon, cooked and diced",
+      "diced chives, bacon bbq sauce, ranch for topping"
+    ],
+    "method": [
+      "Mix together beef, seasoned salt, garlic powder, black pepper and Worcestershire sauce.",
+      "On a baking sheet lined with foil, form 4 meat bowls using a clean jar or can. Set aside.",
+      "In a medium pan, saute mushrooms with butter. Season with salt and pepper to taste. Divide into 4 equal potions.",
+      "Fill each meat bowls with 1/4 cup of cheese, mushrooms, 2 slices worth of diced bacon, and then top with 1/4 cup of cheese.",
+      "Bake at 350 degrees F covered with a foil tent (foil loosely coving) covering for 30 mins. Before serving, top with diced bacon, bbq sauce, ranch and diced chives."
+    ]
+  }
+]

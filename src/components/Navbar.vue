@@ -3,7 +3,6 @@
     <nav>
       <RouterLink to="/">Recipeasy</RouterLink>
     </nav>
-    <ScreenLock />
     <ThemeSwitch />
   </header>
 </template>
