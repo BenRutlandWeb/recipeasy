@@ -4,7 +4,11 @@
     "slug": "blueberry-muffins",
     "description": "",
     "tags": ["breakfast", "snack", "dessert", "baking"],
-    "img": "",
+    "image": {
+      "src": "https://images.pexels.com/photos/5290585/pexels-photo-5290585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "width": 1260,
+      "height": 750
+    },
     "meta": {
       "Prep": "20 mins",
       "Cook": "25 mins",

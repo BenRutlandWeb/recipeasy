@@ -1,13 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Material+Icons");
 
 :root {
+  /* colors */
   --text: #333;
   --border: #d8d8d8;
+  --placeholder: #c4c4c4;
   --bg: #f8f8f8;
   --link: #d71d4c;
 
   --brand-primary: #7143b1;
   --brand-secondary: #d71d4c;
+
+  /* layout */
+  --container: 72ch;
+  --gutter: 1.5rem;
+  --header: 10;
+
+  /* typography */
+  --sans-serif: "Segoe UI", sans-serif;
+  --serif: Georgia, serif;
+  --monospace: Consolas, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,24 +27,86 @@
     --text: #ccc;
     --border: #383838;
     --bg: #222;
-    --link: #7143b1;
+    --link: #e85479;
+    --placeholder: #606060;
   }
 }
 :root[data-prefers-color-scheme="dark"] {
   --text: #ccc;
   --border: #383838;
   --bg: #222;
-  --link: #7143b1;
+  --link: #e85479;
+  --placeholder: #606060;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  font: 400 clamp(1rem, 2.4vw, 1.25rem) / 1.5 var(--sans-serif);
+}
+
+body {
+  /* reset */
+  margin: 0;
+
+  /* colors */
+  background: var(--bg);
+  color: var(--text);
+
+  /* layout */
+  min-height: 100vh;
+  display: grid;
+  grid: auto 1fr auto / auto;
+}
+main {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  width: 100%;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+button:not(:disabled):not([disabled]) {
+  cursor: pointer;
 }
 
 table {
-  overflow-x: auto;
-  white-space: nowrap;
-  display: block;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+}
+thead {
+  border-block-end: 2px solid var(--border);
+}
+tr {
+  border-block: 1px solid var(--border);
+}
+th,
+td {
+  padding-block: 0.25rem;
 }
 
-table,
-table thead th,
-table tbody td {
-  border-color: var(--border);
+/* utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }

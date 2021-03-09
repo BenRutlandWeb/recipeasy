@@ -1,62 +1,41 @@
 <template>
-  <button type="button" @click="toggle" v-if="hasScreenLock" :class="locked">
-    {{ icon }}
-  </button>
+  <label class="theme-switch">
+    <base-switch v-if="hasScreenLock" v-model="isLocked" />
+    Cook mode
+  </label>
 </template>
 
 <script setup>
-  import { computed, ref } from "vue";
+  import { ref, watch } from "vue";
 
-  const hasScreenLock = ref(false);
+  const hasScreenLock = "wakeLock" in navigator;
   const isLocked = ref(false);
 
-  if ("wakeLock" in navigator) {
-    hasScreenLock.value = true;
-  }
-
-  const icon = computed(() => (isLocked.value ? "🖥️🔒" : "🖥️🔓"));
-
-  const locked = computed(() => (isLocked.value ? "active" : ""));
-
-  let wakeLock = null;
-
   if (hasScreenLock) {
-    const handleVisibilityChange = () => {
-      if (wakeLock !== null && document.visibilityState === "visible") {
-        requestWakeLock();
+    let wakeLock = null;
+
+    async function updateState(shouldLock) {
+      if (shouldLock) {
+        try {
+          wakeLock = await navigator.wakeLock.request("screen");
+
+          wakeLock.addEventListener("release", () => {
+            isLocked.value = false;
+          });
+        } catch (err) {
+          isLocked.value = false;
+        }
+      } else {
+        wakeLock.release().then(() => (wakeLock = null));
       }
-    };
-
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-  }
-
-  const requestWakeLock = async () => {
-    try {
-      wakeLock = await navigator.wakeLock.request("screen");
-      isLocked.value = true;
-
-      wakeLock.addEventListener("release", () => {
-        isLocked.value = false;
-      });
-    } catch (err) {
-      //
     }
-  };
 
-  function toggle() {
-    if (!isLocked.value) {
-      requestWakeLock();
-    } else {
-      wakeLock.release().then(() => {
-        wakeLock = null;
-        isLocked.value = false;
-      });
-    }
+    watch(isLocked, updateState);
+
+    document.addEventListener("visibilitychange", () => {
+      if (wakeLock !== null && document.visibilityState === "visible") {
+        isLocked.value = true;
+      }
+    });
   }
 </script>
-
-<style>
-  .active {
-    background: green;
-  }
-</style>

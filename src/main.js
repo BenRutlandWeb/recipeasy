@@ -1,5 +1,4 @@
 import "@/app.css";
-import "marx-css/css/marx.css";
 import { createApp } from "vue";
 import router from "@/router";
 import App from "@/App.vue";

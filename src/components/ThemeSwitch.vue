@@ -1,40 +1,34 @@
 <template>
-  <button type="button" @click="toggle" class="toggle">
-    {{ icon }}
-  </button>
+  <label class="theme-switch">
+    <base-switch v-model="currentMode" />
+    Dark mode
+  </label>
 </template>
 
 <script setup>
-  import { computed, ref } from "vue";
+  import { onMounted, ref, watch } from "vue";
 
-  const mode = localStorage.getItem("prefers-color-scheme") || "no-preference";
-
-  const currentState = ref(mode);
+  const currentMode = ref(
+    localStorage.getItem("prefers-color-scheme") == "dark"
+  );
 
   const el = document.documentElement;
 
-  function updateState(mode) {
-    currentState.value = mode;
-    el.dataset.prefersColorScheme = mode;
-    localStorage.setItem("prefers-color-scheme", mode);
+  function updateState(dark) {
+    const newScheme = dark ? "dark" : "no-preference";
+    el.setAttribute("data-prefers-color-scheme", newScheme);
+    localStorage.setItem("prefers-color-scheme", newScheme);
   }
 
-  updateState(currentState.value);
+  watch(currentMode, updateState);
 
-  function toggle() {
-    const newMode = currentState.value == "dark" ? "no-preference" : "dark";
-
-    updateState(newMode);
-  }
-  const icon = computed(() => (currentState.value !== "dark" ? "🌜" : "💡"));
+  onMounted(() => updateState(currentMode.value));
 </script>
 
 <style>
-  .toggle {
-    background: none;
-    border: 0;
-    padding: 1rem;
-    margin: 0.25rem;
-    width: 3.5rem;
+  .theme-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
   }
 </style>
