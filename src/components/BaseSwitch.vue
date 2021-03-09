@@ -24,13 +24,13 @@
   button[role="switch"] {
     border: 0;
     border-radius: 999px;
-    width: 2rem;
-    height: 1rem;
+    width: 3rem;
+    height: 1.5rem;
     padding: 0;
     background: var(--border);
   }
   button[role="switch"][aria-checked="true"] {
-    --position: 1rem;
+    --position: 1.5rem;
     --thumb-color: var(--brand-secondary);
   }
   button[role="switch"]:focus {
@@ -49,9 +49,9 @@
   button[role="switch"]::before {
   }
   button[role="switch"]::after {
-    width: 0.7rem;
-    height: 0.7rem;
-    margin: 0.15rem;
+    width: 1.05rem;
+    height: 1.05rem;
+    margin: 0.225rem;
     transition: 0.15s;
     transform: translateX(var(--position, 0));
     background: var(--thumb-color, #fff);
