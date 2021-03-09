@@ -16,7 +16,7 @@
   ],
   "start_url": "/recipeasy/",
   "background_color": "#fff",
-  "display": "standalone",
+  "display": "fullscreen",
   "scope": "/recipeasy/",
   "theme_color": "#7143b1"
 }
