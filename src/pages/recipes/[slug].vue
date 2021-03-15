@@ -26,9 +26,7 @@
   if (localStorage.getItem(props.slug)) {
     recipe.value = JSON.parse(localStorage.getItem(props.slug));
   } else {
-    fetch(
-      `https://benrutlandweb.co.uk/staging/7916/wp-json/api/recipes/${props.slug}`
-    )
+    fetch(`https://benrutlandweb.co.uk/wp-json/api/recipes/${props.slug}`)
       .then((r) => r.json())
       .then((r) => (recipe.value = r))
       .then((r) => localStorage.setItem(props.slug, JSON.stringify(r)));

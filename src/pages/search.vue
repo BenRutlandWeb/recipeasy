@@ -29,8 +29,9 @@
   if (sessionStorage.getItem("recipes")) {
     recipes.value = JSON.parse(sessionStorage.getItem("recipes"));
   } else {
-    fetch(`https://benrutlandweb.co.uk/staging/7916/wp-json/api/recipes`)
+    fetch(`https://benrutlandweb.co.uk/wp-json/api/recipes`)
       .then((r) => r.json())
+      .then((r) => r.recipes)
       .then((r) => r.sort((a, b) => a.name.localeCompare(b.name)))
       .then((r) => (recipes.value = r))
       .then((r) => sessionStorage.setItem("recipes", JSON.stringify(r)));
