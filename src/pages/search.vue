@@ -7,7 +7,7 @@
           :to="{ name: 'recipe', params: { slug: item.slug } }"
           class="recipe-card"
         >
-          {{ item.title }}
+          {{ item.name }}
         </RouterLink>
         <!--</li>-->
       </template>
@@ -19,25 +19,34 @@
 </template>
 
 <script setup>
-  import { computed } from "vue";
+  import { computed, ref } from "vue";
   import { useRoute } from "vue-router";
-  import jsonRecipes from "@/api/recipes.json";
 
   const query = computed(() => useRoute().query.q || "");
 
-  const recipes = jsonRecipes.sort((a, b) => a.title.localeCompare(b.title));
+  const recipes = ref([]);
+
+  if (sessionStorage.getItem("recipes")) {
+    recipes.value = JSON.parse(sessionStorage.getItem("recipes"));
+  } else {
+    fetch(`https://benrutlandweb.co.uk/staging/7916/wp-json/api/recipes`)
+      .then((r) => r.json())
+      .then((r) => r.sort((a, b) => a.name.localeCompare(b.name)))
+      .then((r) => (recipes.value = r))
+      .then((r) => sessionStorage.setItem("recipes", JSON.stringify(r)));
+  }
 
   const queriedRecipes = computed(() => {
-    return recipes.filter((recipe) => {
+    return recipes.value.filter((recipe) => {
       const q = query.value.toLowerCase();
 
-      let titleMatches = recipe.title.toLowerCase().includes(q);
+      let titleMatches = recipe.name.toLowerCase().includes(q);
 
-      let ingredientMatches = recipe.ingredients.filter((ingredient) =>
-        ingredient.toLowerCase().includes(q)
-      ).length;
+      // let ingredientMatches = recipe.ingredients.filter((ingredient) =>
+      //   ingredient.name.toLowerCase().includes(q)
+      // ).length;
 
-      return titleMatches || ingredientMatches;
+      return titleMatches; // || ingredientMatches;
     });
   });
 </script>

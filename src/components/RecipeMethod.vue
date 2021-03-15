@@ -3,18 +3,14 @@
     <h2>Method</h2>
     <ScreenLock />
   </div>
-  <ol class="method">
-    <li v-for="step in steps" :key="step">
-      {{ step }}
-    </li>
-  </ol>
+  <div v-html="html" class="method"></div>
 </template>
 
 <script setup>
   import { defineProps } from "vue";
 
   const props = defineProps({
-    steps: Array,
+    html: String,
   });
 </script>
 
@@ -24,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
   }
-  .method {
+  .method ol {
     font-size: 1.25rem;
     display: grid;
     gap: 4rem;
@@ -33,10 +29,10 @@
     list-style: none;
     counter-reset: step;
   }
-  .method li {
+  .method ol li {
     counter-increment: step;
   }
-  .method li::before {
+  .method ol li::before {
     content: counter(step) ".";
     display: block;
     font-size: 2rem;
