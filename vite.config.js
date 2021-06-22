@@ -19,6 +19,7 @@ export default {
     }),
     Pages({
       extensions: ["vue", "md"],
+      import: "sync",
     }),
     components({
       dirs: ["src/components", "src/templates"],
