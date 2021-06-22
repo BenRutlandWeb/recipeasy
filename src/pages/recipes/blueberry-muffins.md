@@ -8,7 +8,7 @@
 
 <Layout>
 
-<RecipeImage src="/blueberry-muffins.jpg" alt="Blueberry Muffins" />
+<RecipeImage src="/recipeasy/blueberry-muffins.jpg" alt="Blueberry Muffins" />
 
 Nom nom nom
 

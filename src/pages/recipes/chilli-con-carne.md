@@ -8,7 +8,7 @@
 
 <Layout>
 
-<RecipeImage src="/chilli-con-carne.jpg" alt="Chilli Con Carne" />
+<RecipeImage src="/recipeasy/chilli-con-carne.jpg" alt="Chilli Con Carne" />
 
 Delicious chilli tex-mex
 

@@ -8,7 +8,7 @@
 
 <Layout>
 
-<RecipeImage src="/pancakes.jpg" alt="Pancakes" />
+<RecipeImage src="/recipeasy/pancakes.jpg" alt="Pancakes" />
 
 Flippin' heck they're tasty
 

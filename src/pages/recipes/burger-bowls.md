@@ -8,7 +8,7 @@
 
 <Layout>
 
-<RecipeImage src="/burger-bowls.jpg" alt="Burger Bowls" />
+<RecipeImage src="/recipeasy/burger-bowls.jpg" alt="Burger Bowls" />
 
 They'll bowl you over with their deliciousness!
 
