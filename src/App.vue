@@ -3,7 +3,7 @@
 </template>
 
 <style>
-  #app {
-    display: contents;
-  }
+#app {
+  display: contents;
+}
 </style>
