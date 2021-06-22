@@ -5,6 +5,7 @@ import Pages from "vite-plugin-pages";
 import components from "vite-plugin-components";
 import path from "path";
 import manifest from "./src/assets/manifest.json";
+import viteImagemin from "vite-plugin-imagemin";
 
 export default {
   base: "/recipeasy/",
@@ -25,6 +26,11 @@ export default {
       dirs: ["src/components", "src/templates"],
       extensions: ["vue", "md"],
       customLoaderMatcher: (path) => path.endsWith(".md"),
+    }),
+    viteImagemin({
+      mozjpeg: {
+        quality: 75,
+      },
     }),
   ],
   resolve: {
