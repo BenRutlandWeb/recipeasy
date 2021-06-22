@@ -1,7 +1,9 @@
 <route>
 {
   meta: {
-    title: "Crispy Salmon Tacos"
+    title: "Crispy Salmon Tacos",
+    ingredients: ["salmon", "tomatoes", "mango", "onions", "cajun seasoning", "tortillas", "limes"],
+    keywords: ["fish", "dinner", "lunch"],
   }
 }
 </route>

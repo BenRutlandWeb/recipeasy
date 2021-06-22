@@ -1,7 +1,9 @@
 <route>
 {
   meta: {
-    title: "Smoky Chorizo Salmon"
+    title: "Smoky Chorizo Salmon",
+    ingredients: ["salmon", "tomatoes", "basil", "olives", "chorizo"],
+    keywords: ["fish", "dinner"],
   }
 }
 </route>

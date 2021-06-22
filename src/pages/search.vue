@@ -9,6 +9,11 @@
         <RouterLink :to="{ name: item.name }" class="recipe-card">
           {{ item.meta.title }}
         </RouterLink>
+        <ChipGroup class="chips">
+          <BaseChip class="chip" v-for="tag in item.meta.keywords" :key="tag">
+            {{ tag }}
+          </BaseChip>
+        </ChipGroup>
       </template>
     </ListGroup>
 
@@ -29,7 +34,14 @@ const recipes = useRouter().options.routes.filter((route) =>
 
 const queriedRecipes = computed(() => {
   return recipes.filter((recipe) => {
-    return recipe.meta.title.toLowerCase().includes(query.value.toLowerCase());
+    const searchTerm = query.value.toLowerCase();
+    const meta = recipe.meta;
+
+    return (
+      meta.title.toLowerCase().includes(searchTerm) ||
+      meta.ingredients?.find((i) => i.toLowerCase().includes(searchTerm)) ||
+      meta.keywords?.find((i) => i.toLowerCase().includes(searchTerm))
+    );
   });
 });
 </script>
@@ -45,11 +57,7 @@ const queriedRecipes = computed(() => {
 .recipe-card {
   display: flex;
   gap: 1rem;
-}
-.recipe-card img {
-  width: 8rem;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
-  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 </style>

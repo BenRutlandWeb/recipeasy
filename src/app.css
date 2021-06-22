@@ -5,6 +5,7 @@
   --text: #333;
   --border: #d8d8d8;
   --placeholder: #c4c4c4;
+  --chip: #e8e8e8;
   --bg: #f8f8f8;
   --link: #d71d4c;
 
@@ -26,6 +27,7 @@
   :root {
     --text: #ccc;
     --border: #383838;
+    --chip: #2f2f2f;
     --bg: #222;
     --link: #e85479;
     --placeholder: #606060;
@@ -34,6 +36,7 @@
 :root[data-prefers-color-scheme="dark"] {
   --text: #ccc;
   --border: #383838;
+  --chip: #2f2f2f;
   --bg: #222;
   --link: #e85479;
   --placeholder: #606060;

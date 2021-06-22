@@ -1,7 +1,9 @@
 <route>
 {
   meta: {
-    title: "Blueberry Muffins"
+    title: "Blueberry Muffins",
+    ingredients: ["eggs", "milk", "sugar", "flour", "blueberries"],
+    keywords: ["baking", "breakfast", "snack", "vegetarian"],
   }
 }
 </route>

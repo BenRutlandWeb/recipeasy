@@ -1,7 +1,9 @@
 <route>
 {
   meta: {
-    title: "Pancakes"
+    title: "Pancakes",
+    ingredients: ["eggs", "milk", "flour"],
+    keywords: ["breakfast", "dessert", "vegetarian"],
   }
 }
 </route>

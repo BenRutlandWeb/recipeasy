@@ -1,7 +1,9 @@
 <route>
 {
   meta: {
-    title: "Burger Bowls"
+    title: "Burger Bowls",
+    ingredients: ["beef", "garlic powder", "worcestershire sauce", "butter", "mushrooms", "cheese", "bacon", "bbq sauce"],
+    keywords: ["dinner", "meat"],
   }
 }
 </route>

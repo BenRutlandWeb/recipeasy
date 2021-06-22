@@ -1,7 +1,9 @@
 <route>
 {
   meta: {
-    title: "Chilli Con Carne"
+    title: "Chilli Con Carne",
+    ingredients: ["onions", "pepper", "beef", "kidney beans", "tomatoes", "chilli peppers", "chilli powder", "rice"],
+    keywords: ["dinner", "mexican", "tex-mex", "meat"],
   }
 }
 </route>
