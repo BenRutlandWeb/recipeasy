@@ -29,7 +29,7 @@ export default {
     }),
     viteImagemin({
       mozjpeg: {
-        quality: 75,
+        quality: 66,
       },
     }),
   ],
