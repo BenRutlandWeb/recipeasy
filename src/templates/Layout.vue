@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <slot name="header">
-      <SearchAppBar />
+      <RecipeAppBar />
     </slot>
   </header>
   <main class="main">
@@ -14,26 +14,30 @@
 </template>
 
 <style>
-  .header {
-    position: sticky;
-    top: 0;
-    z-index: var(--header);
-    background: var(--bg);
+.header {
+  position: sticky;
+  top: 0;
+  z-index: var(--header);
+  background: var(--bg);
 
-    box-shadow: 0 0 1rem rgb(0 0 0 / 25%);
+  box-shadow: 0 0 1rem rgb(0 0 0 / 25%);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .main {
-    margin-block: 1rem;
-  }
+.main {
+  margin-block: 1rem 8rem;
+}
 
-  .footer {
-    text-align: center;
-    padding: 1rem var(--gutter) 2rem;
-    border-block-start: 1px solid var(--border);
-  }
+.footer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem var(--gutter) 2rem;
+  border-block-start: 1px solid var(--border);
+}
 </style>

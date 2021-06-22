@@ -1,41 +1,23 @@
 <template>
   <Layout>
     <template #header>
-      <RecipeAppBar title="Recipeasy" />
+      <AppBar title="Recipeasy" />
     </template>
 
-    <p>Welcome to Recipeasy</p>
-
-    <div>
-      <base-checkbox v-model="checkToggle" />
-      {{ checkToggle ? "chicken" : "egg" }}
-    </div>
-    <div>
-      <base-checkbox v-model="check" value="chicken" />
-      <base-checkbox v-model="check" value="egg" />
-      <base-checkbox v-model="check" value="kfc" disabled />
-      {{ check }}
-    </div>
-    <div>
-      <base-radio v-model="radio" value="chicken" />
-      <base-radio v-model="radio" value="egg" />
-      <base-radio v-model="radio" value="kfc" disabled />
-      {{ radio }}
-    </div>
-    <div>
-      <base-switch v-model="switchToggle" />
-      <base-switch disabled />
-      <base-switch v-model="switchToggle" disabled />
-      {{ switchToggle ? "chicken" : "egg" }}
-    </div>
+    <ListGroup :items="recipes">
+      <template #default="{ item }">
+        <RouterLink :to="{ name: item.name }" class="recipe-card">
+          {{ item.meta.title }}
+        </RouterLink>
+      </template>
+    </ListGroup>
   </Layout>
 </template>
 
 <script setup>
-  import { ref } from "vue";
+import { useRouter } from "vue-router";
 
-  const checkToggle = ref(true);
-  const check = ref(["chicken"]);
-  const radio = ref("chicken");
-  const switchToggle = ref(true);
+const recipes = useRouter().options.routes.filter((route) =>
+  route.path.startsWith("/recipes")
+);
 </script>
