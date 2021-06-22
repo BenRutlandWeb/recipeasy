@@ -1,5 +1,5 @@
 <template>
-  <RouterLink :to="{ name: 'home' }" class="logo-link">
+  <div class="logo-link">
     <img
       src="/favicon-192.png"
       alt="Recipeasy"
@@ -8,17 +8,17 @@
       loading="lazy"
       class="logo"
     />
-  </RouterLink>
+  </div>
 </template>
 
 <style scoped>
-  .logo-link {
-    line-height: 0;
-    padding: 0.5rem;
-    margin: 0.5rem;
-  }
-  .logo {
-    width: 24px;
-    height: 24px;
-  }
+.logo-link {
+  line-height: 0;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+.logo {
+  width: 24px;
+  height: 24px;
+}
 </style>
