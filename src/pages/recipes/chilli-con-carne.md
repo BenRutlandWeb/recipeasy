@@ -10,6 +10,10 @@
 
 <RecipeImage src="/recipeasy/chilli-con-carne.jpg" alt="Chilli Con Carne" />
 
+**Serves:** 6\
+**Preparation time:** 5 minutes\
+**Cook time:** 1 hour
+
 Delicious chilli tex-mex
 
 <RecipeIngredients>

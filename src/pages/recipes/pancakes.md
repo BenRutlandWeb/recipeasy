@@ -10,6 +10,10 @@
 
 <RecipeImage src="/recipeasy/pancakes.jpg" alt="Pancakes" />
 
+**Serves:** 6 pancakes\
+**Preparation time:** 5 minutes\
+**Cook time:** 2-3 minutes per pancake
+
 Flippin' heck they're tasty
 
 <RecipeIngredients>

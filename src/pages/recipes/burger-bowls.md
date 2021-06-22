@@ -10,16 +10,20 @@
 
 <RecipeImage src="/recipeasy/burger-bowls.jpg" alt="Burger Bowls" />
 
+**Serves:** 4\
+**Preparation time** 10 minutes\
+**Cook time** 35 minutes
+
 They'll bowl you over with their deliciousness!
 
 <RecipeIngredients>
 
 - 2 lb extra lean beef
-- 2.5 teaspoons Lawry’s Seasoned Salt
-- 1 teaspoon Garlic Powder
-- 1/2 teaspoon Black Pepper, Ground
-- 3 teaspoon Worcestershire sauce
-- 4 TB butter
+- 2.5 tsp Lawry’s Seasoned Salt
+- 1 tsp Garlic Powder
+- 1/2 tsp Black Pepper, Ground
+- 3 tsp Worcestershire sauce
+- 4 tbsp butter
 - 2 cups sliced mushrooms
 - 2 cups of cheddar cheese. shredded, divided
 - 10 slices of bacon, cooked and diced

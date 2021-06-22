@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <template #header>
-      <SearchAppBar title="Recipeasy" />
+      <SearchAppBar />
     </template>
 
     <ListGroup :items="queriedRecipes" v-if="queriedRecipes.length">

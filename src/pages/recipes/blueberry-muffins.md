@@ -10,6 +10,10 @@
 
 <RecipeImage src="/recipeasy/blueberry-muffins.jpg" alt="Blueberry Muffins" />
 
+**Serves:** 12 muffins\
+**Preparation time** 20 minutes\
+**Cook time** 25 minutes
+
 Nom nom nom
 
 <RecipeIngredients>
