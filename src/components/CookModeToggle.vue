@@ -1,14 +1,38 @@
 <template>
-  <AppBarButton
+  <button
+    type="button"
     role="switch"
+    class="
+      bg-white
+      text-gray-700
+      border-2 border-gray-200
+      dark:bg-gray-900
+      dark:text-gray-300
+      dark:border-gray-500
+      fixed
+      bottom-6
+      right-6
+      rounded-full
+      py-3
+      pl-4
+      pr-6
+      shadow-lg
+      z-50
+      leading-3
+      flex
+      gap-2
+      items-center
+    "
     :class="{ active: isLocked }"
-    :aria-checked="isDarkMode"
     aria-label="Toggle cook mode"
-    @click="toggle"
     v-if="hasScreenLock"
+    @click="toggle"
   >
+    <div v-if="isLocked"></div>
+    <div v-if="isLocked"></div>
     <BaseIcon>outdoor_grill</BaseIcon>
-  </AppBarButton>
+    Cook mode
+  </button>
 </template>
 
 <script setup>
@@ -52,6 +76,12 @@ function toggle() {
 
 <style scoped>
 button.active {
-  @apply bg-gradient-to-br from-pink-700 to-purple-900 text-white;
+  @apply border-pink-600;
+}
+button.active div:first-of-type {
+  @apply w-4 h-4 rounded-full bg-pink-600 absolute top-0 right-0;
+}
+button.active div:last-of-type {
+  @apply w-4 h-4 rounded-full bg-pink-600 absolute top-0 right-0 animate-ping;
 }
 </style>
