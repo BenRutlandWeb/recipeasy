@@ -11,17 +11,17 @@
 
 <Layout>
 
+<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
+
 # {{ $route.meta.title }}
 
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
+Flippin' heck they're tasty
 
 |                       |                         |
 | --------------------- | ----------------------- |
 | **Serves:**           | 6 pancakes              |
 | **Preparation time:** | 5 minutes               |
 | **Cook time:**        | 2-3 minutes per pancake |
-
-Flippin' heck they're tasty
 
 ## Ingredients
 

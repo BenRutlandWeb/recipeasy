@@ -19,6 +19,8 @@ const el = document.documentElement;
 function updateState(dark) {
   const newScheme = dark ? "dark" : "no-preference";
   el.setAttribute("data-prefers-color-scheme", newScheme);
+  el.classList.toggle("dark", dark);
+  el.classList.toggle("light", !dark);
   localStorage.setItem("prefers-color-scheme", newScheme);
 }
 

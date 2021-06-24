@@ -11,17 +11,17 @@
 
 <Layout>
 
+<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
+
 # {{ $route.meta.title }}
 
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
+Nom nom nom
 
 |                      |            |
 | -------------------- | ---------- |
 | **Serves:**          | 12 muffins |
 | **Preparation time** | 20 minutes |
 | **Cook time**        | 25 minutes |
-
-Nom nom nom
 
 ## Ingredients
 

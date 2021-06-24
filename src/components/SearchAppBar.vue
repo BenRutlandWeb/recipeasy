@@ -13,6 +13,7 @@
     :value="query"
     @input="search"
     ref="appSearch"
+    class="text-xl flex-1 placeholder-gray-500 focus:outline-none"
   />
   <AppBarButton @click="clear" v-if="query" aria-label="clear search">
     <BaseIcon>close</BaseIcon>
@@ -44,23 +45,3 @@ function clear({ target }) {
 }
 onMounted(() => appSearch.value.focus());
 </script>
-
-<style scoped>
-input[type="search"] {
-  border: 0;
-  font-size: 1.25rem;
-  flex: 1;
-  color: inherit;
-  padding: 0;
-  background: none;
-}
-input[type="search"]:focus {
-  outline: none;
-}
-input[type="search"]::placeholder {
-  color: var(--placeholder);
-}
-input[type="search"]::-webkit-search-cancel-button {
-  display: none;
-}
-</style>

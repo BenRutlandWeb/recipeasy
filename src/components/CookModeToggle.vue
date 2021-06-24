@@ -52,11 +52,6 @@ function toggle() {
 
 <style scoped>
 button.active {
-  background: linear-gradient(
-    315deg,
-    var(--brand-primary),
-    var(--brand-secondary)
-  );
-  color: var(--brand-secondary-text);
+  @apply bg-gradient-to-br from-pink-700 to-purple-900 text-white;
 }
 </style>

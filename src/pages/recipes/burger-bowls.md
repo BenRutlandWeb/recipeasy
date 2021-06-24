@@ -11,17 +11,17 @@
 
 <Layout>
 
+<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
+
 # {{ $route.meta.title }}
 
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
+They'll bowl you over with their deliciousness!
 
 |                      |            |
 | -------------------- | ---------- |
 | **Serves:**          | 4          |
 | **Preparation time** | 10 minutes |
 | **Cook time**        | 35 minutes |
-
-They'll bowl you over with their deliciousness!
 
 ## Ingredients
 

@@ -1,5 +1,17 @@
 <template>
-  <img :src="src" loading="lazy" class="shadow block w-full mb-4 rounded" />
+  <img
+    :src="src"
+    loading="lazy"
+    class="
+      shadow
+      block
+      w-full
+      rounded
+      dark:filter
+      dark:brightness-75
+      dark:contrast-110
+    "
+  />
 </template>
 
 <script setup>

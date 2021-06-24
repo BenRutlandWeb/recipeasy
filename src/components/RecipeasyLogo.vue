@@ -5,12 +5,6 @@
     width="192"
     height="192"
     loading="lazy"
+    class="w-6 h-6"
   />
 </template>
-
-<style scoped>
-img {
-  width: 24px;
-  height: 24px;
-}
-</style>

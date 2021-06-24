@@ -2,7 +2,7 @@
   <AppBarLink :to="{ name: 'home' }" aria-label="Go home">
     <RecipeasyLogo />
   </AppBarLink>
-  <AppBarTitle>Recipeasy</AppBarTitle>
+  <AppBarTitle>{{ title }}</AppBarTitle>
   <CookModeToggle />
   <DarkModeToggle />
 </template>
@@ -12,14 +12,3 @@ import { useRoute } from "vue-router";
 
 const title = useRoute().meta.title;
 </script>
-
-<style scoped>
-h1 {
-  font-size: 1.25rem;
-  flex: 1;
-  font-weight: 400;
-}
-.mr-auto {
-  margin-inline-end: auto;
-}
-</style>

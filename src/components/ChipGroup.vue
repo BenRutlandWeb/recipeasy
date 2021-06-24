@@ -1,13 +1,5 @@
 <template>
-  <div class="chips">
+  <div class="flex flex-wrap gap-2">
     <slot />
   </div>
 </template>
-
-<style>
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-</style>

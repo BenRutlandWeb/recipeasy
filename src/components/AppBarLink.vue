@@ -1,17 +1,5 @@
 <template>
-  <RouterLink class="button">
+  <RouterLink class="rounded-full p-2 m-2 leading-3">
     <slot />
   </RouterLink>
 </template>
-
-<style scoped>
-.button {
-  border: 0;
-  border-radius: 50%;
-  background: none;
-  padding: 0.5rem;
-  margin: 0.5rem;
-  color: inherit;
-  line-height: 0;
-}
-</style>

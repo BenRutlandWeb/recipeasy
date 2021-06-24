@@ -1,38 +1,28 @@
 <template>
-  <header class="header">
-    <slot name="header">
-      <RecipeAppBar />
-    </slot>
+  <header
+    class="
+      sticky
+      top-0
+      z-50
+      shadow
+      bg-white
+      border-b border-white
+      dark:bg-gray-900
+      dark:border-gray-700
+    "
+  >
+    <div class="max-w-screen-lg mx-auto flex justify-between items-center">
+      <slot name="header">
+        <RecipeAppBar />
+      </slot>
+    </div>
   </header>
-  <main class="main">
+  <main
+    class="mt-8 mb-32 w-full max-w-screen-md mx-auto px-6 flex-1 grid gap-6"
+  >
     <slot />
   </main>
-  <footer class="footer">
+  <footer class="text-center py-8 px-6 border-t dark:border-gray-700">
     <slot name="footer">© 2021 Ben Rutland Web</slot>
   </footer>
 </template>
-
-<style>
-.header {
-  position: sticky;
-  top: 0;
-  z-index: var(--header);
-  background: var(--bg);
-
-  box-shadow: 0 0 1rem rgb(0 0 0 / 25%);
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.main {
-  margin-block: 1rem 8rem;
-}
-
-.footer {
-  text-align: center;
-  padding: 2rem var(--gutter);
-  border-block-start: 1px solid var(--border);
-}
-</style>

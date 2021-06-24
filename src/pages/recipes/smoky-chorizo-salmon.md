@@ -11,17 +11,17 @@
 
 <Layout>
 
+<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
+
 # {{ $route.meta.title }}
 
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
+Smoky chorizo salmon with sweet cherry tomatoes & basil
 
 |                       |            |
 | --------------------- | ---------- |
 | **Serves:**           | 2          |
 | **Preparation time:** | 5 minutes  |
 | **Cook time:**        | 15 minutes |
-
-Smoky chorizo salmon with sweet cherry tomatoes & basil
 
 ## Ingredients
 
