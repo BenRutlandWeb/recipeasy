@@ -23,13 +23,28 @@
       gap-2
       items-center
     "
-    :class="{ active: isLocked }"
+    :class="{ 'border-pink-600': isLocked }"
     aria-label="Toggle cook mode"
     v-if="hasScreenLock"
     @click="toggle"
   >
-    <div v-if="isLocked"></div>
-    <div v-if="isLocked"></div>
+    <div
+      v-if="isLocked"
+      class="w-4 h-4 rounded-full bg-pink-600 absolute top-0 right-0"
+    ></div>
+    <div
+      v-if="isLocked"
+      class="
+        w-4
+        h-4
+        rounded-full
+        bg-pink-600
+        absolute
+        top-0
+        right-0
+        animate-ping
+      "
+    ></div>
     <BaseIcon>outdoor_grill</BaseIcon>
     Cook mode
   </button>
@@ -73,15 +88,3 @@ function toggle() {
   isLocked.value = !isLocked.value;
 }
 </script>
-
-<style scoped>
-button.active {
-  @apply border-pink-600;
-}
-button.active div:first-of-type {
-  @apply w-4 h-4 rounded-full bg-pink-600 absolute top-0 right-0;
-}
-button.active div:last-of-type {
-  @apply w-4 h-4 rounded-full bg-pink-600 absolute top-0 right-0 animate-ping;
-}
-</style>
