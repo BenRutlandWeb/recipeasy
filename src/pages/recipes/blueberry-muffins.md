@@ -4,21 +4,26 @@
     title: "Blueberry Muffins",
     ingredients: ["eggs", "milk", "sugar", "flour", "blueberries"],
     keywords: ["baking", "breakfast", "snack", "vegetarian"],
+    image: "/recipeasy/blueberry-muffins.jpg",
   }
 }
 </route>
 
 <Layout>
 
-<RecipeImage src="/recipeasy/blueberry-muffins.jpg" alt="Blueberry Muffins" />
+# {{ $route.meta.title }}
 
-**Serves:** 12 muffins\
-**Preparation time** 20 minutes\
-**Cook time** 25 minutes
+<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
+
+|                      |            |
+| -------------------- | ---------- |
+| **Serves:**          | 12 muffins |
+| **Preparation time** | 20 minutes |
+| **Cook time**        | 25 minutes |
 
 Nom nom nom
 
-<RecipeIngredients>
+## Ingredients
 
 - 2 medium eggs
 - 125ml vegetable oil
@@ -28,9 +33,7 @@ Nom nom nom
 - 1 tsp salt
 - 150g blueberries
 
-</RecipeIngredients>
-
-<RecipeMethod>
+## Method
 
 1. Heat oven to 200C/180C fan/gas 6. Line 2 muffin trays with paper muffin cases. In a large bowl beat 2 medium eggs lightly with a handheld electric mixer for 1 min.
 2. Add 125ml vegetable oil and 250ml semi-skimmed milk and beat until just combined then add 250g golden caster sugar and whisk until you have a smooth batter.
@@ -38,7 +41,5 @@ Nom nom nom
 4. Stir in 150g blueberries.
 5. Fill muffin cases two-thirds full and bake for 20-25 mins, until risen, firm to the touch and a skewer inserted in the middle comes out clean. If the trays will not fit on 1 shelf, swap 7. the shelves around after 15 mins of cooking.
 6. Leave the muffins in the tin to cool for a few mins and transfer to a wire rack to cool completely.
-
-</RecipeMethod>
 
 </Layout>

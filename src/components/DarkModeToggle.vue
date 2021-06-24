@@ -1,12 +1,16 @@
 <template>
-  <label class="theme-switch">
-    <BaseSwitch v-model="currentMode" />
-    Dark mode
-  </label>
+  <AppBarButton
+    role="switch"
+    :aria-checked="isDarkMode"
+    aria-label="Toggle dark mode"
+    @click="toggle"
+  >
+    <BaseIcon>{{ icon }}</BaseIcon>
+  </AppBarButton>
 </template>
 
 <script setup>
-import { onMounted, ref, watch } from "vue";
+import { onMounted, ref, watch, computed } from "vue";
 
 const currentMode = ref(localStorage.getItem("prefers-color-scheme") == "dark");
 
@@ -18,15 +22,17 @@ function updateState(dark) {
   localStorage.setItem("prefers-color-scheme", newScheme);
 }
 
+function toggle() {
+  currentMode.value = !currentMode.value;
+}
+
 watch(currentMode, updateState);
 
 onMounted(() => updateState(currentMode.value));
-</script>
 
-<style>
-.theme-switch {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-</style>
+const icon = computed(() =>
+  currentMode.value ? "brightness_7" : "brightness_4"
+);
+
+const isDarkMode = false;
+</script>

@@ -9,7 +9,6 @@
   </main>
   <footer class="footer">
     <slot name="footer">© 2021 Ben Rutland Web</slot>
-    <theme-switch />
   </footer>
 </template>
 
@@ -32,12 +31,8 @@
 }
 
 .footer {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-  justify-content: space-between;
   text-align: center;
-  padding: 1rem var(--gutter) 2rem;
+  padding: 2rem var(--gutter);
   border-block-start: 1px solid var(--border);
 }
 </style>

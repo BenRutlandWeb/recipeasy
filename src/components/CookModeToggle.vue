@@ -1,8 +1,14 @@
 <template>
-  <label class="theme-switch">
-    <BaseSwitch v-if="hasScreenLock" v-model="isLocked" />
-    Cook mode
-  </label>
+  <AppBarButton
+    role="switch"
+    :class="{ active: isLocked }"
+    :aria-checked="isDarkMode"
+    aria-label="Toggle cook mode"
+    @click="toggle"
+    v-if="hasScreenLock"
+  >
+    <BaseIcon>outdoor_grill</BaseIcon>
+  </AppBarButton>
 </template>
 
 <script setup>
@@ -38,4 +44,19 @@ if (hasScreenLock) {
     }
   });
 }
+
+function toggle() {
+  isLocked.value = !isLocked.value;
+}
 </script>
+
+<style scoped>
+button.active {
+  background: linear-gradient(
+    315deg,
+    var(--brand-primary),
+    var(--brand-secondary)
+  );
+  color: var(--brand-secondary-text);
+}
+</style>

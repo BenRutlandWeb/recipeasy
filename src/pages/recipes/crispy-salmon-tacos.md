@@ -4,21 +4,26 @@
     title: "Crispy Salmon Tacos",
     ingredients: ["salmon", "tomatoes", "mango", "onions", "cajun seasoning", "tortillas", "limes"],
     keywords: ["fish", "dinner", "lunch"],
+    image: "/recipeasy/crispy-salmon-tacos.jpg",
   }
 }
 </route>
 
 <Layout>
 
-<RecipeImage src="/recipeasy/crispy-salmon-tacos.jpg" alt="Crispy Salmon Tacos" />
+# {{ $route.meta.title }}
 
-**Serves:** 2\
-**Preparation time:** 10 minutes\
-**Cook time:** 20 minutes
+<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
+
+|                       |            |
+| --------------------- | ---------- |
+| **Serves:**           | 2          |
+| **Preparation time:** | 10 minutes |
+| **Cook time:**        | 20 minutes |
 
 Quick, healthy and colourful – this super-speedy dish is sunshine on a plate. The fresh rainbow salsa paired with crispy salmon skin is a total joy. With juicy tomatoes, soft mango, creamy avocado, and zingy lime – you can’t go wrong.
 
-<RecipeIngredients>
+## Ingredients
 
 - 160 g ripe mixed-colour cherry tomatoes
 - 1 small ripe mango
@@ -29,9 +34,7 @@ Quick, healthy and colourful – this super-speedy dish is sunshine on a plate. 
 - 4 small tortillas
 - 2 limes
 
-</RecipeIngredients>
-
-<RecipeMethod>
+## Method
 
 1. Quarter the cherry tomatoes. Destone, peel and roughly chop the mango. Scoop out the avocado and finely slice. Trim and finely slice the spring onions.
 2. Carefully cut the skin off the salmon and place it in a non-stick frying pan on a medium-high heat to crisp up on both sides.
@@ -40,7 +43,5 @@ Quick, healthy and colourful – this super-speedy dish is sunshine on a plate. 
 5. Sprinkle the mango, avocado and spring onions over the tortillas, then flake over the salmon and crack over the skin.
 6. Toss the tomatoes and the juice of 1 lime in the residual heat of the pan for 30 seconds, then spoon over the tortillas.
 7. Serve with lime wedges, for squeezing over.
-
-</RecipeMethod>
 
 </Layout>
