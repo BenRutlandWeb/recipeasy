@@ -1,1 +1,0 @@
-import{o as s,c as o}from"./vendor.f1dabf69.js";const r={expose:[],props:{src:String},setup:r=>(a,c)=>(s(),o("img",{src:r.src,loading:"lazy",class:"shadow block w-full mb-4 rounded"},null,8,["src"]))};export{r as _};
