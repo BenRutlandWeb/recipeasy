@@ -3,7 +3,7 @@
   meta: {
     title: "Tarragon Chicken",
     ingredients: ["chicken", "grapes", "white wine", "tarragon", "cream", "parsley", "garlic", "butter"],
-    keywords: ["dinner", "fish"],
+    keywords: ["dinner"],
     image: "/recipeasy/tarragon-chicken.jpg",
   }
 }
