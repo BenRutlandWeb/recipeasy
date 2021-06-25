@@ -4,16 +4,9 @@
       <AppBar title="Recipeasy" />
     </template>
 
-    <ListGroup :items="recipes">
+    <ListGroup :items="recipes" class="grid gap-6">
       <template #default="{ item }">
-        <RouterLink :to="{ name: item.name }" class="flex gap-4 text-xl mb-2">
-          {{ item.meta.title }}
-        </RouterLink>
-        <ChipGroup>
-          <BaseChip v-for="tag in item.meta.keywords" :key="tag">
-            {{ tag }}
-          </BaseChip>
-        </ChipGroup>
+        <RecipeCard :recipe="item" />
       </template>
     </ListGroup>
   </Layout>

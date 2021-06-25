@@ -13,7 +13,13 @@
     :value="query"
     @input="search"
     ref="appSearch"
-    class="text-xl flex-1 placeholder-gray-500 focus:outline-none"
+    class="
+      text-xl
+      flex-1
+      placeholder-gray-500
+      focus:outline-none
+      bg-transparent
+    "
   />
   <AppBarButton @click="clear" v-if="query" aria-label="clear search">
     <BaseIcon>close</BaseIcon>
