@@ -19,7 +19,7 @@ This smoky cod dish makes a great midweek meal – it's quick, low calorie and m
 
 |                      |            |
 | -------------------- | ---------- |
-| **Serves:**          | 5          |
+| **Serves:**          | 4          |
 | **Preparation time** | 15 minutes |
 | **Cook time**        | 15 minutes |
 
