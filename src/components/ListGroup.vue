@@ -1,5 +1,15 @@
 <template>
-  <component :is="tag" class="my-4 border rounded divide-y">
+  <component
+    :is="tag"
+    class="
+      my-4
+      border
+      rounded
+      divide-y
+      dark:divide-gray-700
+      dark:border-gray-700
+    "
+  >
     <li
       v-for="item in items"
       :key="item"

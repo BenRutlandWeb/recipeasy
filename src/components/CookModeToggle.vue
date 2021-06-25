@@ -23,7 +23,7 @@
       gap-2
       items-center
     "
-    :class="{ 'border-pink-600': isLocked }"
+    :class="{ 'border-pink-600': isLocked, 'dark:border-pink-600': isLocked }"
     aria-label="Toggle cook mode"
     v-if="hasScreenLock"
     @click="toggle"
