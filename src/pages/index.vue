@@ -15,7 +15,7 @@
 <script setup>
 import { useRouter } from "vue-router";
 
-const recipes = useRouter().options.routes.filter((route) =>
-  route.path.startsWith("/recipes")
-);
+const recipes = useRouter()
+  .options.routes.filter((route) => route.path.startsWith("/recipes"))
+  .reverse();
 </script>

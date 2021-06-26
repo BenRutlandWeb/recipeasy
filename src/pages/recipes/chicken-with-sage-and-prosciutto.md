@@ -13,6 +13,8 @@
 
 <RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
 
+<RecipeChips :chips="$route.meta.keywords" />
+
 # {{ $route.meta.title }}
 
 A simple, rustic chicken dish, which is pan fried and finished with a splash of Italian wine.

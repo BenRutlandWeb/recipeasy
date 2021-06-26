@@ -13,6 +13,8 @@
 
 <RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
 
+<RecipeChips :chips="$route.meta.keywords" />
+
 # {{ $route.meta.title }}
 
 The French love rich sauces made with a hint of wine and a handful of fresh herbs and this mouthwatering dish is based on one of their classic cordon bleu recipes. The combined flavours are so delicious, you won't believe how easy and quick it is to make this lovely dish.

@@ -13,6 +13,8 @@
 
 <RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
 
+<RecipeChips :chips="$route.meta.keywords" />
+
 # {{ $route.meta.title }}
 
 Delicious chilli tex-mex

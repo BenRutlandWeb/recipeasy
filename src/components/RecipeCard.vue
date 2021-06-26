@@ -1,7 +1,7 @@
 <template>
   <RouterLink
     :to="{ name: recipe.name }"
-    class="block shadow rounded border border-white dark:border-gray-800"
+    class="block shadow rounded dark:shadow-2xl dark:bg-gray-850"
   >
     <img
       :src="recipe.meta.image"
@@ -10,6 +10,8 @@
       class="
         block
         w-full
+        aspect-ratio-32/9
+        object-cover
         rounded-t
         dark:filter
         dark:brightness-75
@@ -18,11 +20,7 @@
     />
     <div class="p-4">
       <h2 class="mt-0 mb-4">{{ recipe.meta.title }}</h2>
-      <ChipGroup>
-        <BaseChip v-for="tag in recipe.meta.keywords" :key="tag">
-          {{ tag }}
-        </BaseChip>
-      </ChipGroup>
+      <RecipeChips :chips="recipe.meta.keywords" />
     </div>
   </RouterLink>
 </template>

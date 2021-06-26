@@ -25,9 +25,9 @@ import { computed } from "vue";
 import { useRouter, useRoute } from "vue-router";
 
 const query = computed(() => useRoute().query.q || "");
-const recipes = useRouter().options.routes.filter((route) =>
-  route.path.startsWith("/recipes")
-);
+const recipes = useRouter()
+  .options.routes.filter((route) => route.path.startsWith("/recipes"))
+  .reverse();
 
 const queriedRecipes = computed(() => {
   return recipes.filter((recipe) => {

@@ -13,6 +13,8 @@
 
 <RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
 
+<RecipeChips :chips="$route.meta.keywords" />
+
 # {{ $route.meta.title }}
 
 This smoky cod dish makes a great midweek meal – it's quick, low calorie and made in just one pan, which saves on washing up

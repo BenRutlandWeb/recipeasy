@@ -13,9 +13,9 @@
 
 <RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
 
-# {{ $route.meta.title }}
+<RecipeChips :chips="$route.meta.keywords" />
 
-Nom nom nom
+# {{ $route.meta.title }}
 
 |                      |            |
 | -------------------- | ---------- |

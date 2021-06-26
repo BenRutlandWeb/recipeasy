@@ -13,6 +13,8 @@
 
 <RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
 
+<RecipeChips :chips="$route.meta.keywords" />
+
 # {{ $route.meta.title }}
 
 Quick, healthy and colourful – this super-speedy dish is sunshine on a plate. The fresh rainbow salsa paired with crispy salmon skin is a total joy. With juicy tomatoes, soft mango, creamy avocado, and zingy lime – you can’t go wrong.
