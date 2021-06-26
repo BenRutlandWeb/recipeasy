@@ -15,7 +15,7 @@
     </ListGroup>
 
     <div class="list" v-else>
-      <p>No recipes found</p>
+      <p>No recipes found.</p>
     </div>
   </Layout>
 </template>
