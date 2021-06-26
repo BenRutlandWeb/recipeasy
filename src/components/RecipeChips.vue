@@ -1,13 +1,13 @@
 <template>
   <ChipGroup>
-    <BaseChip v-for="chip in chips" :key="chip">
+    <BaseChip v-for="chip in chips.sort()" :key="chip">
       {{ chip }}
     </BaseChip>
   </ChipGroup>
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import { computed, defineProps } from "vue";
 
 const props = defineProps({
   chips: {

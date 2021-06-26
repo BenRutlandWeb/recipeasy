@@ -3,7 +3,7 @@
   meta: {
     title: "Blueberry Muffins",
     ingredients: ["eggs", "milk", "sugar", "flour", "blueberries"],
-    keywords: ["baking", "breakfast", "snack", "vegetarian"],
+    keywords: ["breakfast", "snack", "baking", "vegetarian"],
     image: "/recipeasy/blueberry-muffins.jpg",
   }
 }
