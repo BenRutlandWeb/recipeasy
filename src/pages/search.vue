@@ -16,9 +16,17 @@
 
     <p v-else-if="query">No recipes found.</p>
 
-    <div class="grid justify-center text-center" v-else>
-      <RecipeasyLogo class="w-16 h-16" />
-      <p>Search Recipeasy</p>
+    <div class="text-center grid gap-4" v-else>
+      <div class="relative">
+        <BaseIcon
+          icon="search"
+          class="w-64 h-64 mx-auto filter grayscale opacity-10"
+        />
+        <RecipeasyLogo
+          class="w-16 h-16 mx-auto filter absolute top-18 left-28"
+        />
+      </div>
+      <p class="text-2xl">Search Recipeasy</p>
     </div>
   </Layout>
 </template>

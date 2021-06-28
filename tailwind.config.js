@@ -1,7 +1,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
-  //mode: "jit",
+  mode: "jit",
   purge: ["./**/*.html", "./**/*.vue"],
   darkMode: "class",
   theme: {
@@ -20,6 +20,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Open Sans", "Segoe UI", "sans-serif"],
+      },
+      inset: {
+        18: "4.5rem",
       },
     },
   },

@@ -1,6 +1,6 @@
 import vue from "@vitejs/plugin-vue";
 import markdown from "vite-plugin-md";
-import { VitePWA as pwa } from "vite-plugin-pwa";
+import { VitePWA } from "vite-plugin-pwa";
 import Pages from "vite-plugin-pages";
 import components from "vite-plugin-components";
 import path from "path";
@@ -15,7 +15,7 @@ export default {
       include: [/\.vue$/, /\.md$/],
     }),
     markdown(),
-    pwa({
+    VitePWA({
       registerType: "autoUpdate",
       includeAssets: ["*.jpg", "*.png", "*.svg"],
       manifest,
