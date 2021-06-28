@@ -16,6 +16,8 @@ export default {
     }),
     markdown(),
     pwa({
+      registerType: "autoUpdate",
+      includeAssets: ["*.jpg", "*.png", "*.svg"],
       manifest,
     }),
     Pages({
