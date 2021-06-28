@@ -5,7 +5,7 @@
     aria-label="Toggle dark mode"
     @click="toggle"
   >
-    <BaseIcon>{{ icon }}</BaseIcon>
+    <BaseIcon :icon="icon" />
   </AppBarButton>
 </template>
 

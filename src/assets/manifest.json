@@ -4,9 +4,10 @@
   "description": "Recipeasy - the simplest way to manage your recipe book",
   "icons": [
     {
-      "src": "/recipeasy/favicon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "/recipeasy/recipeasy-maskable.svg",
+      "type": "image/svg+xml",
+      "purpose": "maskable any",
+      "sizes": "any"
     },
     {
       "src": "/recipeasy/favicon-512.png",

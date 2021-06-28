@@ -6,7 +6,7 @@
 
     <ListGroup
       :items="queriedRecipes"
-      v-if="queriedRecipes.length"
+      v-if="query && queriedRecipes.length"
       class="grid gap-6"
     >
       <template #default="{ item }">
@@ -14,8 +14,11 @@
       </template>
     </ListGroup>
 
-    <div class="list" v-else>
-      <p>No recipes found.</p>
+    <p v-else-if="query">No recipes found.</p>
+
+    <div class="grid justify-center text-center" v-else>
+      <RecipeasyLogo class="w-16 h-16" />
+      <p>Search Recipeasy</p>
     </div>
   </Layout>
 </template>

@@ -6,6 +6,8 @@
     <img
       :src="recipe.meta.image"
       :alt="recipe.meta.title"
+      width="640"
+      height="360"
       loading="lazy"
       class="
         block

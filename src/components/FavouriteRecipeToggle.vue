@@ -1,8 +1,9 @@
 <template>
   <AppBarButton @click="toggleFavourite">
-    <BaseIcon :class="{ 'text-pink-600': favourited }">
-      {{ favourited ? "favorite" : "favorite_border" }}
-    </BaseIcon>
+    <BaseIcon
+      :class="{ 'text-pink-600': favourited }"
+      :icon="favourited ? 'favorite' : 'favorite_border'"
+    />
   </AppBarButton>
 </template>
 

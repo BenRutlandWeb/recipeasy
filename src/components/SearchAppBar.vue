@@ -1,6 +1,6 @@
 <template>
   <AppBarLink :to="{ name: 'home' }" aria-label="Go home">
-    <BaseIcon>arrow_back</BaseIcon>
+    <BaseIcon icon="arrow_back" />
   </AppBarLink>
   <label for="app-search" class="sr-only">
     Search by ingredient, dish, keyword...
@@ -22,7 +22,7 @@
     "
   />
   <AppBarButton @click="clear" v-if="query" aria-label="clear search">
-    <BaseIcon>close</BaseIcon>
+    <BaseIcon icon="close" />
   </AppBarButton>
 </template>
 

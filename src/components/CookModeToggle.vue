@@ -45,7 +45,7 @@
         animate-ping
       "
     ></div>
-    <BaseIcon>outdoor_grill</BaseIcon>
+    <BaseIcon icon="outdoor_grill" />
     Cook mode
   </button>
 </template>
