@@ -1,0 +1,1 @@
+import{o as r,c as s}from"./vendor.12da91c2.js";const n={expose:[],props:{src:String},setup:n=>(o,a)=>(r(),s("img",{src:n.src,loading:"lazy",class:"\n      shadow\n      block\n      w-full\n      rounded\n      aspect-ratio-1/1\n      object-cover\n      dark:filter\n      dark:brightness-75\n      dark:contrast-110\n    "},null,8,["src"]))};export{n as _};

@@ -1,1 +1,0 @@
-import{o as s,c as r}from"./vendor.ecab2019.js";const n={expose:[],props:{src:String},setup:n=>(o,a)=>(s(),r("img",{src:n.src,loading:"lazy",class:"\n      shadow\n      block\n      w-full\n      rounded\n      dark:filter\n      dark:brightness-75\n      dark:contrast-110\n    "},null,8,["src"]))};export{n as _};
