@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -41,4 +37,4 @@
 5. Pour the batter into the cake tin, smooth over the top and bake for approximately 40 minutes or until the top appears dry and a skewer inserted in the middle comes out with a few moist crumbs attached (not wet batter). It is important not to overcook this cake so that it retains its wonderful moist consistency. Let cool completely in the tin before handling.
 6. Dust with powdered sugar and, if desired, some lightly whipped cream. This cake keeps well for several days and is even better the next day.
 
-</Layout>
+</RecipeLayout>

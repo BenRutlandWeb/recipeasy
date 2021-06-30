@@ -1,31 +1,26 @@
 <template>
   <RouterLink
     :to="{ name: recipe.name }"
-    class="block h-full shadow rounded dark:shadow-xl dark:bg-gray-850 relative"
+    class="flex items-center rounded shadow dark:bg-gray-850"
   >
     <img
       :src="recipe.meta.image"
       :alt="recipe.meta.title"
-      width="640"
+      width="360"
       height="360"
       loading="lazy"
       class="
         block
-        w-full
-        h-auto
-        aspect-ratio-1/1
-        object-cover
-        rounded-t
+        w-16
+        rounded-l
         dark:filter
         dark:brightness-75
         dark:contrast-110
       "
     />
-    <div class="p-2">
-      <h3 class="truncate-2 overflow-hidden text-sm font-bold">
-        {{ recipe.meta.title }}
-      </h3>
-    </div>
+    <h3 class="truncate-2 text-base font-bold py-2 px-4">
+      {{ recipe.meta.title }}
+    </h3>
   </RouterLink>
 </template>
 

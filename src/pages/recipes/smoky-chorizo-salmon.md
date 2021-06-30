@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -42,4 +38,4 @@ Smoky chorizo salmon with sweet cherry tomatoes & basil
 5. Finely slice the chorizo, add to the pan for the last 2 minutes, then toss in the dressed tomatoes for 30 seconds.
 6. Divide between your plates, with the salmon on top. Spoon over the dressed olives and pick over the remaining basil.
 
-</Layout>
+</RecipeLayout>

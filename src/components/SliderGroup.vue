@@ -27,6 +27,6 @@ const props = defineProps({
 .slider-item {
   scroll-snap-align: start;
   scroll-margin-inline-start: 1.5rem;
-  flex: 0 0 40vw;
+  flex: 0 0 36vw;
 }
 </style>

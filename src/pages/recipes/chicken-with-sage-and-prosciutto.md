@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -41,4 +37,4 @@ A simple, rustic chicken dish, which is pan fried and finished with a splash of 
 3. Pour half the wine over the chicken, then leave to cook for a further 5 mins.
 4. Add rest of wine to pan and leave to sizzle for a few seconds.
 
-</Layout>
+</RecipeLayout>

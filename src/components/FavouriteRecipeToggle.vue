@@ -1,10 +1,10 @@
 <template>
-  <AppBarButton @click="toggleFavourite">
+  <button type="button" @click="toggleFavourite">
     <BaseIcon
       :class="{ 'text-pink-600': favourited }"
       :icon="favourited ? 'favorite' : 'favorite_border'"
     />
-  </AppBarButton>
+  </button>
 </template>
 
 <script setup>

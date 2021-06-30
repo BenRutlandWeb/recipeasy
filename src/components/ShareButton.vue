@@ -1,7 +1,7 @@
 <template>
-  <AppBarButton @click="share">
+  <button type="button" @click="share">
     <BaseIcon icon="share" />
-  </AppBarButton>
+  </button>
 </template>
 
 <script setup>

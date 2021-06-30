@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -44,4 +40,4 @@
 4. Return the frying pan to a high heat and immediately add in the rocket leaves, mix well for about 1 minute to allow the rocket to soften slightly and the pasta to absorb the flavour.
 5. Serve immediately.
 
-</Layout>
+</RecipeLayout>

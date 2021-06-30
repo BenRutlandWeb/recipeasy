@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -46,4 +42,4 @@ They'll bowl you over with their deliciousness!
 4. Fill each meat bowls with 1/4 cup of cheese, mushrooms, 2 slices worth of diced bacon, and then top with 1/4 cup of cheese.
 5. Bake at 350 degrees F covered with a foil tent (foil loosely coving) covering for 30 mins. Before serving, top with diced bacon, bbq sauce, ranch and diced chives.
 
-</Layout>
+</RecipeLayout>

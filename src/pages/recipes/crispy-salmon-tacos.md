@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -46,4 +42,4 @@ Quick, healthy and colourful – this super-speedy dish is sunshine on a plate. 
 6. Toss the tomatoes and the juice of 1 lime in the residual heat of the pan for 30 seconds, then spoon over the tortillas.
 7. Serve with lime wedges, for squeezing over.
 
-</Layout>
+</RecipeLayout>

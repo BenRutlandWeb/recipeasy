@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -41,4 +37,4 @@ The French love rich sauces made with a hint of wine and a handful of fresh herb
 1. Melt the butter and the olive oil in a frying pan over a medium heat, then season the chicken with plenty of salt and freshly ground black pepper. Fry the chicken steaks for approximately 4 mins on each side until golden.
 2. Add white wine, tarragon and grapes to the pan, then bring mixture to the boil and lower the heat. Stir in the cream and parsley and serve immediately with a selection of steamed vegetables and boiled new potatoes.
 
-</Layout>
+</RecipeLayout>

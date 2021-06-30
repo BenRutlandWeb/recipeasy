@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -46,4 +42,4 @@ Serve with rice and fresh vegetables.
 3. Blend the cornflour to a paste with just enough water and stir in to the pork mixture.
 4. Simmer uncovered, for 1-2 minutes to thicken the sauce. Season to taste. Serve.
 
-</Layout>
+</RecipeLayout>

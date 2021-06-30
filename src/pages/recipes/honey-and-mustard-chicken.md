@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -41,4 +37,4 @@
 4. In the meantime, cook the pasta according to the packet instructions. With 2 minutes to go, add the sun-dried tomatoes to the chicken.
 5. When the pasta is cooked, drain and stir in to the chicken. Serve with a salad.
 
-</Layout>
+</RecipeLayout>

@@ -8,7 +8,7 @@
       <h2 class="mt-0">Your favourites</h2>
       <SliderGroup :items="favouritedRecipes">
         <template #default="{ item }">
-          <SmallRecipeCard :recipe="item" />
+          <RecipeCard :recipe="item" />
         </template>
       </SliderGroup>
     </template>
@@ -17,7 +17,7 @@
       <h2 :class="{ 'mt-0': !favouritedRecipes.length }">Recently viewed</h2>
       <SliderGroup :items="recentRecipes">
         <template #default="{ item }">
-          <SmallRecipeCard :recipe="item" />
+          <RecipeCard :recipe="item" />
         </template>
       </SliderGroup>
     </template>
@@ -25,7 +25,7 @@
     <h2>All recipes</h2>
     <ListGroup :items="recipes" class="grid gap-6">
       <template #default="{ item }">
-        <RecipeCard :recipe="item" />
+        <SmallRecipeCard :recipe="item" />
       </template>
     </ListGroup>
   </Layout>

@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -44,4 +40,4 @@ Delicious chilli tex-mex
 3. Turn the heat down to medium-low. Meanwhile, cook the rice according to the packet instructions.
 4. Serve the chilli on a bed of rice, or alternatively, you can serve over a baked potato or nachos.
 
-</Layout>
+</RecipeLayout>

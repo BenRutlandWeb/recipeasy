@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -39,4 +35,4 @@ Flippin' heck they're tasty
 4. Flip the pancake and cook the other side until golden
 5. Serve with your favourite toppings.
 
-</Layout>
+</RecipeLayout>

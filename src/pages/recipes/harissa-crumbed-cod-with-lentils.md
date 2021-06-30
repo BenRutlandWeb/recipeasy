@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -44,4 +40,4 @@ This smoky cod dish makes a great midweek meal – it's quick, low calorie and m
 3. Bake for 12-15 mins until the fish is cooked, the topping is crispy and the lentils are hot.
 4. Scatter with the parsley and squeeze over the lemon wedges.
 
-</Layout>
+</RecipeLayout>

@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -39,4 +35,4 @@ The aniseed flavour of fennel makes a delicious partner for roasted peppers.
 1. Preheat the oven to Mark 7/ 220°C/425°F. Halve the peppers, keeping the stems attached, then carefully remove the seeds.
 2. Season, rub with garlic and put in an oiled roasting tin. Put a slice of fennel in each pepper. Scatter over pine nuts and drizzle with oil. Roast for 30-40 mins until tender.
 
-</Layout>
+</RecipeLayout>

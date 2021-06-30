@@ -9,11 +9,7 @@
 }
 </route>
 
-<Layout>
-
-<RecipeImage :src="$route.meta.image" :alt="$route.meta.title" />
-
-<RecipeChips :chips="$route.meta.keywords" />
+<RecipeLayout>
 
 # {{ $route.meta.title }}
 
@@ -42,4 +38,4 @@
 5. Fill muffin cases two-thirds full and bake for 20-25 mins, until risen, firm to the touch and a skewer inserted in the middle comes out clean. If the trays will not fit on 1 shelf, swap 7. the shelves around after 15 mins of cooking.
 6. Leave the muffins in the tin to cool for a few mins and transfer to a wire rack to cool completely.
 
-</Layout>
+</RecipeLayout>
