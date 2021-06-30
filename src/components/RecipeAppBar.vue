@@ -5,6 +5,7 @@
   <AppBarTitle>{{ title }}</AppBarTitle>
   <CookModeToggle />
   <FavouriteRecipeToggle />
+  <ShareButton />
   <DarkModeToggle />
 </template>
 

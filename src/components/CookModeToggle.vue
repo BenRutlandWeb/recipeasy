@@ -45,7 +45,7 @@
         animate-ping
       "
     ></div>
-    <BaseIcon icon="outdoor_grill" />
+    <BaseIcon :icon="isLocked ? 'outdoor_grill' : 'outdoor_grill_border'" />
     Cook mode
   </button>
 </template>

@@ -10,6 +10,7 @@ module.exports = {
         ping: "ping 2s cubic-bezier(0, 0, 0.2, 1) infinite",
       },
       colors: {
+        yellow: colors.yellow,
         gray: {
           ...colors.coolGray,
           850: "#151c2e",

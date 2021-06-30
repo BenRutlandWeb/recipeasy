@@ -10,7 +10,7 @@
       class="grid gap-6"
     >
       <template #default="{ item }">
-        <RecipeCard :recipe="item" />
+        <FavouritedRecipeCard :recipe="item" />
       </template>
     </ListGroup>
 

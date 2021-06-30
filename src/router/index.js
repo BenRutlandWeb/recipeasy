@@ -30,12 +30,29 @@ const router = createRouter({
   },
 });
 
+function updateRecentRecipes(route) {
+  if (!route.path.startsWith("/recipes")) {
+    return;
+  }
+  let recent = JSON.parse(localStorage.getItem("recent") ?? "[]");
+
+  if (recent[0] == route.name) {
+    return;
+  }
+  recent = recent.filter((recipe) => recipe !== route.name);
+  recent.unshift(route.name);
+  recent = recent.slice(0, 10);
+  localStorage.setItem("recent", JSON.stringify(recent));
+}
+
 router.beforeEach((to, from, next) => {
   if (to.meta?.title) {
     document.title = to.meta.title + " | Recipeasy";
   } else {
     document.title = "Recipeasy";
   }
+
+  updateRecentRecipes(to);
 
   next();
 });

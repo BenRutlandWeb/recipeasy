@@ -1,15 +1,7 @@
 <template>
   <RouterLink
     :to="{ name: recipe.name }"
-    class="
-      block
-      h-full
-      shadow
-      rounded
-      dark:shadow-2xl
-      dark:bg-gray-850
-      relative
-    "
+    class="block h-full shadow rounded dark:shadow-xl dark:bg-gray-850 relative"
   >
     <img
       :src="recipe.meta.image"
@@ -21,7 +13,7 @@
         block
         w-full
         h-auto
-        aspect-ratio-32/9
+        aspect-ratio-1/1
         object-cover
         rounded-t
         dark:filter
@@ -29,9 +21,10 @@
         dark:contrast-110
       "
     />
-    <div class="p-4 grid gap-2">
-      <RecipeChips :chips="recipe.meta.keywords" />
-      <h3 class="text-xl font-bold">{{ recipe.meta.title }}</h3>
+    <div class="p-2">
+      <h3 class="truncate-2 overflow-hidden text-sm font-bold">
+        {{ recipe.meta.title }}
+      </h3>
     </div>
   </RouterLink>
 </template>

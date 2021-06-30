@@ -7,6 +7,8 @@
       block
       w-full
       rounded
+      aspect-ratio-1/1
+      object-cover
       dark:filter
       dark:brightness-75
       dark:contrast-110
