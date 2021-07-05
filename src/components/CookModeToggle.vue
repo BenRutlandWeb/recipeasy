@@ -25,6 +25,7 @@
     "
     :class="{ 'border-pink-600': isLocked, 'dark:border-pink-600': isLocked }"
     aria-label="Toggle cook mode"
+    :aria-checked="isLocked"
     v-if="hasScreenLock"
     @click="toggle"
   >

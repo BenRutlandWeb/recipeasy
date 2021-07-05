@@ -1,5 +1,11 @@
 <template>
-  <button type="button" @click="toggleFavourite">
+  <button
+    type="button"
+    role="switch"
+    @click="toggleFavourite"
+    aria-label="Toggle favourite"
+    :aria-checked="favourited"
+  >
     <BaseIcon
       :class="{ 'text-pink-600': favourited }"
       :icon="favourited ? 'favorite' : 'favorite_border'"

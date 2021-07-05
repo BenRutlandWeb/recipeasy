@@ -1,5 +1,5 @@
 <template>
-  <button type="button" @click="share">
+  <button type="button" @click="share" aria-label="Share recipe">
     <BaseIcon icon="share" />
   </button>
 </template>
