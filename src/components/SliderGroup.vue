@@ -29,4 +29,14 @@ const props = defineProps({
   scroll-margin-inline-start: 1.5rem;
   flex: 0 0 36vw;
 }
+@screen sm {
+  .slider-item {
+    flex: 0 0 24vw;
+  }
+}
+@screen lg {
+  .slider-item {
+    flex: 0 0 16vw;
+  }
+}
 </style>

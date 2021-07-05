@@ -23,7 +23,10 @@
     </template>
 
     <h2>All recipes</h2>
-    <ListGroup :items="recipes" class="grid gap-6">
+    <ListGroup
+      :items="recipes"
+      class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+    >
       <template #default="{ item }">
         <SmallRecipeCard :recipe="item" />
       </template>
