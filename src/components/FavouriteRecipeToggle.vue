@@ -4,7 +4,7 @@
     role="switch"
     @click="toggleFavourite"
     aria-label="Toggle favourite"
-    :aria-checked="favourited"
+    :aria-checked="favourited ? 'true' : 'false'"
   >
     <BaseIcon
       :class="{ 'text-pink-600': favourited }"

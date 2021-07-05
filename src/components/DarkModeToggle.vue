@@ -1,7 +1,7 @@
 <template>
   <AppBarButton
     role="switch"
-    :aria-checked="isDarkMode"
+    :aria-checked="isDarkMode ? 'true' : 'false'"
     aria-label="Toggle dark mode"
     @click="toggle"
   >
