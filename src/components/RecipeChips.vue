@@ -7,8 +7,6 @@
 </template>
 
 <script setup>
-import { computed, defineProps } from "vue";
-
 const props = defineProps({
   chips: {
     type: Array,
