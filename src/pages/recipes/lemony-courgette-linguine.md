@@ -21,10 +21,10 @@
 
 ## Ingredients
 
-- 150 g dried linguine
+- 150g dried linguine
 - 2 mixed-colour courgettes
 - ½ a bunch of fresh mint (15g)
-- 30 g Parmesan cheese
+- 30g Parmesan cheese
 - 1 lemon
 
 ## Method
