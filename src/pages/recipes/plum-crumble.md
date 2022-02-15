@@ -36,7 +36,7 @@ Use two types of sugar and ground almonds for the perfect crunchy crumble toppin
 ## Method
 
 1. Heat the oven to 200C/180C fan/gas 6. Put the plums into the base of a shallow gratin dish about 28cm long.
-2. Mix together the sugar, orange zest, cinnamon and flour and sprinkle over the plums. Trickle over 2 tbsp water.
+2. Mix together the sugar, orange zest, cinnamon and 1tsp flour and sprinkle over the plums. Trickle over 2 tbsp water.
 3. Rub the butter into the flour using your hands and then stir in the other ingredients.
 4. Scatter the crumble over the plums and bake in the oven for 30–40 mins until golden brown.
 5. Leave for about 15 mins before serving with custard or cream.
