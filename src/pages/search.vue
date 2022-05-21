@@ -7,7 +7,7 @@
     <ListGroup
       :items="queriedRecipes"
       v-if="query && queriedRecipes.length"
-      class="grid gap-6 md:max-w-lg md:mx-auto w-full"
+      class="grid gap-6 content-start md:max-w-lg md:mx-auto w-full"
     >
       <template #default="{ item }">
         <SmallRecipeCard :recipe="item" />
