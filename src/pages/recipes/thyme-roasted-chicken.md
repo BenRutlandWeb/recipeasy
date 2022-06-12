@@ -25,13 +25,13 @@
 - 1 red onion
 - 2 carrots
 - 1 red pepper
-- 1 bunch flat leaf parsley
 - 2 chicken breasts
 - 1 tbsp olive oil
 - 2 tsp dried thyme
 - 100ml water
 - 1 chicken stock cube
 - 32g sweet chilli sauce
+- A few sprigs flat leaf parsley
 
 ## Method
 
@@ -45,6 +45,6 @@
 
 5. Add the water and chicken stock paste in a pan and bring to a boil, then reduce the heat and simmer for 1-2 mins. Add the sweet chilli sauce and stir well to combine. Simmer the mixture until thickened and glossy, 3-4 mins, then remove from the heat.
 
-6. Toss together the wedges and roased veg. Transfer to your plates and arrange the chicken (cut into slices) on top. Spoon over the sweet chilli glaze and serve.
+6. Toss together the wedges and roasted veg. Transfer to your plates and arrange the chicken (cut into slices) on top. Spoon over the sweet chilli glaze, scatter with parsley and serve.
 
 </RecipeLayout>
