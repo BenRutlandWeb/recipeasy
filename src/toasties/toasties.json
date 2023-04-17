@@ -1,0 +1,24 @@
+[
+  {
+    "id": 5,
+    "name": "Le Pig Magnifique",
+    "image": "https://www.smallfootprintfamily.com/wp-content/uploads/how-to-cure-bacon.jpg",
+    "ooze": 3,
+    "quirk": 6,
+    "structuralIntegrity": 9,
+    "politicalCorrectness": 8,
+    "involves": ["Brie", "Bacon Bits", "Rosemary"],
+    "tastesLike": "A literal month of sundays"
+  },
+  {
+    "id": 27,
+    "name": "Ze Tasty German",
+    "image": "https://myfermentedfoods.com/wp-content/uploads/2018/09/Depositphotos_54174701_ds-1-1024x682.jpg",
+    "ooze": 3,
+    "quirk": 5,
+    "structuralIntegrity": 9,
+    "politicalCorrectness": 10,
+    "involves": ["Gruyère", "Sauerkraut", "Mustard"],
+    "tastesLike": "Unparalleled efficiency"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "short_name": "Recipeasy",
+  "name": "Recipeasy",
+  "description": "Recipeasy - the simplest way to manage your recipe book",
+  "icons": [
+    {
+      "src": "/recipeasy/recipeasy-maskable.svg",
+      "type": "image/svg+xml",
+      "purpose": "maskable any",
+      "sizes": "any"
+    },
+    {
+      "src": "/recipeasy/favicon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/recipeasy/",
+  "background_color": "#fff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/recipeasy/",
+  "theme_color": "#7143b1"
+}
