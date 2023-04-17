@@ -7,7 +7,7 @@ import path from "path";
 import manifest from "./src/assets/manifest.json";
 import viteImagemin from "vite-plugin-imagemin";
 import { resolve } from "path";
-import { readFileSync, statSync } from "fs";
+import { statSync } from "fs";
 
 export default {
   base: "/recipeasy/",
