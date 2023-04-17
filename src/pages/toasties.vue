@@ -6,43 +6,17 @@
     <div class="flex flex-wrap gap-8">
       <template v-for="toastie in toasties" :key="toastie.id">
         <div
-          class="
-            brw-card
-            w-[360px]
-            bg-red-400
-            rounded-[4mm]
-            shadow
-            aspect-[62/100]
-            overflow-hidden
-            font-toastie-body
-          "
+          class="brw-card w-[360px] bg-red-400 rounded-[4mm] shadow aspect-[62/100] overflow-hidden font-toastie-body"
           :id="'toastie-' + toastie.id"
         >
           <div class="grid">
             <img
               :src="toastie.image"
               alt=""
-              class="
-                aspect-[62/44]
-                w-full
-                object-cover
-                col-start-1 col-span-1
-                row-start-1 row-span-1
-              "
+              class="aspect-[62/44] w-full object-cover col-start-1 col-span-1 row-start-1 row-span-1"
             />
             <h2
-              class="
-                z-0
-                tracking-tighter
-                text-[2rem]
-                my-8
-                leading-1
-                col-start-1 col-span-1
-                row-start-1 row-span-1
-                font-toastie-heading
-                text-white text-center
-                uppercase
-              "
+              class="z-0 tracking-tighter text-[2rem] my-8 leading-1 col-start-1 col-span-1 row-start-1 row-span-1 font-toastie-heading text-white text-center uppercase"
             >
               #{{ toastie.id }} {{ toastie.name }}
             </h2>
@@ -75,13 +49,7 @@
             <table class="mt-8 table-fixed text-lg text-black">
               <tr>
                 <th
-                  class="
-                    text-left
-                    align-top
-                    uppercase
-                    whitespace-nowrap
-                    text-yellow-300
-                  "
+                  class="text-left align-top uppercase whitespace-nowrap text-yellow-300"
                 >
                   Involves
                 </th>
@@ -92,13 +60,7 @@
               </tr>
               <tr>
                 <th
-                  class="
-                    text-left
-                    align-top
-                    uppercase
-                    whitespace-nowrap
-                    text-yellow-300
-                  "
+                  class="text-left align-top uppercase whitespace-nowrap text-yellow-300"
                 >
                   Tastes like
                 </th>
