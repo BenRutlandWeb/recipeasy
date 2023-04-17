@@ -24,15 +24,6 @@
       </SliderGroup>
     </template>
 
-    <template v-if="recentlyAddedRecipes.length">
-      <h2 :class="{ 'mt-0': !recentlyViewedRecipes.length }">Recently added</h2>
-      <SliderGroup :items="recentlyAddedRecipes">
-        <template #default="{ item }">
-          <RecipeCard :recipe="item" />
-        </template>
-      </SliderGroup>
-    </template>
-
     <h2>All recipes</h2>
     <ListGroup
       :items="recipes"
@@ -64,7 +55,4 @@ const favouritedRecipes = recipes.filter((recipe) => {
 const recentlyViewedRecipes = recentKeys.map((name) => {
   return recipes.find((recipe) => recipe.name == name);
 });
-const recentlyAddedRecipes = recipes
-  .sort((a, b) => b.meta.fileStats.birthtimeMs - a.meta.fileStats.birthtimeMs)
-  .slice(0, 10);
 </script>

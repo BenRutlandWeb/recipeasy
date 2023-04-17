@@ -2,7 +2,7 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   mode: "jit",
-  content: ["./**/*.html", "./**/*.vue"],
+  purge: ["./**/*.html", "./**/*.vue"],
   darkMode: "class",
   theme: {
     extend: {
@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         yellow: colors.yellow,
         gray: {
-          ...colors.gray,
+          ...colors.coolGray,
           850: "#151c2e",
         },
       },
@@ -21,8 +21,6 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Open Sans", "Segoe UI", "sans-serif"],
-        "toastie-heading": ["Luckiest Guy", "cursive"],
-        "toastie-body": ["Dosis", "sans-serif"],
       },
       inset: {
         18: "4.5rem",
