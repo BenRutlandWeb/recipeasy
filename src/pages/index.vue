@@ -4,6 +4,8 @@
       <AppBar title="Recipeasy" />
     </template>
 
+    <!--<RouterLink :to="{ name: 'toasties' }">Toasties</RouterLink>-->
+
     <template v-if="favouritedRecipes.length">
       <h2 class="mt-0">Your favourites</h2>
       <SliderGroup :items="favouritedRecipes">
@@ -13,9 +15,18 @@
       </SliderGroup>
     </template>
 
-    <template v-if="recentRecipes.length">
+    <template v-if="recentlyViewedRecipes.length">
       <h2 :class="{ 'mt-0': !favouritedRecipes.length }">Recently viewed</h2>
-      <SliderGroup :items="recentRecipes">
+      <SliderGroup :items="recentlyViewedRecipes">
+        <template #default="{ item }">
+          <RecipeCard :recipe="item" />
+        </template>
+      </SliderGroup>
+    </template>
+
+    <template v-if="recentlyAddedRecipes.length">
+      <h2 :class="{ 'mt-0': !recentlyViewedRecipes.length }">Recently added</h2>
+      <SliderGroup :items="recentlyAddedRecipes">
         <template #default="{ item }">
           <RecipeCard :recipe="item" />
         </template>
@@ -50,7 +61,10 @@ const favouritedRecipes = recipes.filter((recipe) => {
   return favouritedKeys.includes(recipe.name);
 });
 
-const recentRecipes = recentKeys.map((name) => {
+const recentlyViewedRecipes = recentKeys.map((name) => {
   return recipes.find((recipe) => recipe.name == name);
 });
+const recentlyAddedRecipes = recipes
+  .sort((a, b) => b.meta.fileStats.birthtimeMs - a.meta.fileStats.birthtimeMs)
+  .slice(0, 10);
 </script>

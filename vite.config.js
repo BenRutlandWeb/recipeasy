@@ -2,10 +2,12 @@ import vue from "@vitejs/plugin-vue";
 import markdown from "vite-plugin-md";
 import { VitePWA } from "vite-plugin-pwa";
 import Pages from "vite-plugin-pages";
-import components from "vite-plugin-components";
+import components from "unplugin-vue-components/vite";
 import path from "path";
 import manifest from "./src/assets/manifest.json";
 import viteImagemin from "vite-plugin-imagemin";
+import { resolve } from "path";
+import { readFileSync, statSync } from "fs";
 
 export default {
   base: "/recipeasy/",
@@ -23,11 +25,20 @@ export default {
     Pages({
       extensions: ["vue", "md"],
       import: "sync",
+      extendRoute(route) {
+        const path = resolve(__dirname, route.component.slice(1));
+
+        if (path.endsWith(".md")) {
+          route.meta.fileStats = statSync(path);
+        }
+
+        return route;
+      },
     }),
     components({
       dirs: ["src/components", "src/templates"],
       extensions: ["vue", "md"],
-      customLoaderMatcher: (path) => path.endsWith(".md"),
+      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
     }),
     viteImagemin({
       mozjpeg: {
