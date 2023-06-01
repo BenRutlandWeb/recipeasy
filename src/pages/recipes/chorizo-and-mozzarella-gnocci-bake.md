@@ -1,10 +1,10 @@
 <route>
 {
   meta: {
-    title: "Chorizo and Mozzarella Gnocci Bake",
-    ingredients: ["onion", "garlic", "chorizo", "chopped tomatoes", "gnocci","mozzarella", "basil"],
+    title: "Chorizo and Mozzarella Gnocchi Bake",
+    ingredients: ["onion", "garlic", "chorizo", "chopped tomatoes", "gnocchi","mozzarella", "basil"],
     keywords: ["dinner", "meat","traybake"],
-    image: "/recipeasy/chorizo-and-mozzarella-gnocci-bake.jpg",
+    image: "/recipeasy/chorizo-and-mozzarella-gnocchi-bake.jpg",
   }
 }
 </route>
