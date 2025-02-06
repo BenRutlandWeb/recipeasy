@@ -29,9 +29,13 @@ async function add() {
     const url = window.location.href;
     const d = date.value.replaceAll("-", "");
 
+    const selected = new Date(date.value);
+    selected.setDate(selected.getDate() + 1);
+    const t = selected.toISOString().split("T")[0].replaceAll("-", "");
+
     try {
         window.open(
-            `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${d}/${d}&details=${url}`,
+            `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${d}/${t}&details=${url}`,
             "_blank"
         );
         modal.value = false;
