@@ -9,37 +9,37 @@
 }
 </route>
 
-<RecipeLayout>
+<RecipeLayout :serves="2">
 
 # {{ $route.meta.title }}
 
-|                       |            |
-| --------------------- | ---------- |
-| **Serves:**           | 2          |
-| **Preparation time:** | 10 minutes |
-| **Cook time:**        | 25 minutes |
+|                       |                 |
+| --------------------- | --------------- |
+| **Serves:**           | <ServesInput /> |
+| **Preparation time:** | 10 minutes      |
+| **Cook time:**        | 25 minutes      |
 
 ## Ingredients
 
--   250g minced pork
--   2 cloves garlic, crushed
--   3 birds eye chillis, finely chopped
--   2 long beans, chopped
--   15g Thai basil
--   4 tbsp vegetable oil
--   2 tbsp oyster sauce
--   1 tbsp fish sauce
--   1 tbsp soy sauce
--   1 tbsp dark soy sauce
--   1 tbsp brown sugar
--   150g jasmine rice
+-   <Ingredient :quantity="250" unit="g">minced pork</Ingredient>
+-   <Ingredient :quantity="2">cloves garlic, crushed</Ingredient>
+-   <Ingredient :quantity="3">birds eye chillis, finely chopped</Ingredient>
+-   <Ingredient :quantity="2">long beans, chopped</Ingredient>
+-   <Ingredient :quantity="15" unit="g">Thai basil</Ingredient>
+-   <Ingredient :quantity="4" unit="tbsp">vegetable oil</Ingredient>
+-   <Ingredient :quantity="2" unit="tbsp">oyster sauce</Ingredient>
+-   <Ingredient :quantity="1" unit="tbsp">fish sauce</Ingredient>
+-   <Ingredient :quantity="1" unit="tbsp">soy sauce</Ingredient>
+-   <Ingredient :quantity="1" unit="tbsp">dark soy sauce</Ingredient>
+-   <Ingredient :quantity="1" unit="tbsp">brown sugar</Ingredient>
+-   <Ingredient :quantity="150" unit="g">jasmine rice</Ingredient>
 
 ## Method
 
-1. Heat the oil in a wok. Add the crushed garlic and finely chopped chilli peppers and fry until fragrant.
-2. Add the minced pork and stir-fry until cooked.
-3. Meanwhile, combine the oyster sauce, fish sauce, soy sauce, dark soy sauce and brown sugar. Add a little water if needed to get a thick sauce consistency.
-4. Add the sauce to the wok and stir-fry for about 10 minutes.
-5. Turn off the heat and add the Thai basil, mix well and searve with jasmine or sticky rice.
+1. <Method>Heat the oil in a wok. Add the crushed garlic and finely chopped chilli peppers and fry until fragrant.</Method>
+2. <Method>Add the minced pork and stir-fry until cooked.</Method>
+3. <Method>Meanwhile, combine the oyster sauce, fish sauce, soy sauce, dark soy sauce and brown sugar. Add a little water if needed to get a thick sauce consistency.</Method>
+4. <Method>Add the sauce to the wok and stir-fry for about 10 minutes.</Method>
+5. <Method>Turn off the heat and add the Thai basil, mix well and serve with jasmine or sticky rice.</Method>
 
 </RecipeLayout>
