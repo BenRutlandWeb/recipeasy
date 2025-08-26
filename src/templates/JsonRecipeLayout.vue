@@ -6,6 +6,8 @@ const props = defineProps({
 });
 
 init(props.recipe.serves);
+
+//@todo change prepTime and cookTime to be 1h 30m
 </script>
 
 <template>

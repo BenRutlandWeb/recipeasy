@@ -25,6 +25,7 @@ const jsonRecipes = Object.entries(jsonRecipeModules).map(([path, data]) => {
 });
 
 const routes = [
+  //@todo remove virtual routes
   ...virtualRoutes,
   ...jsonRecipes,
   {
@@ -43,8 +44,6 @@ const routes = [
     component: NotFound,
   },
 ];
-
-console.log(jsonRecipes);
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
