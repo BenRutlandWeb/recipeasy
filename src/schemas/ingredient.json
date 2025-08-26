@@ -1,0 +1,35 @@
+{
+  "$id": "ingredient.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ingredient",
+  "type": "object",
+  "required": ["name"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the ingredient"
+    },
+    "quantity": {
+      "type": ["number", "string"],
+      "description": "Amount of the ingredient"
+    },
+    "unit": {
+      "type": "string",
+      "enum": [
+        "tsp",
+        "tbsp",
+        "g",
+        "kg",
+        "ml",
+        "l",
+        "cup",
+        "oz",
+        "lb",
+        "pcs",
+        "pinch"
+      ],
+      "description": "Unit of measurement"
+    }
+  },
+  "additionalProperties": false
+}

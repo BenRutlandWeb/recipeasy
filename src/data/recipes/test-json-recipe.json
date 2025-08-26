@@ -1,0 +1,54 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Bacon and Pea Risotto",
+  "ingredients": [
+    {
+      "name": "onion",
+      "quantity": 1
+    },
+    {
+      "name": "olive oil",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "name": "knob of butter",
+      "quantity": 1
+    },
+    {
+      "name": "rashers streaky bacon, chopped",
+      "quantity": 6
+    },
+    {
+      "name": "risotto rice",
+      "quantity": 300,
+      "unit": "g"
+    },
+    {
+      "name": "hot vegetable stock",
+      "quantity": 1,
+      "unit": "l"
+    },
+    {
+      "name": "frozen peas",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "name": "freshly grated parmesan, to serve"
+    }
+  ],
+  "methods": [
+    "Finely chop the onion. Heat the olive oil and butter in a pan, add the onions and fry until lightly browned (about 7 minutes).",
+    "Add streaky bacon and fry for a further 5 minutes, until it starts to crisp.",
+    "Add the risotto rice and hot vegetable stock, and bring to the boil. Stir well, then reduce the heat and cook, covered, for 15-20 minutes until the rice is almost tender.",
+    "Stir in the frozen peas, add a little salt and pepper and cook for a further 3 minutes, until the peas are cooked.",
+    "Serve sprinkled with freshly grated parmesan and freshly ground black pepper."
+  ],
+  "keywords": ["dinner", "meat"],
+  "image": "/recipeasy/bacon-and-pea-risotto.jpg",
+  "description": "Not one for risotto purists - this simple recipe has just a few ingredients and the stock is added all in one go. The result is creamy, comforting yet healthy",
+  "serves": 4,
+  "prepTime": "00:05",
+  "cookTime": "00:40"
+}
