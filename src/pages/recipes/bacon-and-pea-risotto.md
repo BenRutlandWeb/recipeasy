@@ -9,28 +9,28 @@
 }
 </route>
 
-<RecipeLayout>
+<RecipeLayout :serves="4">
 
 # {{ $route.meta.title }}
 
 Not one for risotto purists – this simple recipe has just a few ingredients and the stock is added all in one go. The result is creamy, comforting yet healthy
 
-|                      |            |
-| -------------------- | ---------- |
-| **Serves:**          | 4          |
-| **Preparation time** | 5 minutes  |
-| **Cook time**        | 40 minutes |
+|                      |                 |
+| -------------------- | --------------- |
+| **Serves:**          | <ServesInput /> |
+| **Preparation time** | 5 minutes       |
+| **Cook time**        | 40 minutes      |
 
 ## Ingredients
 
-- 1 onion
-- 2 tbsp olive oil
-- knob of butter
-- 6 rashers streaky bacon, chopped
-- 300g risotto rice
-- 1l hot vegetable stock
-- 100g frozen peas
-- freshly grated parmesan, to serve
+-   <IngredientQuantity :quantity="1" /> onion
+-   <IngredientQuantity :quantity="2" /> tbsp olive oil
+-   <IngredientQuantity :quantity="1" /> knob of butter
+-   <IngredientQuantity :quantity="6" /> rashers streaky bacon, chopped
+-   <IngredientQuantity :quantity="300" />g risotto rice
+-   <IngredientQuantity :quantity="1" />l hot vegetable stock
+-   <IngredientQuantity :quantity="100" />g frozen peas
+-   freshly grated parmesan, to serve
 
 ## Method
 

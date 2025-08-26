@@ -9,25 +9,25 @@
 }
 </route>
 
-<RecipeLayout>
+<RecipeLayout :serves="3">
 
 # {{ $route.meta.title }}
 
-|                      |            |
-| -------------------- | ---------- |
-| **Serves:**          | 3          |
-| **Preparation time** | 5 minutes  |
-| **Cook time**        | 10 minutes |
+|                      |                 |
+| -------------------- | --------------- |
+| **Serves:**          | <ServesInput /> |
+| **Preparation time** | 5 minutes       |
+| **Cook time**        | 10 minutes      |
 
 ## Ingredients
 
-- 150 g self-raising flour
-- 1 teaspoon baking powder
-- 1 teaspoon sugar
-- 1 large free-range egg
-- 240 ml semi-skimmed milk
-- 1 orange
-- vanilla extract
+-   <IngredientQuantity :quantity="150" />g self-raising flour
+-   <IngredientQuantity :quantity="1" /> tsp baking powder
+-   <IngredientQuantity :quantity="1" /> tsp sugar
+-   <IngredientQuantity :quantity="1" /> large free-range egg
+-   <IngredientQuantity :quantity="240" />ml semi-skimmed milk
+-   <IngredientQuantity :quantity="1" /> orange
+-   vanilla extract
 
 ## Method
 

@@ -23,14 +23,14 @@ Quick, healthy and colourful – this super-speedy dish is sunshine on a plate. 
 
 ## Ingredients
 
-- 160 g ripe mixed-colour cherry tomatoes
-- 1 small ripe mango
-- ½ a small ripe avocado
-- 2 spring onions
-- 2 x 130 g salmon fillets , skin on, scaled, pin-boned, from sustainable sources
-- 2 heaped teaspoons Cajun seasoning
-- 4 small tortillas
-- 2 limes
+-   160 g ripe mixed-colour cherry tomatoes
+-   1 small ripe mango
+-   ½ a small ripe avocado
+-   2 spring onions
+-   2 x 130 g salmon fillets , skin on, scaled, pin-boned, from sustainable sources
+-   2 heaped tsp Cajun seasoning
+-   4 small tortillas
+-   2 limes
 
 ## Method
 

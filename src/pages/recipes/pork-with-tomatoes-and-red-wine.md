@@ -23,17 +23,17 @@ Serve with rice and fresh vegetables.
 
 ## Ingredients
 
-- 350g pork tenderloin or fillet, cut into strips
-- 1 large onion, chopped
-- 400g canned chopped tomatoes with herbs
-- 150ml red wine
-- 1 tablespoon tomato purée
-- 150ml hot vegetable or chicken stock
-- 1 teaspoon dried herbes de Provence or Italian mixed herbs
-- 225g chestnut or open-cap mushrooms, halved
-- 2 courgettes, sliced thickly
-- 2 teaspoons cornflour
-- salt and freshly ground black pepper
+-   350g pork tenderloin or fillet, cut into strips
+-   1 large onion, chopped
+-   400g canned chopped tomatoes with herbs
+-   150ml red wine
+-   1 tbsp tomato purée
+-   150ml hot vegetable or chicken stock
+-   1 tsp dried herbes de Provence or Italian mixed herbs
+-   225g chestnut or open-cap mushrooms, halved
+-   2 courgettes, sliced thickly
+-   2 tsp cornflour
+-   salt and freshly ground black pepper
 
 ## Method
 

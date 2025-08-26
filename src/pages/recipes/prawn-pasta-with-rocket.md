@@ -21,16 +21,16 @@
 
 ## Ingredients
 
-- 5 tablespoons olive oil
-- 2 garlic cloves, finely sliced
-- 50g pine nuts
-- 1 medium-hot red chilli, finely sliced and deseeded
-- 300g large fresh raw prawns, peeled, heads and tails removed
-- 1⁄2 glass dry white wine
-- 3 tablespoons finely sliced fresh basil
-- 500g linguine
-- 100g rocket leaves
-- Salt
+-   5 tbsp olive oil
+-   2 garlic cloves, finely sliced
+-   50g pine nuts
+-   1 medium-hot red chilli, finely sliced and deseeded
+-   300g large fresh raw prawns, peeled, heads and tails removed
+-   1⁄2 glass dry white wine
+-   3 tbsp finely sliced fresh basil
+-   500g linguine
+-   100g rocket leaves
+-   Salt
 
 ## Method
 
