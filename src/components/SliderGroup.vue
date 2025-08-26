@@ -1,40 +1,30 @@
 <template>
-  <component :is="tag" class="slider-group flex overflow-auto px-6 pb-8 -mx-6">
-    <li v-for="item in items" :key="item" class="slider-item">
-      <slot :item="item">{{ item }}</slot>
-    </li>
-  </component>
+    <component :is="tag" class="slider-group flex overflow-auto px-6 pb-8 -mx-6">
+        <li v-for="item in items" :key="item" class="slider-item">
+            <slot :item="item">{{ item }}</slot>
+        </li>
+    </component>
 </template>
 
 <script setup>
 const props = defineProps({
-  items: {
-    type: Array,
-  },
-  tag: {
-    type: String,
-    default: "ul",
-  },
+    items: {
+        type: Array,
+    },
+    tag: {
+        type: String,
+        default: "ul",
+    },
 });
 </script>
 
 <style scoped>
 .slider-group {
-  scroll-snap-type: x mandatory;
+    scroll-snap-type: x mandatory;
 }
 .slider-item {
-  scroll-snap-align: start;
-  scroll-margin-inline-start: 1.5rem;
-  flex: 0 0 36vw;
-}
-@screen sm {
-  .slider-item {
-    flex: 0 0 24vw;
-  }
-}
-@screen lg {
-  .slider-item {
-    flex: 0 0 16vw;
-  }
+    scroll-snap-align: start;
+    scroll-margin-inline-start: 1.5rem;
+    flex: 0 0 min(360px, 36vw);
 }
 </style>
