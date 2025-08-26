@@ -21,8 +21,24 @@ export default {
             manifest,
         }),
         Pages({
-            extensions: ["vue", "md"],
+            extensions: ["vue", "md", "json"],
             import: "sync",
+            extendRoute(route, parent) {
+                if (route.component.endsWith(".json")) {
+                    const fileName = route.component
+                        .split("/")
+                        .pop()
+                        .replace(/\.[^/.]+$/, "");
+                    // replace the raw json file with a Vue wrapper component
+
+                    return {
+                        ...route,
+                        component: "/src/templates/JsonRecipeLayout.vue",
+                        meta: { jsonFile: fileName },
+                    };
+                }
+                return route;
+            },
         }),
         components({
             dirs: ["src/components", "src/templates"],

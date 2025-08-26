@@ -1,0 +1,7 @@
+{
+    "title": "Test JSON Recipe",
+    "ingredients": ["test", "json", "recipe"],
+    "keywords": ["test"],
+    "image": "/recipeasy/bacon-and-pea-risotto.jpg",
+    "description": "Not one for risotto purists – this simple recipe has just a few ingredients and the stock is added all in one go. The result is creamy, comforting yet healthy"
+}
