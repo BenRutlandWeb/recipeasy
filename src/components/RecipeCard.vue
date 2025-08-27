@@ -1,6 +1,6 @@
 <template>
     <RouterLink
-        :to="{ name: 'recipe', params: { slug: recipe.slug } }"
+        :to="{ name: recipe.slug }"
         class="block h-full shadow rounded dark:shadow-xl dark:bg-gray-850 relative"
     >
         <img

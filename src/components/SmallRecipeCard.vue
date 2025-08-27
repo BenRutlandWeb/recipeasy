@@ -1,8 +1,5 @@
 <template>
-    <RouterLink
-        :to="{ name: 'recipe', params: { slug: recipe.slug } }"
-        class="flex items-center rounded shadow dark:bg-gray-850"
-    >
+    <RouterLink :to="{ name: recipe.slug }" class="flex items-center rounded shadow dark:bg-gray-850">
         <img
             :src="recipe.image"
             :alt="recipe.title"

@@ -36,6 +36,7 @@ export default {
                 quality: 66,
             },
         }),
+        //@todo make into a plugin or remove the need to a manifest
         {
             name: "recipes-manifest",
             buildStart() {
@@ -48,12 +49,11 @@ export default {
                     // pick only meta fields (adjust as needed)
                     return {
                         slug,
-                        //path: `/recipes/${slug}`,//@todo remove
                         name: "recipe",
                         title: content.title,
                         image: content.image,
-                        ingredients: content.ingredients,
-                        keywords: content.keywords,
+                        //ingredients: content.ingredients,
+                        //keywords: content.keywords,
                     };
                 });
 

@@ -17,7 +17,7 @@ const jsonRecipes = Object.entries(jsonRecipeModules).map(([path, loader]) => {
     return {
         slug,
         path: `/recipes/${slug}`,
-        name: `recipe-${slug}`,
+        name: `${slug}`,
         component: async () => {
             const data = (await loader()).default;
             return {
@@ -31,17 +31,18 @@ const jsonRecipes = Object.entries(jsonRecipeModules).map(([path, loader]) => {
 });
 
 const routes = [
-    //...jsonRecipes,
+    ...jsonRecipes,
     {
         path: "/",
         component: Home,
         name: "home",
     },
-    {
+    //@todo remove or change this
+    /*{
         path: "/recipes/:slug",
         component: () => import("@/pages/recipe.vue"),
         name: "recipe",
-    },
+    },*/
     {
         path: "/search",
         component: () => import("@/pages/search.vue"),
@@ -78,6 +79,10 @@ function updateRecentRecipes(route) {
 }
 
 router.beforeEach((to, from, next) => {
+    console.log(to);
+
+    //@todo fix title
+
     if (to.meta?.title) {
         document.title = to.meta.title + " | Recipeasy";
     } else {
