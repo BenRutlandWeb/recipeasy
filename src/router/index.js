@@ -1,48 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from "/src/pages/index.vue";
-import NotFound from "/src/pages/404.vue";
-import JsonRecipeLayout from "../templates/JsonRecipeLayout.vue";
 
-import recipes from "@/data/recipes-manifest.json";
-import { h } from "vue";
-/*
-const jsonRecipeModules = import.meta.glob("../data/recipes/*.json", {
-    eager: false,
-});
-
-const jsonRecipes = Object.entries(jsonRecipeModules).map(([path, loader]) => {
-    const slug = path
-        .split("/")
-        .pop()
-        .replace(/\.json$/, "");
-
-    return {
-        slug,
-        path: `/recipes/${slug}`,
-        name: `${slug}`,
-        component: async () => {
-            const data = (await loader()).default;
-            return {
-                name: `RecipePage-${slug}`,
-                render() {
-                    return h(JsonRecipeLayout, { recipe: data });
-                },
-            };
-        },
-    };
-});
-*/
 const routes = [
-  //...jsonRecipes,
   {
     path: "/",
-    component: Home,
+    component: () => import("@/pages/index.vue"),
     name: "home",
   },
-  //@todo remove or change this
   {
     path: "/recipes/:slug",
-    component: () => import("@/pages/[slug].vue"),
+    component: () => import("@/pages/recipe.vue"),
     name: "recipe",
   },
   {
@@ -53,7 +19,7 @@ const routes = [
   {
     path: "/:pathMatch(.*)*",
     name: "404",
-    component: NotFound,
+    component: () => import("@/pages/404.vue"),
   },
 ];
 

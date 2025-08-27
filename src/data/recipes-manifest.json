@@ -1,32 +1,113 @@
 [
   {
     "slug": "bacon-and-pea-risotto",
-    "name": "recipe",
     "title": "Bacon and Pea Risotto",
-    "image": "/recipeasy/bacon-and-pea-risotto.jpg"
+    "image": "/recipeasy/bacon-and-pea-risotto.jpg",
+    "ingredients": [
+      "onion",
+      "olive oil",
+      "knob of butter",
+      "rashers streaky bacon, chopped",
+      "risotto rice",
+      "hot vegetable stock",
+      "frozen peas",
+      "freshly grated parmesan, to serve"
+    ],
+    "keywords": [
+      "dinner",
+      "meat"
+    ]
   },
   {
     "slug": "chilli-con-carne",
-    "name": "recipe",
     "title": "Chilli Con Carne",
-    "image": "/recipeasy/chilli-con-carne.jpg"
+    "image": "/recipeasy/chilli-con-carne.jpg",
+    "ingredients": [
+      "onions, finely chopped",
+      "red pepper, chopped",
+      "minced beef",
+      "kidney beans, drained",
+      "can chopped tomatoes",
+      "Tomato puree",
+      "chili peppers, finely sliced",
+      "chili powder",
+      "long grain rice"
+    ],
+    "keywords": [
+      "dinner",
+      "tex-mex",
+      "meat"
+    ]
   },
   {
     "slug": "italian-meatballs-with-mozarella",
-    "name": "recipe",
     "title": "Italian Meatballs with Mozarella",
-    "image": "/recipeasy/italian-meatballs-with-mozarella.jpg"
+    "image": "/recipeasy/italian-meatballs-with-mozarella.jpg",
+    "ingredients": [
+      "olive oil",
+      "minced beef or lamb",
+      "onion, chopped",
+      "cloves garlic, crushed",
+      "egg, lightly beaten",
+      "fresh oregano, chopped",
+      "tomato puree",
+      "grated Parmesan cheese",
+      "fresh breadcrumbs",
+      "plain flour",
+      "red wine",
+      "beef stock",
+      "can chopped tomatoes",
+      "mozzarella, cubed",
+      "pasta",
+      "a few sprigs of oregano, to garnish"
+    ],
+    "keywords": [
+      "dinner",
+      "meat",
+      "italian"
+    ]
   },
   {
     "slug": "pad-kra-pao",
-    "name": "recipe",
     "title": "Pad Kra Pao",
-    "image": "/recipeasy/pad-kra-pao.jpg"
+    "image": "/recipeasy/pad-kra-pao.jpg",
+    "ingredients": [
+      "minced pork",
+      "cloves garlic, crushed",
+      "birds eye chillis, finely chopped",
+      "long beans, chopped",
+      "Thai basil",
+      "vegetable oil",
+      "oyster sauce",
+      "fish sauce",
+      "soy sauce",
+      "dark soy sauce",
+      "brown sugar",
+      "jasmine rice"
+    ],
+    "keywords": [
+      "dinner",
+      "thai",
+      "meat"
+    ]
   },
   {
     "slug": "smoky-chorizo-salmon",
-    "name": "recipe",
     "title": "Smoky Chorizo Salmon",
-    "image": "/recipeasy/smoky-chorizo-salmon.jpg"
+    "image": "/recipeasy/smoky-chorizo-salmon.jpg",
+    "ingredients": [
+      "salmon fillets, skin on, scaled, pin-boned",
+      "ripe mixed-colour cherry tomatoes",
+      "sprigs of fresh basil",
+      "black olives, (stone in)",
+      "red wine vinegar",
+      "extra virgin olive oil",
+      "chorizo",
+      "green beans"
+    ],
+    "keywords": [
+      "dinner",
+      "fish"
+    ]
   }
 ]

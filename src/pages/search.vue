@@ -26,28 +26,22 @@
 
 <script setup>
 import { computed } from "vue";
-import { useRouter, useRoute } from "vue-router";
+import { useRoute } from "vue-router";
 import recipes from "@/data/recipes-manifest.json";
 
 const route = useRoute();
 const query = computed(() => route.query.q || "");
-//@todo remove this
-const __recipes = useRouter()
-  .options.routes.filter((route) => route.path.startsWith("/recipes"))
-  .reverse();
 
 const queriedRecipes = computed(() => {
   return recipes.filter((recipe) => {
     const searchTerm = query.value.toLowerCase();
-    const meta = recipe.meta;
-    //@todo remove old obj search
+
     return (
-      meta.title.toLowerCase().includes(searchTerm) ||
-      meta.ingredients?.find((i) => {
-        const x = typeof i === "string" ? i : i.name;
-        return x.toLowerCase().includes(searchTerm);
+      recipe.title.toLowerCase().includes(searchTerm) ||
+      recipe.ingredients?.find((i) => {
+        return i.toLowerCase().includes(searchTerm);
       }) ||
-      meta.keywords?.find((i) => i.toLowerCase().includes(searchTerm))
+      recipe.keywords?.find((i) => i.toLowerCase().includes(searchTerm))
     );
   });
 });
