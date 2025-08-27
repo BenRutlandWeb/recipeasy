@@ -27,10 +27,12 @@
 <script setup>
 import { computed } from "vue";
 import { useRouter, useRoute } from "vue-router";
+import recipes from "../data/recipes-manifest.json";
 
 const route = useRoute();
 const query = computed(() => route.query.q || "");
-const recipes = useRouter()
+//@todo remove this
+const __recipes = useRouter()
     .options.routes.filter((route) => route.path.startsWith("/recipes"))
     .reverse();
 

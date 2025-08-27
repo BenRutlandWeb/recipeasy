@@ -1,12 +1,20 @@
 <script setup>
 import { init } from "@/composables/useRecipe";
 import { formatMinutes } from "@/utils/time";
+import { ref, onMounted } from "vue";
+import { useRoute } from "vue-router";
 
-const props = defineProps({
-    recipe: Object,
-});
+const route = useRoute();
 
-init(props.recipe.serves);
+const recipe = ref({});
+
+const recipeModules = import.meta.glob("../data/recipes/*.json");
+const loader = recipeModules[`../data/recipes/${route.params.slug}.json`];
+const data = (await loader()).default;
+
+recipe.value = data;
+
+init(recipe.value.serves);
 </script>
 
 <template>

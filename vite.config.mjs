@@ -6,37 +6,65 @@ import components from "unplugin-vue-components/vite";
 import path from "path";
 import manifest from "./src/assets/manifest.json";
 import viteImagemin from "vite-plugin-imagemin";
+import fs from "fs";
 
 export default {
-  base: "/recipeasy/",
-  plugins: [
-    vue({
-      pagesDir: "src/pages",
-      include: [/\.vue$/, /\.md$/],
-    }),
-    //@todo remove markdown pages
-    markdown(),
-    VitePWA({
-      registerType: "autoUpdate",
-      includeAssets: ["*.jpg", "*.png", "*.svg"],
-      manifest,
-    }),
-    Pages({
-      extensions: ["vue", "md", "json"],
-      import: "sync",
-    }),
-    components({
-      dirs: ["src/components", "src/templates"],
-      extensions: ["vue", "md"],
-      include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-    }),
-    viteImagemin({
-      mozjpeg: {
-        quality: 66,
-      },
-    }),
-  ],
-  resolve: {
-    alias: { "@": path.resolve(__dirname, "src") },
-  },
+    base: "/recipeasy/",
+    plugins: [
+        vue({
+            pagesDir: "src/pages",
+            include: [/\.vue$/, /\.md$/],
+        }),
+        //@todo remove markdown pages
+        //markdown(),
+        VitePWA({
+            registerType: "autoUpdate",
+            includeAssets: ["*.jpg", "*.png", "*.svg"],
+            manifest,
+        }),
+        Pages({
+            extensions: ["vue", "md", "json"],
+            import: "sync",
+        }),
+        components({
+            dirs: ["src/components", "src/templates"],
+            extensions: ["vue", "md"],
+            include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+        }),
+        viteImagemin({
+            mozjpeg: {
+                quality: 66,
+            },
+        }),
+        {
+            name: "recipes-manifest",
+            buildStart() {
+                const recipesDir = path.resolve(__dirname, "src/data/recipes");
+                const files = fs.readdirSync(recipesDir).filter((f) => f.endsWith(".json"));
+
+                const manifest = files.map((f) => {
+                    const content = JSON.parse(fs.readFileSync(path.join(recipesDir, f), "utf-8"));
+                    const slug = f.replace(/\.json$/, "");
+                    // pick only meta fields (adjust as needed)
+                    return {
+                        slug,
+                        //path: `/recipes/${slug}`,//@todo remove
+                        name: "recipe",
+                        title: content.title,
+                        image: content.image,
+                        ingredients: content.ingredients,
+                        keywords: content.keywords,
+                    };
+                });
+
+                fs.writeFileSync(
+                    path.resolve(__dirname, "src/data/recipes-manifest.json"),
+                    JSON.stringify(manifest, null, 2)
+                );
+            },
+        },
+    ],
+    resolve: {
+        alias: { "@": path.resolve(__dirname, "src") },
+    },
 };

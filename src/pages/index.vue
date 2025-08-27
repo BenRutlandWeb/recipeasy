@@ -33,13 +33,14 @@
 
 <script setup>
 import { useRouter } from "vue-router";
+import recipes from "../data/recipes-manifest.json";
 
 const favourited = JSON.parse(localStorage.getItem("favourites") ?? "{}");
 const favouritedKeys = Object.keys(favourited);
 
 const recentKeys = JSON.parse(localStorage.getItem("recent") ?? "[]");
-
-const recipes = useRouter()
+//@todo remove this
+const __recipes = useRouter()
     .options.routes.filter((route) => route.path.startsWith("/recipes"))
     .reverse();
 
