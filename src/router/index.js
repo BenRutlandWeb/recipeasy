@@ -2,8 +2,10 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "/src/pages/index.vue";
 import NotFound from "/src/pages/404.vue";
 import JsonRecipeLayout from "../templates/JsonRecipeLayout.vue";
-import { h } from "vue";
 
+import recipes from "@/data/recipes-manifest.json";
+import { h } from "vue";
+/*
 const jsonRecipeModules = import.meta.glob("../data/recipes/*.json", {
     eager: false,
 });
@@ -29,69 +31,75 @@ const jsonRecipes = Object.entries(jsonRecipeModules).map(([path, loader]) => {
         },
     };
 });
-
+*/
 const routes = [
-    ...jsonRecipes,
-    {
-        path: "/",
-        component: Home,
-        name: "home",
-    },
-    //@todo remove or change this
-    /*{
-        path: "/recipes/:slug",
-        component: () => import("@/pages/recipe.vue"),
-        name: "recipe",
-    },*/
-    {
-        path: "/search",
-        component: () => import("@/pages/search.vue"),
-        name: "search",
-    },
-    {
-        path: "/:pathMatch(.*)*",
-        name: "404",
-        component: NotFound,
-    },
+  //...jsonRecipes,
+  {
+    path: "/",
+    component: Home,
+    name: "home",
+  },
+  //@todo remove or change this
+  {
+    path: "/recipes/:slug",
+    component: () => import("@/pages/[slug].vue"),
+    name: "recipe",
+  },
+  {
+    path: "/search",
+    component: () => import("@/pages/search.vue"),
+    name: "search",
+  },
+  {
+    path: "/:pathMatch(.*)*",
+    name: "404",
+    component: NotFound,
+  },
 ];
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
-    routes,
-    scrollBehavior(to, from, savedPosition) {
-        return savedPosition || { left: 0, top: 0 };
-    },
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    return savedPosition || { left: 0, top: 0 };
+  },
 });
 
 function updateRecentRecipes(route) {
-    if (!route.path.startsWith("/recipes")) {
-        return;
-    }
-    let recent = JSON.parse(localStorage.getItem("recent") ?? "[]");
+  if (!route.path.startsWith("/recipes")) {
+    return;
+  }
 
-    if (recent[0] == route.name) {
-        return;
-    }
-    recent = recent.filter((recipe) => recipe !== route.name);
-    recent.unshift(route.name);
-    recent = recent.slice(0, 10);
-    localStorage.setItem("recent", JSON.stringify(recent));
+  const slug = route.params.slug;
+
+  let recent = JSON.parse(localStorage.getItem("recent") ?? "[]");
+
+  if (recent[0] == slug) {
+    return;
+  }
+
+  recent = recent.filter((recipe) => recipe !== slug);
+  recent.unshift(slug);
+  recent = recent.slice(0, 10);
+
+  localStorage.setItem("recent", JSON.stringify(recent));
 }
 
 router.beforeEach((to, from, next) => {
-    console.log(to);
+  //console.log(to);
 
-    //@todo fix title
+  //@todo fix title
+  //console.log(recipes, to);
 
-    if (to.meta?.title) {
-        document.title = to.meta.title + " | Recipeasy";
-    } else {
-        document.title = "Recipeasy";
-    }
+  if (to.meta?.title) {
+    document.title = to.meta.title + " | Recipeasy";
+  } else {
+    document.title = "Recipeasy";
+  }
 
-    updateRecentRecipes(to);
+  updateRecentRecipes(to);
 
-    next();
+  next();
 });
 
 export default router;

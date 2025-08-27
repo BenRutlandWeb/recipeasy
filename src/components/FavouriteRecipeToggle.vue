@@ -1,3 +1,25 @@
+<script setup>
+import { ref } from "vue";
+import { useRoute } from "vue-router";
+
+const recipes = JSON.parse(localStorage.getItem("favourites") ?? "[]");
+const route = useRoute();
+const slug = route.params.slug;
+const favourited = ref(recipes.includes(slug));
+
+function toggleFavourite() {
+  if (recipes.includes(slug)) {
+    recipes.splice(recipes.indexOf(slug), 1);
+    favourited.value = false;
+  } else {
+    recipes.unshift(slug);
+    favourited.value = true;
+  }
+
+  localStorage.setItem("favourites", JSON.stringify(recipes));
+}
+</script>
+
 <template>
   <button
     type="button"
@@ -12,25 +34,3 @@
     />
   </button>
 </template>
-
-<script setup>
-import { ref } from "vue";
-import { useRoute } from "vue-router";
-
-const recipes = JSON.parse(localStorage.getItem("favourites") ?? "{}");
-const route = useRoute();
-
-const favourited = ref(recipes[route.name]);
-
-function toggleFavourite() {
-  if (recipes[route.name]) {
-    delete recipes[route.name];
-    favourited.value = false;
-  } else {
-    recipes[route.name] = true;
-    favourited.value = true;
-  }
-
-  localStorage.setItem("favourites", JSON.stringify(recipes));
-}
-</script>
