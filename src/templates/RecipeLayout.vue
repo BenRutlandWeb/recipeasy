@@ -22,6 +22,7 @@
 </template>
 
 <script setup>
+//@todo remove this component and rename the jsonrecipelayout
 import { init } from "@/composables/useRecipe";
 
 const props = defineProps({

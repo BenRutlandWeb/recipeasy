@@ -1,0 +1,95 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Italian Meatballs with Mozarella",
+    "ingredients": [
+        {
+            "name": "olive oil",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "minced beef or lamb",
+            "quantity": 500,
+            "unit": "g"
+        },
+        {
+            "name": "onion, chopped",
+            "quantity": 1
+        },
+        {
+            "name": "cloves garlic, crushed",
+            "quantity": 2
+        },
+        {
+            "name": "egg, lightly beaten",
+            "quantity": 1
+        },
+        {
+            "name": "fresh oregano, chopped",
+            "quantity": 1,
+            "unit": "tsp"
+        },
+        {
+            "name": "tomato puree",
+            "quantity": 2,
+            "unit": "tbsp"
+        },
+        {
+            "name": "grated Parmesan cheese",
+            "quantity": 25,
+            "unit": "g"
+        },
+        {
+            "name": "fresh breadcrumbs",
+            "quantity": 50,
+            "unit": "g"
+        },
+        {
+            "name": "plain flour",
+            "quantity": 25,
+            "unit": "g"
+        },
+        {
+            "name": "red wine",
+            "quantity": 150,
+            "unit": "ml"
+        },
+        {
+            "name": "beef stock",
+            "quantity": 300,
+            "unit": "ml"
+        },
+        {
+            "name": "can chopped tomatoes",
+            "quantity": 225,
+            "unit": "g"
+        },
+        {
+            "name": "mozzarella, cubed",
+            "quantity": 125,
+            "unit": "g"
+        },
+        {
+            "name": "pasta",
+            "quantity": 300,
+            "unit": "g"
+        },
+        {
+            "name": "a few sprigs of oregano, to garnish"
+        }
+    ],
+    "methods": [
+        "In a large bowl, mix together the oil, mince, chopped onion, garlic, egg, oregano, tomato purée, Parmesan, breadcrumbs and seasoning.",
+        "Mix with your fingers to combine thoroughly. Form into 24 balls, about the size of a walnut.",
+        "Preheat oven to 200°C. Place the meat balls in a shallow ovenproof casserole and cook for 15 min.",
+        "Sprinkle the flour over and gradually add stock, wine and tomatoes, stirring carefully. Return to the oven and cook for a further 15 min, stirring occasionally.",
+        "Stir in the mozzarella 5 min before the end of cooking time.",
+        "Garnish with oregano. Serve hot with freshly cooked pasta."
+    ],
+    "keywords": ["dinner", "meat", "italian"],
+    "image": "/recipeasy/italian-meatballs-with-mozarella.jpg",
+    "description": "A traditional family filler, cooked in a flavoursome red wine and tomato sauce.",
+    "serves": 4,
+    "prepTime": 15,
+    "cookTime": 30
+}

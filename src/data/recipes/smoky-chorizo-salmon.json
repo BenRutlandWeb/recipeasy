@@ -1,0 +1,58 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Smoky Chorizo Salmon",
+    "ingredients": [
+        {
+            "name": "salmon fillets, skin on, scaled, pin-boned",
+            "quantity": 300,
+            "unit": "g"
+        },
+        {
+            "name": "ripe mixed-colour cherry tomatoes",
+            "quantity": 300,
+            "unit": "g"
+        },
+        {
+            "name": "sprigs of fresh basil",
+            "quantity": 4
+        },
+        {
+            "name": "black olives, (stone in)",
+            "quantity": 8
+        },
+        {
+            "name": "red wine vinegar",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "extra virgin olive oil",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "chorizo",
+            "quantity": 30,
+            "unit": "g"
+        },
+        {
+            "name": "green beans",
+            "quantity": 200,
+            "unit": "g"
+        }
+    ],
+    "methods": [
+        "Put the salmon flesh side down in a large cold non-stick frying pan and place on a medium-high heat.",
+        "As the pan comes up to temperature and the salmon begins to sizzle (about 3 minutes), flip it over and cook on the skin side for 5 minutes, or until very crisp and just cooked (depending on its thickness).",
+        "Meanwhile, halve the cherry tomatoes, tear up most of the basil leaves, then toss it all with the red wine vinegar and a pinch of sea salt and black pepper.",
+        "Squash the olives and discard the stones, then finely chop the flesh. Mix with the extra virgin olive oil and a splash of water.",
+        "Finely slice the chorizo, add to the pan for the last 2 minutes, then toss in the dressed tomatoes for 30 seconds.",
+        "Divide between your plates, with the salmon on top. Spoon over the dressed olives, pick over the remaining basil and served with cooked green beans."
+    ],
+    "keywords": ["dinner", "fish"],
+    "image": "/recipeasy/smoky-chorizo-salmon.jpg",
+    "description": "Smoky chorizo salmon with sweet cherry tomatoes & basil",
+    "serves": 2,
+    "prepTime": 5,
+    "cookTime": 15
+}

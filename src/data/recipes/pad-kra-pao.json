@@ -1,0 +1,77 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Pad Kra Pao",
+    "ingredients": [
+        {
+            "name": "minced pork",
+            "quantity": 250,
+            "unit": "g"
+        },
+        {
+            "name": "cloves garlic, crushed",
+            "quantity": 2
+        },
+        {
+            "name": "birds eye chillis, finely chopped",
+            "quantity": 3
+        },
+        {
+            "name": "long beans, chopped",
+            "quantity": 2
+        },
+        {
+            "name": "Thai basil",
+            "quantity": 15,
+            "unit": "g"
+        },
+        {
+            "name": "vegetable oil",
+            "quantity": 4,
+            "unit": "tbsp"
+        },
+        {
+            "name": "oyster sauce",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "fish sauce",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "soy sauce",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "dark soy sauce",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "brown sugar",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "jasmine rice",
+            "quantity": 150,
+            "unit": "g"
+        }
+    ],
+    "methods": [
+        "Heat the oil in a wok. Add the crushed garlic and finely chopped chilli peppers and fry until fragrant.",
+        "Add the minced pork and stir-fry until cooked.",
+        "Meanwhile, combine the oyster sauce, fish sauce, soy sauce, dark soy sauce and brown sugar. Add a little water if needed to get a thick sauce consistency.",
+        "Add the sauce to the wok and stir-fry for about 10 minutes.",
+        "Turn off the heat and add the Thai basil, mix well and serve with jasmine or sticky rice."
+    ],
+    "keywords": ["dinner", "thai", "meat"],
+    "image": "/recipeasy/pad-kra-pao.jpg",
+    "description": "",
+    "serves": 2,
+    "prepTime": 10,
+    "cookTime": 25,
+    "spiceLevel": 3
+}

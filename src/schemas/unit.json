@@ -1,0 +1,20 @@
+{
+    "$id": "unit.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Unit",
+    "type": "string",
+    "oneOf": [
+        { "type": "string", "const": "tsp", "description": "Teaspoon (5 ml)" },
+        { "type": "string", "const": "tbsp", "description": "Tablespoon (15 ml)" },
+        { "type": "string", "const": "g", "description": "Gram" },
+        { "type": "string", "const": "kg", "description": "Kilogram" },
+        { "type": "string", "const": "ml", "description": "Millilitre" },
+        { "type": "string", "const": "L", "description": "Litre" },
+        { "type": "string", "const": "cup", "description": "Cup (250 ml)" },
+        { "type": "string", "const": "oz", "description": "Ounce (28 g)" },
+        { "type": "string", "const": "lb", "description": "Pound (453 g)" }
+    ],
+    "description": "Unit of measurement",
+    "additionalProperties": false,
+    "default": "g"
+}

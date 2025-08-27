@@ -1,8 +1,10 @@
 <template>
     <component :is="tag" class="slider-group flex overflow-auto px-6 pb-8 -mx-6">
-        <li v-for="item in items" :key="item" class="slider-item">
-            <slot :item="item">{{ item }}</slot>
-        </li>
+        <template v-for="item in items">
+            <li :key="item" class="slider-item" v-if="item">
+                <slot :item="item">{{ item }}</slot>
+            </li>
+        </template>
     </component>
 </template>
 

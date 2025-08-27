@@ -1,0 +1,67 @@
+{
+    "$id": "diet.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Diet",
+    "type": "array",
+    "description": "Indicates a dietary restriction or guideline for which this recipe or menu item is suitable, e.g. diabetic, halal etc.",
+    "items": {
+        "anyOf": [
+            {
+                "type": "string",
+                "description": "A diet appropriate for people with diabetes.",
+                "const": "diabetic"
+            },
+            {
+                "type": "string",
+                "description": "A diet exclusive of gluten.",
+                "const": "gluten-free"
+            },
+            {
+                "type": "string",
+                "description": "A diet conforming to Islamic dietary practices.",
+                "const": "halal"
+            },
+            {
+                "type": "string",
+                "description": "A diet conforming to Hindu dietary practices, in particular, beef-free.",
+                "const": "hindu"
+            },
+            {
+                "type": "string",
+                "description": "A diet conforming to Jewish dietary practices.",
+                "const": "kosher"
+            },
+            {
+                "type": "string",
+                "description": "A diet focused on reduced calorie intake.",
+                "const": "low-calorie"
+            },
+            {
+                "type": "string",
+                "description": "A diet focused on reduced fat and cholesterol intake.",
+                "const": "low-fat"
+            },
+            {
+                "type": "string",
+                "description": "A diet appropriate for people with lactose intolerance.",
+                "const": "low-lactose"
+            },
+            {
+                "type": "string",
+                "description": "A diet focused on reduced sodium intake.",
+                "const": "low-salt"
+            },
+            {
+                "type": "string",
+                "description": "A diet exclusive of all animal products.",
+                "const": "vegan"
+            },
+            {
+                "type": "string",
+                "description": "A diet exclusive of animal meat.",
+                "const": "vegetarian"
+            }
+        ]
+    },
+    "additionalProperties": false
+}

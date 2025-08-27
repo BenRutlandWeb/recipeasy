@@ -38,10 +38,13 @@ const queriedRecipes = computed(() => {
     return recipes.filter((recipe) => {
         const searchTerm = query.value.toLowerCase();
         const meta = recipe.meta;
-
+        //@todo remove old obj search
         return (
             meta.title.toLowerCase().includes(searchTerm) ||
-            meta.ingredients?.find((i) => i.toLowerCase().includes(searchTerm)) ||
+            meta.ingredients?.find((i) => {
+                const x = typeof i === "string" ? i : i.name;
+                return x.toLowerCase().includes(searchTerm);
+            }) ||
             meta.keywords?.find((i) => i.toLowerCase().includes(searchTerm))
         );
     });
