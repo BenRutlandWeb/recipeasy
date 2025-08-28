@@ -25,7 +25,7 @@ init(props.recipe.serves);
         <div class="grid gap-6 md:col-span-2">
             <h1>{{ recipe.title }}</h1>
 
-            <p>{{ recipe.description }}</p>
+            <div v-html="recipe.description"></div>
 
             <table>
                 <tbody>

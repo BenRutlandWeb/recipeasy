@@ -1,6 +1,6 @@
 {
     "$schema": "../../schemas/recipe.json",
-    "title": "Italian Meatballs with Mozarella",
+    "title": "Italian meatballs with mozarella",
     "ingredients": [
         {
             "name": "olive oil",
@@ -15,23 +15,22 @@
         {
             "name": "onion",
             "quantity": 1,
-            "description": "chopped"
+            "description": "Chopped"
         },
         {
             "name": "garlic cloves",
             "quantity": 2,
-            "description": "crushed"
+            "description": "Crushed"
         },
         {
             "name": "egg",
             "quantity": 1,
-            "description": "lightly beaten"
+            "description": "Lightly beaten"
         },
         {
-            "name": "fresh oregano",
+            "name": "dried oregano",
             "quantity": 1,
-            "unit": "tsp",
-            "description": "chopped. Alternatively use dried oregano"
+            "unit": "tsp"
         },
         {
             "name": "tomato puree",
@@ -42,7 +41,7 @@
             "name": "parmesan cheese",
             "quantity": 25,
             "unit": "g",
-            "description": "finely grated"
+            "description": "Finely grated"
         },
         {
             "name": "fresh breadcrumbs",
@@ -73,7 +72,7 @@
             "name": "mozzarella",
             "quantity": 125,
             "unit": "g",
-            "description": "cubed or sliced"
+            "description": "Cubed or sliced"
         },
         {
             "name": "pasta",
@@ -81,8 +80,8 @@
             "unit": "g"
         },
         {
-            "name": "oregano",
-            "description": "a few sprigs to garnish"
+            "name": "Oregano",
+            "description": "A few sprigs to garnish"
         }
     ],
     "methods": [
@@ -93,7 +92,7 @@
         "Stir in the mozzarella 5 min before the end of cooking time.",
         "Garnish with oregano. Serve hot with freshly cooked pasta."
     ],
-    "keywords": ["dinner", "meat", "italian"],
+    "keywords": ["Dinner", "Meat", "Italian"],
     "image": "/recipeasy/italian-meatballs-with-mozarella.jpg",
     "description": "A traditional family filler, cooked in a flavoursome red wine and tomato sauce.",
     "serves": 4,

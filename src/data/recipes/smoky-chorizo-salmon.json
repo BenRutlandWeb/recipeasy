@@ -1,12 +1,12 @@
 {
     "$schema": "../../schemas/recipe.json",
-    "title": "Smoky Chorizo Salmon",
+    "title": "Smoky chorizo salmon",
     "ingredients": [
         {
             "name": "salmon fillets",
             "quantity": 300,
             "unit": "g",
-            "description": "skin on, scaled, pin-boned"
+            "description": "Skin on, scaled, pin-boned"
         },
         {
             "name": "cherry tomatoes",
@@ -50,9 +50,9 @@
         "Finely slice the chorizo, add to the pan for the last 2 minutes, then toss in the dressed tomatoes for 30 seconds.",
         "Divide between your plates, with the salmon on top. Spoon over the dressed olives, pick over the remaining basil and served with cooked green beans."
     ],
-    "keywords": ["dinner", "fish"],
+    "keywords": ["Dinner", "Fish"],
     "image": "/recipeasy/smoky-chorizo-salmon.jpg",
-    "description": "Smoky chorizo salmon with sweet cherry tomatoes & basil",
+    "description": "Smoky chorizo salmon with sweet cherry tomatoes & basil.",
     "serves": 2,
     "prepTime": 5,
     "cookTime": 15

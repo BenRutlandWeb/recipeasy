@@ -1,6 +1,6 @@
 {
     "$schema": "../../schemas/recipe.json",
-    "title": "Pad Kra Pao",
+    "title": "Pad kra pao",
     "ingredients": [
         {
             "name": "minced pork",
@@ -10,17 +10,17 @@
         {
             "name": "garlic cloves",
             "quantity": 2,
-            "description": "crushed"
+            "description": "Crushed"
         },
         {
             "name": "birds eye chilli",
             "quantity": 3,
-            "description": "finely chopped"
+            "description": "Finely chopped"
         },
         {
             "name": "long beans",
             "quantity": 2,
-            "description": "cut into 3-4cm pieces"
+            "description": "Cut into 3-4cm pieces"
         },
         {
             "name": "Thai basil",
@@ -70,7 +70,7 @@
         "Add the sauce to the wok and stir-fry for about 10 minutes.",
         "Turn off the heat and add the Thai basil, mix well and serve with jasmine or sticky rice."
     ],
-    "keywords": ["dinner", "thai", "meat"],
+    "keywords": ["Dinner", "Meat", "Thai"],
     "image": "/recipeasy/pad-kra-pao.jpg",
     "description": "",
     "serves": 2,

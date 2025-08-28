@@ -1,6 +1,6 @@
 {
     "$schema": "../../schemas/recipe.json",
-    "title": "Massaman Curry",
+    "title": "Massaman curry",
     "ingredients": [
         {
             "name": "massaman curry paste",
@@ -21,13 +21,13 @@
             "name": "coconut milk",
             "quantity": 250,
             "unit": "ml",
-            "description": "mixed with te same amount of water"
+            "description": "Mixed with the same amount of water"
         },
         {
             "name": "roasted peanuts",
             "quantity": 2,
             "unit": "tbsp",
-            "description": "roughly chopped"
+            "description": "Roughly chopped"
         },
         {
             "name": "bay leaves",
@@ -36,22 +36,22 @@
         {
             "name": "onion",
             "quantity": 0.25,
-            "description": "roughly chopped"
+            "description": "Roughly chopped"
         },
         {
             "name": "tomato",
             "quantity": 0.5,
-            "description": "halved or quartered"
+            "description": "Halved or quartered"
         },
         {
             "name": "potato",
             "quantity": 0.5,
-            "description": "cut into large chunks"
+            "description": "Cut into large chunks"
         },
         {
             "name": "chicken breast",
             "quantity": 1,
-            "description": "cut into large pieces"
+            "description": "Cut into large pieces"
         },
         {
             "name": "jasmine rice",
@@ -67,7 +67,7 @@
         "Add the potatoes and onions, increase the heat and add the tomatoes, boiling for about 1 minute.",
         "Turn off the heat, serve in a bowl with rice."
     ],
-    "keywords": ["dinner", "meat", "thai"],
+    "keywords": ["Dinner", "Meat", "Thai"],
     "image": "/recipeasy/massaman-curry.jpg",
     "description": "",
     "serves": 2,

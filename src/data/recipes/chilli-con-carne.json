@@ -1,16 +1,16 @@
 {
     "$schema": "../../schemas/recipe.json",
-    "title": "Chilli Con Carne",
+    "title": "Chilli con carne",
     "ingredients": [
         {
             "name": "onion",
             "quantity": 2,
-            "description": "finely chopped"
+            "description": "Finely chopped"
         },
         {
             "name": "red pepper",
             "quantity": 1,
-            "description": "chopped"
+            "description": "Chopped"
         },
         {
             "name": "minced beef",
@@ -21,7 +21,7 @@
             "name": "kidney beans",
             "quantity": 400,
             "unit": "g",
-            "description": "drained"
+            "description": "Drained"
         },
         {
             "name": "can chopped tomatoes",
@@ -36,7 +36,7 @@
         {
             "name": "chilli peppers",
             "quantity": 2,
-            "description": "finely sliced"
+            "description": "Finely sliced"
         },
         {
             "name": "chilli powder",
@@ -55,7 +55,7 @@
         "Turn the heat down to medium-low. Meanwhile, cook the rice according to the packet instructions.",
         "Serve the chilli on a bed of rice, or alternatively, you can serve over a baked potato or nachos."
     ],
-    "keywords": ["dinner", "tex-mex", "meat"],
+    "keywords": ["Dinner", "Tex-Mex", "Meat"],
     "image": "/recipeasy/chilli-con-carne.jpg",
     "description": "",
     "serves": 4,

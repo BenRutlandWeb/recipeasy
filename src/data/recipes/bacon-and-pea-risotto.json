@@ -1,6 +1,6 @@
 {
     "$schema": "../../schemas/recipe.json",
-    "title": "Bacon and Pea Risotto",
+    "title": "Bacon and pea risotto",
     "ingredients": [
         {
             "name": "onion",
@@ -18,7 +18,7 @@
         {
             "name": "streaky bacon rashers",
             "quantity": 6,
-            "description": "chopped into small chunks"
+            "description": "Chopped into small chunks"
         },
         {
             "name": "risotto rice",
@@ -36,8 +36,8 @@
             "unit": "g"
         },
         {
-            "name": "parmesan cheese",
-            "description": "finely grated to serve"
+            "name": "Parmesan cheese",
+            "description": "Finely grated to serve"
         }
     ],
     "methods": [
@@ -47,9 +47,9 @@
         "Stir in the frozen peas, add a little salt and pepper and cook for a further 3 minutes, until the peas are cooked.",
         "Serve sprinkled with freshly grated parmesan and freshly ground black pepper."
     ],
-    "keywords": ["dinner", "meat"],
+    "keywords": ["Dinner", "Meat"],
     "image": "/recipeasy/bacon-and-pea-risotto.jpg",
-    "description": "Not one for risotto purists - this simple recipe has just a few ingredients and the stock is added all in one go. The result is creamy, comforting yet healthy",
+    "description": "Not one for risotto purists - this simple recipe has just a few ingredients and the stock is added all in one go. The result is creamy, comforting yet healthy.",
     "serves": 4,
     "prepTime": 5,
     "cookTime": 40
