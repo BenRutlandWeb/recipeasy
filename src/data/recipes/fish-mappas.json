@@ -1,0 +1,66 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Fish mappas",
+    "description": "A coconut fish curry, popular in the southern Indian state of Kerala - use pollock or any other sustainably sourced white fish fillets.",
+    "serves": 4,
+    "prepTime": 15,
+    "cookTime": 20,
+    "image": "/recipeasy/fish-mappas.jpg",
+    "keywords": ["Fish", "Dinner", "Indian"],
+    "ingredients": [
+        {
+            "name": "basmati rice",
+            "quantity": 300,
+            "unit": "g"
+        },
+        {
+            "name": "vegetable oil",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "onion",
+            "quantity": 2,
+            "description": "Large, sliced"
+        },
+        {
+            "name": "garlic cloves",
+            "quantity": 2,
+            "description": "Chopped"
+        },
+        {
+            "name": "tomatoes",
+            "quantity": 450,
+            "unit": "g",
+            "description": "Cut into chunks"
+        },
+        {
+            "name": "tikka curry paste",
+            "quantity": 3,
+            "unit": "tbsp"
+        },
+        {
+            "name": "coconut milk",
+            "quantity": 400,
+            "unit": "ml"
+        },
+        {
+            "name": "white fish fillets",
+            "quantity": 4,
+            "description": "Skinless, boneless (about 150g each), cut into 4cm chunks"
+        },
+        {
+            "name": "coriander",
+            "quantity": 15,
+            "unit": "g",
+            "description": "roughly chopped"
+        }
+    ],
+    "methods": [
+        "Put a large saucepan of water on to boil and cook the rice following pack instructions. Meanwhile, heat the oil in a large, wide saucepan over a medium heat and add the onions. Cook for 5-10 mins until softened and starting to colour.",
+        "Add the garlic and tomatoes, and fry for 2 mins. Add the curry paste, fry for 2 mins more, then pour in the coconut milk and bring to the boil.",
+        "Add the fish to the pan and simmer gently for 5-8 mins until just cooked through. Turn off the heat. Sprinkle the coriander over the curry and serve with the rice."
+    ],
+    "diet": ["halal", "hindu"],
+    "spiceLevel": 2
+}

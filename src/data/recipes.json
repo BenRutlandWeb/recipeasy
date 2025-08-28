@@ -15,6 +15,14 @@
     "title": "Chilli con carne",
     "image": "/recipeasy/chilli-con-carne.jpg"
   },
+  "fish-mappas": {
+    "title": "Fish mappas",
+    "image": "/recipeasy/fish-mappas.jpg"
+  },
+  "honey-and-mustard-chicken": {
+    "title": "Honey and mustard chicken",
+    "image": "/recipeasy/honey-and-mustard-chicken.jpg"
+  },
   "italian-meatballs-with-mozarella": {
     "title": "Italian meatballs with mozarella",
     "image": "/recipeasy/italian-meatballs-with-mozarella.jpg"
@@ -34,6 +42,10 @@
   "pasta-alla-vodka": {
     "title": "Pasta alla vodka",
     "image": "/recipeasy/pasta-alla-vodka.jpg"
+  },
+  "plum-crumble": {
+    "title": "Plum crumble",
+    "image": "/recipeasy/plum-crumble.jpg"
   },
   "smoky-chorizo-salmon": {
     "title": "Smoky chorizo salmon",

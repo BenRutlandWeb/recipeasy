@@ -15,6 +15,6 @@
         { "type": "string", "const": "lb", "description": "Pound (453 g)" }
     ],
     "description": "Unit of measurement",
-    "additionalProperties": false,
-    "default": "g"
+    "default": "g",
+    "additionalProperties": false
 }

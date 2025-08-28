@@ -66,7 +66,7 @@ init(props.recipe.serves);
             <h2>Method</h2>
 
             <ol>
-                <li v-for="method in recipe.methods" :key="method">
+                <li v-for="(method, step) in recipe.methods" :key="method">
                     <Method>{{ method }}</Method>
                 </li>
             </ol>
