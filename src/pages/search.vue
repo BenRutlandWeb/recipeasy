@@ -49,6 +49,10 @@ function search() {
                     tempSlugs[q] = new Set();
                 }
                 _slugs.forEach((s) => tempSlugs[q].add(s));
+            } else {
+                if (!tempSlugs[q]) {
+                    tempSlugs[q] = new Set();
+                }
             }
         });
     });
