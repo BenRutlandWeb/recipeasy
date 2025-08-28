@@ -1,3 +1,19 @@
+<script setup>
+import recipes from "@/data/recipes-manifest.json";
+import { useStorage } from "@/composables/useStorage";
+
+const { all: favourited } = useStorage("favourites");
+const { all: recent } = useStorage("recent");
+
+const favouritedRecipes = favourited.value.map((slug) => {
+    return recipes.find((r) => r.slug === slug);
+});
+
+const recentlyViewedRecipes = recent.value.map((slug) => {
+    return recipes.find((r) => r.slug === slug);
+});
+</script>
+
 <template>
     <Layout>
         <template #header>
@@ -30,19 +46,3 @@
         </ListGroup>
     </Layout>
 </template>
-
-<script setup>
-import recipes from "@/data/recipes-manifest.json";
-
-const favourited = JSON.parse(localStorage.getItem("favourites") ?? "[]");
-
-const favouritedRecipes = favourited.map((slug) => {
-    return recipes.find((r) => r.slug === slug);
-});
-
-const recentlyViewed = JSON.parse(localStorage.getItem("recent") ?? "[]");
-
-const recentlyViewedRecipes = recentlyViewed.map((slug) => {
-    return recipes.find((r) => r.slug === slug);
-});
-</script>

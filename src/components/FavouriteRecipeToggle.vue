@@ -1,23 +1,18 @@
 <script setup>
 import { ref } from "vue";
 import { useRoute } from "vue-router";
+import { useStorage } from "@/composables/useStorage";
 
-const recipes = JSON.parse(localStorage.getItem("favourites") ?? "[]");
+const { toggle, has } = useStorage("favourites");
+
 const route = useRoute();
 
 const slug = route.meta.slug;
-const favourited = ref(recipes.includes(slug));
+
+const favourited = has(slug);
 
 function toggleFavourite() {
-    if (recipes.includes(slug)) {
-        recipes.splice(recipes.indexOf(slug), 1);
-        favourited.value = false;
-    } else {
-        recipes.unshift(slug);
-        favourited.value = true;
-    }
-
-    localStorage.setItem("favourites", JSON.stringify(recipes));
+    toggle(slug);
 }
 </script>
 

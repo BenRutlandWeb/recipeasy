@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import { useStorage } from "@/composables/useStorage";
 
 const recipes = import.meta.glob("@/data/recipes/*.json", { eager: true });
 
@@ -51,19 +52,17 @@ function updateRecentRecipes(route) {
         return;
     }
 
+    const { all, add, remove, trim } = useStorage("recent");
+
     const slug = route.meta.slug;
 
-    let recent = JSON.parse(localStorage.getItem("recent") ?? "[]");
-
-    if (recent[0] == slug) {
-        return;
+    if (all.value.includes(slug)) {
+        remove(slug);
     }
 
-    recent = recent.filter((recipe) => recipe !== slug);
-    recent.unshift(slug);
-    recent = recent.slice(0, 10);
+    add(slug);
 
-    localStorage.setItem("recent", JSON.stringify(recent));
+    trim(10);
 }
 
 router.beforeEach((to, from, next) => {
