@@ -1,0 +1,49 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Belgian Waffles",
+    "ingredients": [
+        {
+            "name": "self-raising flour",
+            "quantity": 150,
+            "unit": "g"
+        },
+        {
+            "name": "baking powder",
+            "quantity": 1,
+            "unit": "tsp"
+        },
+        {
+            "name": "sugar",
+            "quantity": 1,
+            "unit": "tsp"
+        },
+        {
+            "name": "eggs",
+            "quantity": 1
+        },
+        {
+            "name": "semi-skimmed milk",
+            "quantity": 240,
+            "unit": "ml"
+        },
+        {
+            "name": "orange",
+            "quantity": 1
+        },
+        {
+            "name": "Vanilla extract"
+        }
+    ],
+    "methods": [
+        "Mix all the dry ingredients together in a large bowl. Gradually beat in the egg, then add the milk slowly, whisking well to get as smooth a batter as possible.",
+        "Grate in the orange zest and add a few drops of vanilla extract.",
+        "Get your waffle machine ready. Once it's hot, ladle in the batter mixture and seal, cook for 8 - 10 minutes."
+    ],
+    "keywords": ["Breakfast", "Dessert", "Baking", "Vegetarian"],
+    "image": "/recipeasy/belgian-waffles.jpg",
+    "description": "",
+    "serves": 3,
+    "prepTime": 5,
+    "cookTime": 10,
+    "diet": ["vegetarian"]
+}

@@ -24,8 +24,6 @@ import { useRecipe } from "@/composables/useRecipe";
 
 const { serves } = useRecipe();
 
-serves.value = 2;
-
 function decrement() {
     if (serves.value > 1) {
         serves.value--;

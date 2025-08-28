@@ -9,7 +9,7 @@
         { "type": "string", "const": "g", "description": "Gram" },
         { "type": "string", "const": "kg", "description": "Kilogram" },
         { "type": "string", "const": "ml", "description": "Millilitre" },
-        { "type": "string", "const": "L", "description": "Litre" },
+        { "type": "string", "const": "l", "description": "Litre" },
         { "type": "string", "const": "cup", "description": "Cup (250 ml)" },
         { "type": "string", "const": "oz", "description": "Ounce (28 g)" },
         { "type": "string", "const": "lb", "description": "Pound (453 g)" }

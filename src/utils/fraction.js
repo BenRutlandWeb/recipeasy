@@ -42,5 +42,5 @@ export const toFraction = (decimal) => {
     const frac = `${bestFrac.num}/${bestFrac.den}`;
     const unicode = unicodeFractions[frac] || frac;
 
-    return integerPart > 0 ? `${integerPart} ${unicode}` : unicode;
+    return integerPart > 0 ? `${integerPart}${unicode}` : unicode;
 };

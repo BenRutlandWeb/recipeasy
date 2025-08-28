@@ -34,7 +34,8 @@
     "smoky-chorizo-salmon"
   ],
   "butter": [
-    "bacon-and-pea-risotto"
+    "bacon-and-pea-risotto",
+    "torte-caprese"
   ],
   "streaky": [
     "bacon-and-pea-risotto"
@@ -82,6 +83,77 @@
     "chilli-con-carne",
     "massaman-curry",
     "pad-kra-pao"
+  ],
+  "belgian": [
+    "belgian-waffles"
+  ],
+  "waffles": [
+    "belgian-waffles"
+  ],
+  "self": [
+    "belgian-waffles"
+  ],
+  "raising": [
+    "belgian-waffles"
+  ],
+  "flour": [
+    "belgian-waffles",
+    "italian-meatballs-with-mozarella",
+    "pancakes"
+  ],
+  "baking": [
+    "belgian-waffles",
+    "torte-caprese"
+  ],
+  "powder": [
+    "belgian-waffles",
+    "chilli-con-carne"
+  ],
+  "sugar": [
+    "belgian-waffles",
+    "massaman-curry",
+    "pad-kra-pao",
+    "torte-caprese"
+  ],
+  "eggs": [
+    "belgian-waffles",
+    "italian-meatballs-with-mozarella",
+    "pancakes",
+    "torte-caprese"
+  ],
+  "semi": [
+    "belgian-waffles"
+  ],
+  "skimmed": [
+    "belgian-waffles"
+  ],
+  "milk": [
+    "belgian-waffles",
+    "massaman-curry",
+    "pancakes"
+  ],
+  "orange": [
+    "belgian-waffles"
+  ],
+  "vanilla": [
+    "belgian-waffles"
+  ],
+  "extract": [
+    "belgian-waffles"
+  ],
+  "breakfast": [
+    "belgian-waffles",
+    "pancakes"
+  ],
+  "dessert": [
+    "belgian-waffles",
+    "pancakes",
+    "torte-caprese"
+  ],
+  "vegetarian": [
+    "belgian-waffles",
+    "pancakes",
+    "torte-caprese"
   ],
   "chicken": [
     "chicken-souvlaki",
@@ -196,9 +268,6 @@
   "peppers": [
     "chilli-con-carne"
   ],
-  "powder": [
-    "chilli-con-carne"
-  ],
   "long": [
     "chilli-con-carne",
     "pad-kra-pao"
@@ -213,7 +282,8 @@
     "chilli-con-carne"
   ],
   "italian": [
-    "italian-meatballs-with-mozarella"
+    "italian-meatballs-with-mozarella",
+    "torte-caprese"
   ],
   "meatballs": [
     "italian-meatballs-with-mozarella"
@@ -224,9 +294,6 @@
   "mozarella": [
     "italian-meatballs-with-mozarella"
   ],
-  "egg": [
-    "italian-meatballs-with-mozarella"
-  ],
   "fresh": [
     "italian-meatballs-with-mozarella",
     "smoky-chorizo-salmon"
@@ -235,9 +302,6 @@
     "italian-meatballs-with-mozarella"
   ],
   "plain": [
-    "italian-meatballs-with-mozarella"
-  ],
-  "flour": [
     "italian-meatballs-with-mozarella"
   ],
   "wine": [
@@ -271,14 +335,7 @@
   "palm": [
     "massaman-curry"
   ],
-  "sugar": [
-    "massaman-curry",
-    "pad-kra-pao"
-  ],
   "coconut": [
-    "massaman-curry"
-  ],
-  "milk": [
     "massaman-curry"
   ],
   "roasted": [
@@ -339,10 +396,14 @@
     "pad-kra-pao"
   ],
   "dark": [
-    "pad-kra-pao"
+    "pad-kra-pao",
+    "torte-caprese"
   ],
   "brown": [
     "pad-kra-pao"
+  ],
+  "pancakes": [
+    "pancakes"
   ],
   "smoky": [
     "smoky-chorizo-salmon"
@@ -379,5 +440,41 @@
   ],
   "green": [
     "smoky-chorizo-salmon"
+  ],
+  "torta": [
+    "torte-caprese"
+  ],
+  "caprese": [
+    "torte-caprese"
+  ],
+  "ground": [
+    "torte-caprese"
+  ],
+  "almonds": [
+    "torte-caprese"
+  ],
+  "chocolate": [
+    "torte-caprese"
+  ],
+  "unsalted": [
+    "torte-caprese"
+  ],
+  "caster": [
+    "torte-caprese"
+  ],
+  "icing": [
+    "torte-caprese"
+  ],
+  "for": [
+    "torte-caprese"
+  ],
+  "dusting": [
+    "torte-caprese"
+  ],
+  "gluten": [
+    "torte-caprese"
+  ],
+  "free": [
+    "torte-caprese"
   ]
 }

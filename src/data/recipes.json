@@ -3,6 +3,10 @@
     "title": "Bacon and pea risotto",
     "image": "/recipeasy/bacon-and-pea-risotto.jpg"
   },
+  "belgian-waffles": {
+    "title": "Belgian Waffles",
+    "image": "/recipeasy/belgian-waffles.jpg"
+  },
   "chicken-souvlaki": {
     "title": "Chicken souvlaki",
     "image": "/recipeasy/chicken-souvlaki.jpg"
@@ -23,8 +27,16 @@
     "title": "Pad kra pao",
     "image": "/recipeasy/pad-kra-pao.jpg"
   },
+  "pancakes": {
+    "title": "Pancakes",
+    "image": "/recipeasy/pancakes.jpg"
+  },
   "smoky-chorizo-salmon": {
     "title": "Smoky chorizo salmon",
     "image": "/recipeasy/smoky-chorizo-salmon.jpg"
+  },
+  "torte-caprese": {
+    "title": "Torta Caprese",
+    "image": "/recipeasy/torte-caprese.jpg"
   }
 }
