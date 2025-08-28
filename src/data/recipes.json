@@ -1,0 +1,22 @@
+{
+  "bacon-and-pea-risotto": {
+    "title": "Bacon and Pea Risotto",
+    "image": "/recipeasy/bacon-and-pea-risotto.jpg"
+  },
+  "chilli-con-carne": {
+    "title": "Chilli Con Carne",
+    "image": "/recipeasy/chilli-con-carne.jpg"
+  },
+  "italian-meatballs-with-mozarella": {
+    "title": "Italian Meatballs with Mozarella",
+    "image": "/recipeasy/italian-meatballs-with-mozarella.jpg"
+  },
+  "pad-kra-pao": {
+    "title": "Pad Kra Pao",
+    "image": "/recipeasy/pad-kra-pao.jpg"
+  },
+  "smoky-chorizo-salmon": {
+    "title": "Smoky Chorizo Salmon",
+    "image": "/recipeasy/smoky-chorizo-salmon.jpg"
+  }
+}

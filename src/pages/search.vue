@@ -27,16 +27,32 @@
 <script setup>
 import { computed } from "vue";
 import { useRoute } from "vue-router";
-import recipes from "@/data/recipes-manifest.json";
+import recipes from "@/data/recipes.json";
+import searchIndex from "@/data/recipes-search.json";
 
 const route = useRoute();
 const query = computed(() => route.query.q || "");
 
-const queriedRecipes = computed(() => {
-    return recipes.filter((recipe) => {
-        const searchTerm = query.value.toLowerCase();
+const recipesArray = Object.entries(recipes).map(([slug, recipe]) => {
+    return { slug, ...recipe };
+});
 
-        return recipe.search?.find((i) => i.includes(searchTerm));
+function search() {
+    const q = query.value.toLowerCase();
+    const slugs = new Set();
+
+    Object.entries(searchIndex).forEach(([keyword, _slugs]) => {
+        if (keyword.includes(q)) {
+            _slugs.forEach((slug) => slugs.add(slug));
+        }
     });
+
+    return [...slugs];
+}
+
+const queriedRecipes = computed(() => {
+    const slugs = search();
+
+    return slugs.map((slug) => recipesArray.find((r) => r.slug === slug));
 });
 </script>
