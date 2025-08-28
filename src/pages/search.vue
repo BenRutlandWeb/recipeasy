@@ -38,16 +38,30 @@ const recipesArray = Object.entries(recipes).map(([slug, recipe]) => {
 });
 
 function search() {
-    const q = query.value.toLowerCase();
-    const slugs = new Set();
+    const searchWords = query.value.toLowerCase().split(/\s+/).filter(Boolean);
+
+    const tempSlugs = {};
 
     Object.entries(searchIndex).forEach(([keyword, _slugs]) => {
-        if (keyword.includes(q)) {
-            _slugs.forEach((slug) => slugs.add(slug));
-        }
+        searchWords.forEach((q) => {
+            if (keyword.includes(q)) {
+                if (!tempSlugs[q]) {
+                    tempSlugs[q] = new Set();
+                }
+                _slugs.forEach((s) => tempSlugs[q].add(s));
+            }
+        });
     });
 
-    return [...slugs];
+    if (Object.keys(tempSlugs).length === 0) {
+        return [];
+    }
+
+    return Object.values(tempSlugs)
+        .map((s) => [...s])
+        .reduce((accumulator, currentArray) => {
+            return accumulator.filter((item) => currentArray.includes(item));
+        });
 }
 
 const queriedRecipes = computed(() => {
