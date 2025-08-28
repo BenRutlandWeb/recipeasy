@@ -1,10 +1,12 @@
 {
   "bacon": [
-    "bacon-and-pea-risotto"
+    "bacon-and-pea-risotto",
+    "one-pot-hunters-chicken-rice"
   ],
   "and": [
     "bacon-and-pea-risotto",
-    "honey-and-mustard-chicken"
+    "honey-and-mustard-chicken",
+    "one-pot-hunters-chicken-rice"
   ],
   "risotto": [
     "bacon-and-pea-risotto"
@@ -15,6 +17,7 @@
     "fish-mappas",
     "italian-meatballs-with-mozarella",
     "massaman-curry",
+    "one-pot-hunters-chicken-rice",
     "pasta-alla-vodka"
   ],
   "olive": [
@@ -57,6 +60,7 @@
     "chilli-con-carne",
     "fish-mappas",
     "massaman-curry",
+    "one-pot-hunters-chicken-rice",
     "pad-kra-pao"
   ],
   "vegetable": [
@@ -66,7 +70,8 @@
   ],
   "stock": [
     "bacon-and-pea-risotto",
-    "italian-meatballs-with-mozarella"
+    "italian-meatballs-with-mozarella",
+    "one-pot-hunters-chicken-rice"
   ],
   "peas": [
     "bacon-and-pea-risotto"
@@ -79,6 +84,7 @@
   "cheese": [
     "bacon-and-pea-risotto",
     "italian-meatballs-with-mozarella",
+    "one-pot-hunters-chicken-rice",
     "pasta-alla-vodka"
   ],
   "dinner": [
@@ -89,6 +95,7 @@
     "honey-and-mustard-chicken",
     "italian-meatballs-with-mozarella",
     "massaman-curry",
+    "one-pot-hunters-chicken-rice",
     "pad-kra-pao",
     "pasta-alla-vodka",
     "smoky-chorizo-salmon"
@@ -98,6 +105,7 @@
     "chicken-souvlaki",
     "chilli-con-carne",
     "massaman-curry",
+    "one-pot-hunters-chicken-rice",
     "pad-kra-pao"
   ],
   "belgian": [
@@ -181,7 +189,8 @@
   "chicken": [
     "chicken-souvlaki",
     "honey-and-mustard-chicken",
-    "massaman-curry"
+    "massaman-curry",
+    "one-pot-hunters-chicken-rice"
   ],
   "souvlaki": [
     "chicken-souvlaki"
@@ -215,7 +224,8 @@
     "chicken-souvlaki"
   ],
   "paprika": [
-    "chicken-souvlaki"
+    "chicken-souvlaki",
+    "one-pot-hunters-chicken-rice"
   ],
   "lemon": [
     "chicken-souvlaki"
@@ -224,6 +234,7 @@
     "chicken-souvlaki",
     "fish-mappas",
     "italian-meatballs-with-mozarella",
+    "one-pot-hunters-chicken-rice",
     "pad-kra-pao",
     "pasta-alla-vodka"
   ],
@@ -231,6 +242,7 @@
     "chicken-souvlaki",
     "fish-mappas",
     "italian-meatballs-with-mozarella",
+    "one-pot-hunters-chicken-rice",
     "pad-kra-pao",
     "pasta-alla-vodka"
   ],
@@ -297,6 +309,7 @@
   "puree": [
     "chilli-con-carne",
     "italian-meatballs-with-mozarella",
+    "one-pot-hunters-chicken-rice",
     "pasta-alla-vodka"
   ],
   "peppers": [
@@ -325,7 +338,8 @@
     "fish-mappas"
   ],
   "basmati": [
-    "fish-mappas"
+    "fish-mappas",
+    "one-pot-hunters-chicken-rice"
   ],
   "tikka": [
     "fish-mappas"
@@ -382,7 +396,8 @@
   ],
   "breast": [
     "honey-and-mustard-chicken",
-    "massaman-curry"
+    "massaman-curry",
+    "one-pot-hunters-chicken-rice"
   ],
   "pasta": [
     "honey-and-mustard-chicken",
@@ -430,6 +445,7 @@
   ],
   "sauce": [
     "massaman-curry",
+    "one-pot-hunters-chicken-rice",
     "pad-kra-pao"
   ],
   "palm": [
@@ -449,6 +465,7 @@
   ],
   "tomato": [
     "massaman-curry",
+    "one-pot-hunters-chicken-rice",
     "pasta-alla-vodka"
   ],
   "potato": [
@@ -461,6 +478,27 @@
   "thai": [
     "massaman-curry",
     "pad-kra-pao"
+  ],
+  "one": [
+    "one-pot-hunters-chicken-rice"
+  ],
+  "pot": [
+    "one-pot-hunters-chicken-rice"
+  ],
+  "hunters": [
+    "one-pot-hunters-chicken-rice"
+  ],
+  "bbq": [
+    "one-pot-hunters-chicken-rice"
+  ],
+  "seasoning": [
+    "one-pot-hunters-chicken-rice"
+  ],
+  "smoked": [
+    "one-pot-hunters-chicken-rice"
+  ],
+  "parsley": [
+    "one-pot-hunters-chicken-rice"
   ],
   "pad": [
     "pad-kra-pao"
