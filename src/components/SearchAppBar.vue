@@ -1,7 +1,7 @@
 <template>
-    <AppBarLink :to="{ name: 'home' }" aria-label="Go home">
+    <AppBarButton @click="$router.back()" aria-label="Go home">
         <BaseIcon icon="arrow_back" />
-    </AppBarLink>
+    </AppBarButton>
     <label for="app-search" class="sr-only"> Search by ingredient, dish, keyword... </label>
     <input
         type="search"
