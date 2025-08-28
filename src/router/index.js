@@ -1,71 +1,81 @@
 import { createRouter, createWebHistory } from "vue-router";
 
+const recipes = import.meta.glob("@/data/recipes/*.json", { eager: true });
+
+const recipeRoutes = Object.entries(recipes).map(([filepath, recipe]) => {
+    const slug = filepath
+        .split("/")
+        .pop()
+        .replace(/\.json$/, "");
+    return {
+        path: `/recipes/${slug}`,
+        name: `recipes-${slug}`,
+        component: () => import("@/pages/recipe.vue"),
+        props: { recipe },
+        meta: {
+            slug,
+            title: recipe.title,
+        },
+    };
+});
+
 const routes = [
-  {
-    path: "/",
-    component: () => import("@/pages/index.vue"),
-    name: "home",
-  },
-  {
-    path: "/recipes/:slug",
-    component: () => import("@/pages/recipe.vue"),
-    name: "recipe",
-  },
-  {
-    path: "/search",
-    component: () => import("@/pages/search.vue"),
-    name: "search",
-  },
-  {
-    path: "/:pathMatch(.*)*",
-    name: "404",
-    component: () => import("@/pages/404.vue"),
-  },
+    ...recipeRoutes,
+    {
+        path: "/",
+        component: () => import("@/pages/index.vue"),
+        name: "home",
+    },
+    {
+        path: "/search",
+        component: () => import("@/pages/search.vue"),
+        name: "search",
+    },
+    {
+        path: "/:pathMatch(.*)*",
+        name: "404",
+        component: () => import("@/pages/404.vue"),
+    },
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes,
-  scrollBehavior(to, from, savedPosition) {
-    return savedPosition || { left: 0, top: 0 };
-  },
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes,
+    scrollBehavior(to, from, savedPosition) {
+        return savedPosition || { left: 0, top: 0 };
+    },
 });
 
 function updateRecentRecipes(route) {
-  if (!route.path.startsWith("/recipes")) {
-    return;
-  }
+    if (!route.path.startsWith("/recipes")) {
+        return;
+    }
 
-  const slug = route.params.slug;
+    const slug = route.meta.slug;
 
-  let recent = JSON.parse(localStorage.getItem("recent") ?? "[]");
+    let recent = JSON.parse(localStorage.getItem("recent") ?? "[]");
 
-  if (recent[0] == slug) {
-    return;
-  }
+    if (recent[0] == slug) {
+        return;
+    }
 
-  recent = recent.filter((recipe) => recipe !== slug);
-  recent.unshift(slug);
-  recent = recent.slice(0, 10);
+    recent = recent.filter((recipe) => recipe !== slug);
+    recent.unshift(slug);
+    recent = recent.slice(0, 10);
 
-  localStorage.setItem("recent", JSON.stringify(recent));
+    localStorage.setItem("recent", JSON.stringify(recent));
 }
 
 router.beforeEach((to, from, next) => {
-  //console.log(to);
+    if (to.meta?.title) {
+        document.title = to.meta.title + " | Recipeasy";
+    } else {
+        document.title = "Recipeasy";
+    }
 
-  //@todo fix title
-  //console.log(recipes, to);
+    updateRecentRecipes(to);
 
-  if (to.meta?.title) {
-    document.title = to.meta.title + " | Recipeasy";
-  } else {
-    document.title = "Recipeasy";
-  }
-
-  updateRecentRecipes(to);
-
-  next();
+    next();
 });
 
 export default router;
