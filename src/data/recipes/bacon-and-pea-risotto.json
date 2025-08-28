@@ -16,8 +16,9 @@
             "quantity": 1
         },
         {
-            "name": "rashers streaky bacon, chopped",
-            "quantity": 6
+            "name": "streaky bacon rashers",
+            "quantity": 6,
+            "description": "chopped into small chunks"
         },
         {
             "name": "risotto rice",
@@ -25,17 +26,18 @@
             "unit": "g"
         },
         {
-            "name": "hot vegetable stock",
+            "name": "vegetable stock",
             "quantity": 1,
             "unit": "L"
         },
         {
-            "name": "frozen peas",
+            "name": "peas",
             "quantity": 100,
             "unit": "g"
         },
         {
-            "name": "freshly grated parmesan, to serve"
+            "name": "parmesan cheese",
+            "description": "finely grated to serve"
         }
     ],
     "methods": [

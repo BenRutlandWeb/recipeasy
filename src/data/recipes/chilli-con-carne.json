@@ -3,12 +3,14 @@
     "title": "Chilli Con Carne",
     "ingredients": [
         {
-            "name": "onions, finely chopped",
-            "quantity": 2
+            "name": "onion",
+            "quantity": 2,
+            "description": "finely chopped"
         },
         {
-            "name": "red pepper, chopped",
-            "quantity": 1
+            "name": "red pepper",
+            "quantity": 1,
+            "description": "chopped"
         },
         {
             "name": "minced beef",
@@ -16,9 +18,10 @@
             "unit": "g"
         },
         {
-            "name": "kidney beans, drained",
+            "name": "kidney beans",
             "quantity": 400,
-            "unit": "g"
+            "unit": "g",
+            "description": "drained"
         },
         {
             "name": "can chopped tomatoes",
@@ -26,13 +29,14 @@
             "unit": "g"
         },
         {
-            "name": "Tomato puree",
+            "name": "tomato puree",
             "quantity": 3,
             "unit": "tbsp"
         },
         {
-            "name": "chilli peppers, finely sliced",
-            "quantity": 2
+            "name": "chilli peppers",
+            "quantity": 2,
+            "description": "finely sliced"
         },
         {
             "name": "chilli powder",

@@ -15,6 +15,10 @@
         },
         "unit": {
             "$ref": "unit.json"
+        },
+        "description": {
+            "type": "string",
+            "description": "Additional information such as prep or serving suggestions"
         }
     },
     "additionalProperties": false

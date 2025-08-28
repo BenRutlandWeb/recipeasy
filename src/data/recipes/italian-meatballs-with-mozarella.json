@@ -8,26 +8,30 @@
             "unit": "tbsp"
         },
         {
-            "name": "minced beef or lamb",
+            "name": "minced beef",
             "quantity": 500,
             "unit": "g"
         },
         {
-            "name": "onion, chopped",
-            "quantity": 1
-        },
-        {
-            "name": "cloves garlic, crushed",
-            "quantity": 2
-        },
-        {
-            "name": "egg, lightly beaten",
-            "quantity": 1
-        },
-        {
-            "name": "fresh oregano, chopped",
+            "name": "onion",
             "quantity": 1,
-            "unit": "tsp"
+            "description": "chopped"
+        },
+        {
+            "name": "garlic cloves",
+            "quantity": 2,
+            "description": "crushed"
+        },
+        {
+            "name": "egg",
+            "quantity": 1,
+            "description": "lightly beaten"
+        },
+        {
+            "name": "fresh oregano",
+            "quantity": 1,
+            "unit": "tsp",
+            "description": "chopped. Alternatively use dried oregano"
         },
         {
             "name": "tomato puree",
@@ -35,9 +39,10 @@
             "unit": "tbsp"
         },
         {
-            "name": "grated Parmesan cheese",
+            "name": "parmesan cheese",
             "quantity": 25,
-            "unit": "g"
+            "unit": "g",
+            "description": "finely grated"
         },
         {
             "name": "fresh breadcrumbs",
@@ -65,9 +70,10 @@
             "unit": "g"
         },
         {
-            "name": "mozzarella, cubed",
+            "name": "mozzarella",
             "quantity": 125,
-            "unit": "g"
+            "unit": "g",
+            "description": "cubed or sliced"
         },
         {
             "name": "pasta",
@@ -75,7 +81,8 @@
             "unit": "g"
         },
         {
-            "name": "a few sprigs of oregano, to garnish"
+            "name": "oregano",
+            "description": "a few sprigs to garnish"
         }
     ],
     "methods": [

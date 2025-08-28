@@ -56,6 +56,9 @@ init(props.recipe.serves);
                 <li v-for="ingredient in recipe.ingredients" :key="ingredient.name">
                     <Ingredient :quantity="ingredient.quantity" :unit="ingredient.unit">
                         {{ ingredient.name }}
+                        <span v-if="ingredient.description" class="block text-base text-gray-500 dark:text-gray-400">
+                            {{ ingredient.description }}
+                        </span>
                     </Ingredient>
                 </li>
             </ul>

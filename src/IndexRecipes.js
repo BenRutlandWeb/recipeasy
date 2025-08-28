@@ -1,5 +1,6 @@
 import fs from "fs";
 import path from "path";
+import { watch } from "chokidar";
 
 function reduceWords(words) {
     return words.filter((w, i, arr) => !arr.some((other, j) => i !== j && other.includes(w)));
@@ -64,11 +65,25 @@ function buildListings() {
 }
 
 export default function indexRecipes() {
+    let watcher;
+
     return {
         name: "recipes-manifest",
         buildStart() {
-            buildListings();
-            buildSearchIndex();
+            watcher = watch(__dirname, "./data/recipes/*.json");
+
+            watcher.on("add", (file) => {
+                buildListings();
+                buildSearchIndex();
+            });
+            watcher.on("change", (file) => {
+                buildListings();
+                buildSearchIndex();
+            });
+        },
+
+        closeBundle() {
+            watcher?.close();
         },
     };
 }

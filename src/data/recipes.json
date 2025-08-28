@@ -3,6 +3,10 @@
     "title": "Bacon and Pea Risotto",
     "image": "/recipeasy/bacon-and-pea-risotto.jpg"
   },
+  "chicken-souvlaki": {
+    "title": "Chicken Souvlaki",
+    "image": "/recipeasy/chicken-souvlaki.jpg"
+  },
   "chilli-con-carne": {
     "title": "Chilli Con Carne",
     "image": "/recipeasy/chilli-con-carne.jpg"
@@ -10,6 +14,10 @@
   "italian-meatballs-with-mozarella": {
     "title": "Italian Meatballs with Mozarella",
     "image": "/recipeasy/italian-meatballs-with-mozarella.jpg"
+  },
+  "massaman-curry": {
+    "title": "Massaman Curry",
+    "image": "/recipeasy/massaman-curry.jpg"
   },
   "pad-kra-pao": {
     "title": "Pad Kra Pao",

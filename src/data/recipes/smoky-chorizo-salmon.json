@@ -3,12 +3,13 @@
     "title": "Smoky Chorizo Salmon",
     "ingredients": [
         {
-            "name": "salmon fillets, skin on, scaled, pin-boned",
+            "name": "salmon fillets",
             "quantity": 300,
-            "unit": "g"
+            "unit": "g",
+            "description": "skin on, scaled, pin-boned"
         },
         {
-            "name": "ripe mixed-colour cherry tomatoes",
+            "name": "cherry tomatoes",
             "quantity": 300,
             "unit": "g"
         },
@@ -17,7 +18,7 @@
             "quantity": 4
         },
         {
-            "name": "black olives, (stone in)",
+            "name": "black olives",
             "quantity": 8
         },
         {

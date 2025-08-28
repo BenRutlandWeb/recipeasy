@@ -8,16 +8,19 @@
             "unit": "g"
         },
         {
-            "name": "cloves garlic, crushed",
-            "quantity": 2
+            "name": "garlic cloves",
+            "quantity": 2,
+            "description": "crushed"
         },
         {
-            "name": "birds eye chillis, finely chopped",
-            "quantity": 3
+            "name": "birds eye chilli",
+            "quantity": 3,
+            "description": "finely chopped"
         },
         {
-            "name": "long beans, chopped",
-            "quantity": 2
+            "name": "long beans",
+            "quantity": 2,
+            "description": "cut into 3-4cm pieces"
         },
         {
             "name": "Thai basil",
