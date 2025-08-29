@@ -1,0 +1,68 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Chorizo and mozzarella gnocchi bake",
+    "ingredients": [
+        {
+            "name": "olive oil",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "onion",
+            "quantity": 1,
+            "description": "Finely chopped"
+        },
+        {
+            "name": "garlic cloves",
+            "quantity": 2,
+            "description": "Crushed"
+        },
+        {
+            "name": "chorizo",
+            "quantity": 120,
+            "unit": "g",
+            "description": "Diced"
+        },
+        {
+            "name": "can chopped tomatoes",
+            "quantity": 800,
+            "unit": "g"
+        },
+        {
+            "name": "caster sugar",
+            "quantity": 1,
+            "unit": "tsp"
+        },
+        {
+            "name": "gnocci",
+            "quantity": 600,
+            "unit": "g"
+        },
+        {
+            "name": "mozzarella",
+            "quantity": 125,
+            "unit": "g",
+            "description": "Cut into chunks"
+        },
+        {
+            "name": "Basil",
+            "quantity": 15,
+            "unit": "g",
+            "description": "Torn"
+        }
+    ],
+    "methods": [
+        "Heat the oil in a medium pan over a medium heat. Fry the onion and garlic for 8-10 mins until soft.",
+        "Add the chorizo and fry for 5 mins more.",
+        "Tip in the tomatoes and sugar, and season. Bring to a simmer, then add the gnocchi and cook for 8 mins, stirring often, until soft.",
+        "Heat the grill to high. Stir 3/4 of the mozzarella and most of the basil through the gnocchi.",
+        "Divide the mixture between six ovenproof ramekins, or put in one baking dish. Top with the remaining mozzarella, then grill for 3 mins, or until the cheese is melted and golden.",
+        "Season, scatter over the remaining basil and serve with green salad."
+    ],
+    "keywords": ["Dinner", "Meat"],
+    "image": "/recipeasy/chorizo-and-mozzarella-gnocchi-bake.jpg",
+    "description": "Upgrade cheesy tomato pasta with gnocchi, chorizo and mozzarella for a comforting bake that makes an excellent midweek meal.",
+    "serves": 4,
+    "prepTime": 10,
+    "cookTime": 25
+}
