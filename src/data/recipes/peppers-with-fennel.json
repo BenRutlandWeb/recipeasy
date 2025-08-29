@@ -1,0 +1,41 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Peppers with fennel",
+    "description": "The aniseed flavour of fennel makes a delicious partner for roasted peppers.",
+    "serves": 6,
+    "prepTime": 10,
+    "cookTime": 40,
+    "image": "/recipeasy/peppers-with-fennel.jpg",
+    "keywords": ["Dinner", "Vegetarian", "Vegan"],
+    "ingredients": [
+        {
+            "name": "red peppers",
+            "quantity": 3
+        },
+        {
+            "name": "garlic cloves",
+            "quantity": 2,
+            "description": "Crushed"
+        },
+        {
+            "name": "fennel",
+            "quantity": 1,
+            "description": "Sliced"
+        },
+        {
+            "name": "pine nuts",
+            "quantity": 1,
+            "unit": "tbsp"
+        },
+        {
+            "name": "Olive oil",
+            "description": "For drizzling"
+        }
+    ],
+    "methods": [
+        "Preheat the oven to Mark 7/ 220°C/425°F. Halve the peppers, keeping the stems attached, then carefully remove the seeds.",
+        "Season, rub with garlic and put in an oiled roasting tin. Put a slice of fennel in each pepper. Scatter over pine nuts and drizzle with oil. Roast for 30-40 mins until tender."
+    ],
+    "diet": ["vegetarian", "vegan", "gluten-free", "low-lactose"],
+    "spiceLevel": 0
+}

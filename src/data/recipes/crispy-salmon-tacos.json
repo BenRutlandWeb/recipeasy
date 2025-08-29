@@ -1,0 +1,58 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Crispy salmon tacos",
+    "ingredients": [
+        {
+            "name": "cherry tomatoes",
+            "quantity": 160,
+            "unit": "g"
+        },
+        {
+            "name": "mango",
+            "quantity": 1,
+            "description": "Small"
+        },
+        {
+            "name": "Avocado",
+            "quantity": 0.5
+        },
+        {
+            "name": "spring onions",
+            "quantity": 2
+        },
+        {
+            "name": "salmon fillets",
+            "quantity": 2,
+            "description": "skin on, scaled, pin-boned"
+        },
+        {
+            "name": "cajun seasoning",
+            "quantity": 2,
+            "unit": "tsp"
+        },
+        {
+            "name": "tortillas",
+            "quantity": 4,
+            "description": "Small"
+        },
+        {
+            "name": "limes",
+            "quantity": 2
+        }
+    ],
+    "methods": [
+        "Quarter the cherry tomatoes. Destone, peel and roughly chop the mango. Scoop out the avocado and finely slice. Trim and finely slice the spring onions.",
+        "Carefully cut the skin off the salmon and place it in a non-stick frying pan on a medium-high heat to crisp up on both sides.",
+        "Pat the Cajun seasoning all over the salmon fillets, then fry for 5 minutes, turning to get them golden on each of their sides. Once the skin is crispy, move it to sit on top of the salmon.",
+        "Meanwhile, use tongs to toast the tortillas directly over the flame of your gas hob for 15 seconds, or use a hot pan.",
+        "Sprinkle the mango, avocado and spring onions over the tortillas, then flake over the salmon and crack over the skin.",
+        "Toss the tomatoes and the juice of 1 lime in the residual heat of the pan for 30 seconds, then spoon over the tortillas.",
+        "Serve with lime wedges, for squeezing over."
+    ],
+    "keywords": ["Dinner", "Fish"],
+    "image": "/recipeasy/crispy-salmon-tacos.jpg",
+    "description": "Smoky chorizo salmon with sweet cherry tomatoes & basil.",
+    "serves": 2,
+    "prepTime": 10,
+    "cookTime": 20
+}
