@@ -38,7 +38,10 @@ const recipesArray = Object.entries(recipes).map(([slug, recipe]) => {
 });
 
 function search() {
-    const searchWords = query.value.toLowerCase().split(/\s+/).filter(Boolean);
+    const searchWords = query.value
+        .toLowerCase()
+        .split(/[^a-zA-Z]+/)
+        .filter(Boolean);
 
     const tempSlugs = {};
 
