@@ -1,0 +1,25 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Garlic butter mussels with spaghetti",
+    "ingredients": [
+        { "name": "spaghetti pasta", "quantity": 150, "unit": "g" },
+        { "name": "mussels", "quantity": 200, "unit": "g", "description": "Cooked and prepared, de-shelled" },
+        { "name": "garlic cloves", "quantity": 4, "description": "Finely sliced" },
+        { "name": "butter", "quantity": 20, "unit": "g" },
+        { "name": "chilli flakes", "quantity": 0.5, "unit": "tsp" },
+        { "name": "parsley", "quantity": 2, "unit": "tsp" }
+    ],
+    "methods": [
+        "Bring a pan of salted water to a boil for cooking the spaghetti. Once boiling add the pasta and begin to cook. Meanwhile in a large frying pan over a medium heat add the butter and allow to melt.",
+        "Add the finely chopped garlic to the melted butter and a good pinch of chilli flakes. Gently fry until fragrant.",
+        "Add the cooked mussels and simmer them gently in the butter to heat through. Add a grind of black pepper and a tiny bit of salt (the mussels are already salty so don't add a lot). Check on the pasta.",
+        "Stir the mussels so that they are coated in the butter garlic and chilli sauce evenly. Turn down the heat to low.",
+        "Drain off the spaghetti once el dente and add into the frying pan with the mussels using tongs gently toss everything together. Add the parsley and a touch more pepper. Toss until every strand is coated in the butter sauce. Serve up immediately and enjoy!"
+    ],
+    "keywords": ["Dinner", "Seafood", "Italian"],
+    "image": "/recipeasy/garlic-butter-mussels-with-spaghetti.jpg",
+    "description": "This recipe is pure simplicity but packs some big flavour. This dish also works beautifully with tender and succulent prawns if you prefer them to mussels.",
+    "serves": 2,
+    "prepTime": 5,
+    "cookTime": 10
+}

@@ -1,0 +1,24 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Chicken with sage and prosciutto",
+    "ingredients": [
+        { "name": "parma ham", "quantity": 6, "description": "Slices" },
+        { "name": "sage leaves", "quantity": 6 },
+        { "name": "chicken breasts", "quantity": 6 },
+        { "name": "butter", "quantity": 15, "unit": "g" },
+        { "name": "olive oil", "quantity": 2, "unit": "tbsp" },
+        { "name": "white wine", "quantity": 100, "unit": "ml" }
+    ],
+    "methods": [
+        "Place Parma ham and a sage leaf on each breast and secure with a wooden cocktail stick.",
+        "Heat butter and oil in a large frying pan, then cook breasts on both sides for 5 mins.",
+        "Pour half the wine over the chicken, then leave to cook for a further 5 mins.",
+        "Add rest of wine to pan and leave to sizzle for a few seconds."
+    ],
+    "keywords": ["Dinner", "Meat", "Italian"],
+    "image": "/recipeasy/thyme-roasted-chicken.jpg",
+    "description": "A simple, rustic chicken dish, which is pan fried and finished with a splash of Italian wine.",
+    "serves": 6,
+    "prepTime": 10,
+    "cookTime": 20
+}

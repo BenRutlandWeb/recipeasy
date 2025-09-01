@@ -12,10 +12,9 @@
             "unit": "tbsp"
         },
         {
-            "name": "pasta",
+            "name": "penne pasta",
             "quantity": 175,
-            "unit": "g",
-            "description": "Penne"
+            "unit": "g"
         },
         {
             "name": "garlic clove",
