@@ -1,0 +1,84 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Spanish chicken traybake",
+    "ingredients": [
+        {
+            "name": "olive oil",
+            "quantity": 2,
+            "unit": "tbsp"
+        },
+        {
+            "name": "red onions",
+            "quantity": 2,
+            "description": "Each cut into 8 wedges"
+        },
+        {
+            "name": "baby new potatoes",
+            "quantity": 500,
+            "unit": "g",
+            "description": "Halved if large"
+        },
+        {
+            "name": "chicken thigh fillets",
+            "quantity": 8
+        },
+        {
+            "name": "smoked paprika",
+            "quantity": 0.5,
+            "unit": "tsp"
+        },
+        {
+            "name": "red pepper",
+            "quantity": 1,
+            "description": "Deseeded and sliced"
+        },
+        {
+            "name": "yellow pepper",
+            "quantity": 1,
+            "description": "Deseeded and sliced"
+        },
+        {
+            "name": "tomatoes",
+            "quantity": 4,
+            "description": "Quartered"
+        },
+        {
+            "name": "chorizo",
+            "quantity": 125,
+            "unit": "g",
+            "description": "Sliced into rounds"
+        },
+        {
+            "name": "black olives",
+            "quantity": 50,
+            "unit": "g"
+        },
+        {
+            "name": "garlic cloves",
+            "quantity": 2,
+            "description": "Crushed"
+        },
+        {
+            "name": "oregano",
+            "quantity": 1,
+            "unit": "tsp"
+        },
+        {
+            "name": "Manzilla sherry",
+            "quantity": 50,
+            "unit": "ml"
+        }
+    ],
+    "methods": [
+        "Preheat oven to 200°C (180°C fan) mark 6. Toss the oil, onions, potatoes and some seasoning in a large roasting tin. Roast for 30min.",
+        "Slash the top of each chicken thigh a couple of times and sprinkle over the paprika and plenty of freshly ground black pepper.",
+        "Mix the peppers, tomatoes, chorizo, olives and garlic into the roasting tin and sprinkle over the oregano. Sit the chicken on top and add the sherry, if using.",
+        "Continue roasting for 40-45min, basting the chicken midway through with any juices in the pan. Serve with a crisp green salad and some bread to mop up the juices, if you like."
+    ],
+    "keywords": ["Dinner", "Spanish"],
+    "image": "/recipeasy/spanish-chicken-traybake.jpg",
+    "description": "A chicken tray bake full of sunshine flavours. If you'd prefer not to use sherry, substitute with chicken stock instead. Serve it with a crisp green salad or a decent loaf of crusty bread.",
+    "serves": 4,
+    "prepTime": 20,
+    "cookTime": 75
+}
