@@ -11,7 +11,8 @@
         },
         "quantity": {
             "type": ["number", "string"],
-            "description": "Amount of the ingredient"
+            "description": "Amount of the ingredient",
+            "default": 1
         },
         "unit": {
             "$ref": "unit.json"
