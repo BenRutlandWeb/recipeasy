@@ -1,0 +1,30 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Chicken curry",
+    "ingredients": [
+        { "name": "sunflower oil", "quantity": 2, "unit": "tbsp" },
+        { "name": "onion", "quantity": 1, "description": "Thinly sliced" },
+        { "name": "garlic cloves", "quantity": 2, "description": "Crushed" },
+        { "name": "ginger", "description": "Thumb-sized piece, grated" },
+        { "name": "chicken thighs", "quantity": 6, "description": "Boneless and skinless" },
+        { "name": "tikka spice paste", "quantity": 3, "unit": "tbsp" },
+        { "name": "can chopped tomatoes", "quantity": 400, "unit": "g" },
+        { "name": "Greek yoghurt", "quantity": 100, "unit": "g" },
+        { "name": "coriander", "quantity": 15, "unit": "g" },
+        { "name": "ground almonds", "quantity": 50, "unit": "g" },
+        { "name": "basmati rice", "quantity": 300, "unit": "g" }
+    ],
+    "methods": [
+        "Heat the oil in a flameproof casserole dish or large frying pan over a medium heat. Add the onion and a generous pinch of salt and fry for 8-10 mins, or until the onion has turned golden brown and sticky.",
+        "Add the garlic and ginger, cooking for a further minute.",
+        "Chop the chicken into chunky 3cm pieces, add to the pan and fry for 5 mins.",
+        "Stir through the spice paste and chopped tomatoes, along with 250ml water. Bring to the boil, lower to a simmer and cook on a gentle heat uncovered for 25-30 mins or until rich and slightly reduced.",
+        "Stir though the yogurt, coriander and ground almonds, season and serve with warm naan or fluffy basmati rice."
+    ],
+    "keywords": ["Dinner", "Meat", "Indian"],
+    "image": "/recipeasy/chicken-curry.jpg",
+    "description": "This easy staple chicken curry is a fantastic recipe for family dinners. It's made with just a handful of ingredients and is enriched with creamy yogurt.",
+    "serves": 4,
+    "prepTime": 5,
+    "cookTime": 45
+}
