@@ -1,0 +1,34 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Spaghetti Bolognese",
+  "ingredients": [
+    { "name": "vegetable base mix", "quantity": 200, "unit": "g" },
+    { "name": "olive oil", "quantity": 2, "unit": "tbsp" },
+    { "name": "garlic cloves", "quantity": 2, "description": "Crushed" },
+    {
+      "name": "button mushrooms",
+      "quantity": 200,
+      "unit": "g",
+      "description": "Sliced"
+    },
+    { "name": "beef mince", "quantity": 400, "unit": "g" },
+    { "name": "chopped tomatoes", "quantity": 800, "unit": "g" },
+    { "name": "tomato puree", "quantity": 1, "unit": "tbsp" },
+    { "name": "worchester sauce", "quantity": 1, "unit": "tbsp" },
+    { "name": "vegetable stock", "quantity": 150, "unit": "ml" },
+    { "name": "oregano", "quantity": 1, "unit": "tsp" }
+  ],
+  "methods": [
+    "Preheat the oil over'a medium to high heat in a deep frying pan or wok. Add the classic vegetable base mix and cook for 3-4 minutes stirring continuously.",
+    "Add the garlic and mushrooms, cover and cook over a medium to high heat stirring frequently for 4 minutes.",
+    "Add the beef mince and cook for 5 minutes stirring frequently.",
+    "Add the chopped tomatoes, worcestershire sauce, vegetable stock, tomato puree, oregano, salt and pepper. Cook for 8-10 minutes meanwhile, cook the spaghetti according to pack instructions.",
+    "Drain the pasta and serve."
+  ],
+  "keywords": ["Dinner", "Meat"],
+  "image": "/recipeasy/spaghetti-bolognese.jpg",
+  "description": "",
+  "serves": 4,
+  "prepTime": 5,
+  "cookTime": 25
+}
