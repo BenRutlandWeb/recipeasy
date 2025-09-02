@@ -16,7 +16,8 @@
     { "name": "tomato puree", "quantity": 1, "unit": "tbsp" },
     { "name": "worchester sauce", "quantity": 1, "unit": "tbsp" },
     { "name": "vegetable stock", "quantity": 150, "unit": "ml" },
-    { "name": "oregano", "quantity": 1, "unit": "tsp" }
+    { "name": "oregano", "quantity": 1, "unit": "tsp" },
+    { "name": "spaghetti pasta", "quantity": 300, "unit": "g" }
   ],
   "methods": [
     "Preheat the oil over'a medium to high heat in a deep frying pan or wok. Add the classic vegetable base mix and cook for 3-4 minutes stirring continuously.",
