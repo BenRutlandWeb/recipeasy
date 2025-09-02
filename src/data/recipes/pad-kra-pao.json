@@ -2,66 +2,18 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Pad kra pao",
     "ingredients": [
-        {
-            "name": "minced pork",
-            "quantity": 250,
-            "unit": "g"
-        },
-        {
-            "name": "garlic cloves",
-            "quantity": 2,
-            "description": "Crushed"
-        },
-        {
-            "name": "birds eye chilli",
-            "quantity": 3,
-            "description": "Finely chopped"
-        },
-        {
-            "name": "long beans",
-            "quantity": 2,
-            "description": "Cut into 3-4cm pieces"
-        },
-        {
-            "name": "Thai basil",
-            "quantity": 15,
-            "unit": "g"
-        },
-        {
-            "name": "vegetable oil",
-            "quantity": 4,
-            "unit": "tbsp"
-        },
-        {
-            "name": "oyster sauce",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "fish sauce",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "soy sauce",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "dark soy sauce",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "brown sugar",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "jasmine rice",
-            "quantity": 150,
-            "unit": "g"
-        }
+        { "name": "minced pork", "quantity": 250, "unit": "g" },
+        { "name": "garlic cloves", "quantity": 2, "description": "Crushed" },
+        { "name": "birds eye chilli", "quantity": 3, "description": "Finely chopped" },
+        { "name": "long beans", "quantity": 2, "description": "Cut into 3-4cm pieces" },
+        { "name": "Thai basil", "quantity": 15, "unit": "g" },
+        { "name": "vegetable oil", "quantity": 4, "unit": "tbsp" },
+        { "name": "oyster sauce", "quantity": 1, "unit": "tbsp" },
+        { "name": "fish sauce", "quantity": 1, "unit": "tbsp" },
+        { "name": "soy sauce", "quantity": 1, "unit": "tbsp" },
+        { "name": "dark soy sauce", "quantity": 1, "unit": "tbsp" },
+        { "name": "brown sugar", "quantity": 1, "unit": "tbsp" },
+        { "name": "jasmine rice", "quantity": 150, "unit": "g" }
     ],
     "methods": [
         "Heat the oil in a wok. Add the crushed garlic and finely chopped chilli peppers and fry until fragrant.",

@@ -1,0 +1,31 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Spinach and chickpeas",
+    "ingredients": [
+        { "name": "fresh spinach", "quantity": 900, "unit": "g" },
+        { "name": "chickpeas", "quantity": 150, "unit": "g" },
+        { "name": "onion", "quantity": 1, "description": "Chopped" },
+        { "name": "garlic cloves", "quantity": 4, "description": "Removed from the skin" },
+        { "name": "stale white bread", "quantity": 2, "description": "Slices, diced" },
+        { "name": "tomato puree", "quantity": 6, "unit": "tbsp" },
+        { "name": "sweet smoked paprika", "quantity": 1, "unit": "tsp" },
+        { "name": "cumin", "quantity": 2, "unit": "tsp" },
+        { "name": "sherry vinegar", "quantity": 1, "unit": "tsp" },
+        { "name": "extra virgin olive oil", "quantity": 4, "unit": "tbsp" }
+    ],
+    "methods": [
+        "Boil the spinach for about 5 or 6 minutes and set aside, a bit soggy is better.",
+        "Heat the extra virgin olive oil in a large frying pan. Fry the garlic on low heat until golden brown, fish it out and put it into a pestle.",
+        "Dice and fry the bread in the same oil and then take to the pestle too when is nice and crunchy. Crush together and add a tbsp of the spinach water to form a paste.",
+        "In the same pan, fry the chopped onion with a pinch of salt until it is a bit caramelized. Then, add smoked paprika and half the cumin and stir in the chickpeas. Add tomato puree and cook it for 2 minutes, until the oil separates a bit.",
+        "Next, add the boiled spinach with some of the spinach water, the bread paste, a tsp of salt or a little more if you like, the rest of the cumin and some sherry vinegar to the pan.",
+        "Mix well and cook until the liquid reduces, so you get a creamy stew.",
+        "Let it sit for 10 minutes before serving."
+    ],
+    "keywords": ["Dinner", "Spanish", "Vegetarian"],
+    "image": "/recipeasy/spinach-and-chickpeas.jpg",
+    "description": "",
+    "serves": 6,
+    "prepTime": 5,
+    "cookTime": 30
+}

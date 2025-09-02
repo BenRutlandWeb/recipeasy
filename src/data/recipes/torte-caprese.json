@@ -2,33 +2,11 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Torta Caprese",
     "ingredients": [
-        {
-            "name": "ground almonds",
-            "quantity": 100,
-            "unit": "g"
-        },
-        {
-            "name": "dark chocolate",
-            "quantity": 100,
-            "unit": "g",
-            "description": "70% cocoa"
-        },
-        {
-            "name": "unsalted butter",
-            "quantity": 100,
-            "unit": "g",
-            "description": "Chopped"
-        },
-        {
-            "name": "caster sugar",
-            "quantity": 100,
-            "unit": "g"
-        },
-        {
-            "name": "eggs",
-            "quantity": 3,
-            "description": "Separated and left to come to room temperature"
-        },
+        { "name": "ground almonds", "quantity": 100, "unit": "g" },
+        { "name": "dark chocolate", "quantity": 100, "unit": "g", "description": "70% cocoa" },
+        { "name": "unsalted butter", "quantity": 100, "unit": "g", "description": "Chopped" },
+        { "name": "caster sugar", "quantity": 100, "unit": "g" },
+        { "name": "eggs", "quantity": 3, "description": "Separated and left to come to room temperature" },
         { "name": "Icing sugar for dusting" }
     ],
     "methods": [

@@ -2,62 +2,17 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Massaman curry",
     "ingredients": [
-        {
-            "name": "massaman curry paste",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "fish sauce",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "palm sugar",
-            "quantity": 0.5,
-            "unit": "tbsp"
-        },
-        {
-            "name": "coconut milk",
-            "quantity": 250,
-            "unit": "ml",
-            "description": "Mixed with the same amount of water"
-        },
-        {
-            "name": "roasted peanuts",
-            "quantity": 2,
-            "unit": "tbsp",
-            "description": "Roughly chopped"
-        },
-        {
-            "name": "bay leaves",
-            "quantity": 2
-        },
-        {
-            "name": "onion",
-            "quantity": 0.25,
-            "description": "Roughly chopped"
-        },
-        {
-            "name": "tomato",
-            "quantity": 0.5,
-            "description": "Halved or quartered"
-        },
-        {
-            "name": "potato",
-            "quantity": 0.5,
-            "description": "Cut into large chunks"
-        },
-        {
-            "name": "chicken breast",
-            "quantity": 1,
-            "description": "Cut into large pieces"
-        },
-        {
-            "name": "jasmine rice",
-            "quantity": 150,
-            "unit": "g"
-        }
+        { "name": "massaman curry paste", "quantity": 1, "unit": "tbsp" },
+        { "name": "fish sauce", "quantity": 1, "unit": "tbsp" },
+        { "name": "palm sugar", "quantity": 0.5, "unit": "tbsp" },
+        { "name": "coconut milk", "quantity": 250, "unit": "ml", "description": "Mixed with the same amount of water" },
+        { "name": "roasted peanuts", "quantity": 2, "unit": "tbsp", "description": "Roughly chopped" },
+        { "name": "bay leaves", "quantity": 2 },
+        { "name": "onion", "quantity": 0.25, "description": "Roughly chopped" },
+        { "name": "tomato", "quantity": 0.5, "description": "Halved or quartered" },
+        { "name": "potato", "quantity": 0.5, "description": "Cut into large chunks" },
+        { "name": "chicken breast", "quantity": 1, "description": "Cut into large pieces" },
+        { "name": "jasmine rice", "quantity": 150, "unit": "g" }
     ],
     "methods": [
         "Add the massaman curry paste to a pan, stir until fragrant. Mix the coconut milk and water together",

@@ -2,56 +2,16 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Pasta alla vodka",
     "ingredients": [
-        {
-            "name": "olive oil",
-            "quantity": 2,
-            "unit": "tbsp"
-        },
-        {
-            "name": "onion",
-            "quantity": 0.5,
-            "description": "Finely chopped"
-        },
-        {
-            "name": "garlic cloves",
-            "quantity": 3,
-            "description": "Crushed"
-        },
-        {
-            "name": "chilli flakes",
-            "quantity": 0.25,
-            "unit": "tsp"
-        },
-        {
-            "name": "tomato puree",
-            "quantity": 100,
-            "unit": "g"
-        },
-        {
-            "name": "vodka",
-            "quantity": 5,
-            "unit": "tbsp"
-        },
-        {
-            "name": "double cream",
-            "quantity": 100,
-            "unit": "ml"
-        },
-        {
-            "name": "penne pasta",
-            "quantity": 150,
-            "unit": "g"
-        },
-        {
-            "name": "parmesan cheese",
-            "quantity": 30,
-            "unit": "g",
-            "description": "Finely grated to serve"
-        },
-        {
-            "name": "Basil",
-            "description": "A few sprigs to serve"
-        }
+        { "name": "olive oil", "quantity": 2, "unit": "tbsp" },
+        { "name": "onion", "quantity": 0.5, "description": "Finely chopped" },
+        { "name": "garlic cloves", "quantity": 3, "description": "Crushed" },
+        { "name": "chilli flakes", "quantity": 0.25, "unit": "tsp" },
+        { "name": "tomato puree", "quantity": 100, "unit": "g" },
+        { "name": "vodka", "quantity": 5, "unit": "tbsp" },
+        { "name": "double cream", "quantity": 100, "unit": "ml" },
+        { "name": "penne pasta", "quantity": 150, "unit": "g" },
+        { "name": "parmesan cheese", "quantity": 30, "unit": "g", "description": "Finely grated to serve" },
+        { "name": "Basil", "description": "A few sprigs to serve" }
     ],
     "methods": [
         "Heat the oil in a large frying pan or casserole dish. Add the onion and a large pinch of salt and gently fry over a low heat for 10 mins or until softened and translucent.",

@@ -2,45 +2,14 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Smoky chorizo salmon",
     "ingredients": [
-        {
-            "name": "salmon fillets",
-            "quantity": 300,
-            "unit": "g",
-            "description": "Skin on, scaled, pin-boned"
-        },
-        {
-            "name": "cherry tomatoes",
-            "quantity": 300,
-            "unit": "g"
-        },
-        {
-            "name": "sprigs of fresh basil",
-            "quantity": 4
-        },
-        {
-            "name": "black olives",
-            "quantity": 8
-        },
-        {
-            "name": "red wine vinegar",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "extra virgin olive oil",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "chorizo",
-            "quantity": 30,
-            "unit": "g"
-        },
-        {
-            "name": "green beans",
-            "quantity": 200,
-            "unit": "g"
-        }
+        { "name": "salmon fillets", "quantity": 300, "unit": "g", "description": "Skin on, scaled, pin-boned" },
+        { "name": "cherry tomatoes", "quantity": 300, "unit": "g" },
+        { "name": "sprigs of fresh basil", "quantity": 4 },
+        { "name": "black olives", "quantity": 8 },
+        { "name": "red wine vinegar", "quantity": 1, "unit": "tbsp" },
+        { "name": "extra virgin olive oil", "quantity": 1, "unit": "tbsp" },
+        { "name": "chorizo", "quantity": 30, "unit": "g" },
+        { "name": "green beans", "quantity": 200, "unit": "g" }
     ],
     "methods": [
         "Put the salmon flesh side down in a large cold non-stick frying pan and place on a medium-high heat.",

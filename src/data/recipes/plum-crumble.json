@@ -8,52 +8,15 @@
     "image": "/recipeasy/plum-crumble.jpg",
     "keywords": ["Dessert", "Vegetarian"],
     "ingredients": [
-        {
-            "name": "plums",
-            "quantity": 800,
-            "unit": "g",
-            "description": "Halved and stoned"
-        },
-        {
-            "name": "light brown sugar",
-            "quantity": 50,
-            "unit": "g"
-        },
-        {
-            "name": "orange",
-            "quantity": 1,
-            "description": "Zested"
-        },
-        {
-            "name": "ground cinnamon",
-            "quantity": 1,
-            "unit": "tsp"
-        },
-        {
-            "name": "plain flour",
-            "quantity": 250,
-            "unit": "g"
-        },
-        {
-            "name": "butter",
-            "quantity": 150,
-            "unit": "g"
-        },
-        {
-            "name": "caster sugar",
-            "quantity": 80,
-            "unit": "g"
-        },
-        {
-            "name": "demerara sugar",
-            "quantity": 80,
-            "unit": "g"
-        },
-        {
-            "name": "ground almonds",
-            "quantity": 50,
-            "unit": "g"
-        }
+        { "name": "plums", "quantity": 800, "unit": "g", "description": "Halved and stoned" },
+        { "name": "light brown sugar", "quantity": 50, "unit": "g" },
+        { "name": "orange", "quantity": 1, "description": "Zested" },
+        { "name": "ground cinnamon", "quantity": 1, "unit": "tsp" },
+        { "name": "plain flour", "quantity": 250, "unit": "g" },
+        { "name": "butter", "quantity": 150, "unit": "g" },
+        { "name": "caster sugar", "quantity": 80, "unit": "g" },
+        { "name": "demerara sugar", "quantity": 80, "unit": "g" },
+        { "name": "ground almonds", "quantity": 50, "unit": "g" }
     ],
     "methods": [
         "Heat the oven to 200C/180C fan/gas 6. Put the plums into the base of a shallow gratin dish about 28cm long.",

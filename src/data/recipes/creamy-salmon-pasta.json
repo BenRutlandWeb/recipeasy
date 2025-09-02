@@ -2,53 +2,15 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Creamy salmon pasta",
     "ingredients": [
-        {
-            "name": "salmon fillets",
-            "quantity": 2
-        },
-        {
-            "name": "olive oil",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "penne pasta",
-            "quantity": 175,
-            "unit": "g"
-        },
-        {
-            "name": "garlic clove",
-            "quantity": 1,
-            "description": "Crushed"
-        },
-        {
-            "name": "shallots",
-            "quantity": 2,
-            "description": "Or 1 small onion, finely chopped"
-        },
-        {
-            "name": "white wine",
-            "quantity": 100,
-            "unit": "ml"
-        },
-        {
-            "name": "double cream",
-            "quantity": 200,
-            "unit": "ml",
-            "description": "Or crème fraîche"
-        },
-        {
-            "name": "lemon",
-            "quantity": 0.25,
-
-            "description": "Zested and juiced"
-        },
-        {
-            "name": "dill",
-            "quantity": 10,
-            "unit": "g",
-            "description": "Finely chopped"
-        }
+        { "name": "salmon fillets", "quantity": 2 },
+        { "name": "olive oil", "quantity": 1, "unit": "tbsp" },
+        { "name": "penne pasta", "quantity": 175, "unit": "g" },
+        { "name": "garlic clove", "quantity": 1, "description": "Crushed" },
+        { "name": "shallots", "quantity": 2, "description": "Or 1 small onion, finely chopped" },
+        { "name": "white wine", "quantity": 100, "unit": "ml" },
+        { "name": "double cream", "quantity": 200, "unit": "ml", "description": "Or crème fraîche" },
+        { "name": "lemon", "quantity": 0.25, "description": "Zested and juiced" },
+        { "name": "dill", "quantity": 10, "unit": "g", "description": "Finely chopped" }
     ],
     "methods": [
         "Heat the oven to 180C, place the salmon on a baking tray, drizzle with oil and roast for 12 mins.",

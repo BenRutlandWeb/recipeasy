@@ -8,43 +8,13 @@
     "image": "/recipeasy/honey-and-mustard-chicken.jpg",
     "keywords": ["Dinner", "Italian", "Meat"],
     "ingredients": [
-        {
-            "name": "Dijon mustard",
-            "quantity": 3,
-            "unit": "tbsp"
-        },
-        {
-            "name": "extra virgin olive oil",
-            "quantity": 1,
-            "unit": "tbsp",
-            "description": "Plus extra for frying"
-        },
-        {
-            "name": "balsamic vinegar",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "clear honey",
-            "quantity": 1,
-            "unit": "tbsp"
-        },
-        {
-            "name": "chicken breast fillets",
-            "quantity": 550,
-            "unit": "g",
-            "description": "Cut into long strips"
-        },
-        {
-            "name": "penne pasta",
-            "quantity": 300,
-            "unit": "g"
-        },
-        {
-            "name": "sun-dried tomatoes",
-            "quantity": 10,
-            "description": "Cut into small pieces"
-        }
+        { "name": "Dijon mustard", "quantity": 3, "unit": "tbsp" },
+        { "name": "extra virgin olive oil", "quantity": 1, "unit": "tbsp", "description": "Plus extra for frying" },
+        { "name": "balsamic vinegar", "quantity": 1, "unit": "tbsp" },
+        { "name": "clear honey", "quantity": 1, "unit": "tbsp" },
+        { "name": "chicken breast fillets", "quantity": 550, "unit": "g", "description": "Cut into long strips" },
+        { "name": "penne pasta", "quantity": 300, "unit": "g" },
+        { "name": "sun-dried tomatoes", "quantity": 10, "description": "Cut into small pieces" }
     ],
     "methods": [
         "Combine the honey, mustard, olive oil and balsamic vinegar in a bowl, mixing until smooth.",

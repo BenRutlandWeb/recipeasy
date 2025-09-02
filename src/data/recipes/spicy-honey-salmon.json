@@ -2,52 +2,15 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Spicy honey salmon",
     "ingredients": [
-        {
-            "name": "lemon",
-            "quantity": 2
-        },
-        {
-            "name": "ras el hanout",
-            "quantity": 2,
-            "unit": "tsp"
-        },
-        {
-            "name": "garlic cloves",
-            "quantity": 2,
-            "description": "Crushed"
-        },
-        {
-            "name": "spring onions",
-            "quantity": 4,
-            "description": "Thinly sliced"
-        },
-        {
-            "name": "olive oil",
-            "quantity": 3,
-            "unit": "tsp",
-            "description": "Plus extra for drizzling"
-        },
-        {
-            "name": "salmon fillets",
-            "quantity": 2,
-            "description": "Boneless, skinless"
-        },
-        {
-            "name": "couscous",
-            "quantity": 140,
-            "unit": "g"
-        },
-        {
-            "name": "clear honey",
-            "quantity": 2,
-            "unit": "tsp"
-        },
-        {
-            "name": "mint",
-            "quantity": 10,
-            "unit": "g",
-            "description": "Finely sliced"
-        }
+        { "name": "lemon", "quantity": 2 },
+        { "name": "ras el hanout", "quantity": 2, "unit": "tsp" },
+        { "name": "garlic cloves", "quantity": 2, "description": "Crushed" },
+        { "name": "spring onions", "quantity": 4, "description": "Thinly sliced" },
+        { "name": "olive oil", "quantity": 3, "unit": "tsp", "description": "Plus extra for drizzling" },
+        { "name": "salmon fillets", "quantity": 2, "description": "Boneless, skinless" },
+        { "name": "couscous", "quantity": 140, "unit": "g" },
+        { "name": "clear honey", "quantity": 2, "unit": "tsp" },
+        { "name": "mint", "quantity": 10, "unit": "g", "description": "Finely sliced" }
     ],
     "methods": [
         "Heat oven to 200C/fan 180C/gas 6. Zest and juice the lemon, then mix the zest and half the juice with the spice, garlic, half the spring onions and 2 tsp oil. Season well.",

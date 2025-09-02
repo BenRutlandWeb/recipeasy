@@ -2,37 +2,13 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Belgian Waffles",
     "ingredients": [
-        {
-            "name": "self-raising flour",
-            "quantity": 150,
-            "unit": "g"
-        },
-        {
-            "name": "baking powder",
-            "quantity": 1,
-            "unit": "tsp"
-        },
-        {
-            "name": "sugar",
-            "quantity": 1,
-            "unit": "tsp"
-        },
-        {
-            "name": "eggs",
-            "quantity": 1
-        },
-        {
-            "name": "semi-skimmed milk",
-            "quantity": 240,
-            "unit": "ml"
-        },
-        {
-            "name": "orange",
-            "quantity": 1
-        },
-        {
-            "name": "Vanilla extract"
-        }
+        { "name": "self-raising flour", "quantity": 150, "unit": "g" },
+        { "name": "baking powder", "quantity": 1, "unit": "tsp" },
+        { "name": "sugar", "quantity": 1, "unit": "tsp" },
+        { "name": "eggs", "quantity": 1 },
+        { "name": "semi-skimmed milk", "quantity": 240, "unit": "ml" },
+        { "name": "orange", "quantity": 1 },
+        { "name": "Vanilla extract" }
     ],
     "methods": [
         "Mix all the dry ingredients together in a large bowl. Gradually beat in the egg, then add the milk slowly, whisking well to get as smooth a batter as possible.",

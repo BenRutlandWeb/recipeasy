@@ -2,52 +2,15 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Chilli con carne",
     "ingredients": [
-        {
-            "name": "onion",
-            "quantity": 2,
-            "description": "Finely chopped"
-        },
-        {
-            "name": "red pepper",
-            "quantity": 1,
-            "description": "Chopped"
-        },
-        {
-            "name": "minced beef",
-            "quantity": 500,
-            "unit": "g"
-        },
-        {
-            "name": "kidney beans",
-            "quantity": 400,
-            "unit": "g",
-            "description": "Drained"
-        },
-        {
-            "name": "can chopped tomatoes",
-            "quantity": 400,
-            "unit": "g"
-        },
-        {
-            "name": "tomato puree",
-            "quantity": 3,
-            "unit": "tbsp"
-        },
-        {
-            "name": "chilli peppers",
-            "quantity": 2,
-            "description": "Finely sliced"
-        },
-        {
-            "name": "chilli powder",
-            "quantity": 3,
-            "unit": "tsp"
-        },
-        {
-            "name": "long grain rice",
-            "quantity": 300,
-            "unit": "g"
-        }
+        { "name": "onion", "quantity": 2, "description": "Finely chopped" },
+        { "name": "red pepper", "quantity": 1, "description": "Chopped" },
+        { "name": "minced beef", "quantity": 500, "unit": "g" },
+        { "name": "kidney beans", "quantity": 400, "unit": "g", "description": "Drained" },
+        { "name": "chopped tomatoes", "quantity": 400, "unit": "g" },
+        { "name": "tomato puree", "quantity": 3, "unit": "tbsp" },
+        { "name": "chilli peppers", "quantity": 2, "description": "Finely sliced" },
+        { "name": "chilli powder", "quantity": 3, "unit": "tsp" },
+        { "name": "long grain rice", "quantity": 300, "unit": "g" }
     ],
     "methods": [
         "On a medium heat, fry the onions and red pepper in a tbsp of olive oil for 5 minutes or until soft. Add the mince and fry until browned.",

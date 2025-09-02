@@ -8,7 +8,7 @@
         { "name": "ginger", "description": "Thumb-sized piece, grated" },
         { "name": "chicken thighs", "quantity": 6, "description": "Boneless and skinless" },
         { "name": "tikka spice paste", "quantity": 3, "unit": "tbsp" },
-        { "name": "can chopped tomatoes", "quantity": 400, "unit": "g" },
+        { "name": "chopped tomatoes", "quantity": 400, "unit": "g" },
         { "name": "Greek yoghurt", "quantity": 100, "unit": "g" },
         { "name": "coriander", "quantity": 15, "unit": "g" },
         { "name": "ground almonds", "quantity": 50, "unit": "g" },

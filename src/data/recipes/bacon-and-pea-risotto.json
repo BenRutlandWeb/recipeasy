@@ -2,43 +2,14 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Bacon and pea risotto",
     "ingredients": [
-        {
-            "name": "onion",
-            "quantity": 1
-        },
-        {
-            "name": "olive oil",
-            "quantity": 2,
-            "unit": "tbsp"
-        },
-        {
-            "name": "knob of butter",
-            "quantity": 1
-        },
-        {
-            "name": "streaky bacon rashers",
-            "quantity": 6,
-            "description": "Chopped into small chunks"
-        },
-        {
-            "name": "risotto rice",
-            "quantity": 300,
-            "unit": "g"
-        },
-        {
-            "name": "vegetable stock",
-            "quantity": 1,
-            "unit": "l"
-        },
-        {
-            "name": "peas",
-            "quantity": 100,
-            "unit": "g"
-        },
-        {
-            "name": "Parmesan cheese",
-            "description": "Finely grated to serve"
-        }
+        { "name": "onion", "quantity": 1 },
+        { "name": "olive oil", "quantity": 2, "unit": "tbsp" },
+        { "name": "knob of butter", "quantity": 1 },
+        { "name": "streaky bacon rashers", "quantity": 6, "description": "Chopped into small chunks" },
+        { "name": "risotto rice", "quantity": 300, "unit": "g" },
+        { "name": "vegetable stock", "quantity": 1, "unit": "l" },
+        { "name": "peas", "quantity": 100, "unit": "g" },
+        { "name": "Parmesan cheese", "description": "Finely grated to serve" }
     ],
     "methods": [
         "Finely chop the onion. Heat the olive oil and butter in a pan, add the onions and fry until lightly browned (about 7 minutes).",

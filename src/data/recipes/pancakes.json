@@ -2,20 +2,9 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Pancakes",
     "ingredients": [
-        {
-            "name": "eggs",
-            "quantity": 2
-        },
-        {
-            "name": "milk",
-            "quantity": 300,
-            "unit": "ml"
-        },
-        {
-            "name": "flour",
-            "quantity": 100,
-            "unit": "g"
-        }
+        { "name": "eggs", "quantity": 2 },
+        { "name": "milk", "quantity": 300, "unit": "ml" },
+        { "name": "flour", "quantity": 100, "unit": "g" }
     ],
     "methods": [
         "Mix together the eggs, milk and flour until a smooth batter.",

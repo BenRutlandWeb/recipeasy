@@ -2,43 +2,14 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Crispy salmon tacos",
     "ingredients": [
-        {
-            "name": "cherry tomatoes",
-            "quantity": 160,
-            "unit": "g"
-        },
-        {
-            "name": "mango",
-            "quantity": 1,
-            "description": "Small"
-        },
-        {
-            "name": "Avocado",
-            "quantity": 0.5
-        },
-        {
-            "name": "spring onions",
-            "quantity": 2
-        },
-        {
-            "name": "salmon fillets",
-            "quantity": 2,
-            "description": "skin on, scaled, pin-boned"
-        },
-        {
-            "name": "cajun seasoning",
-            "quantity": 2,
-            "unit": "tsp"
-        },
-        {
-            "name": "tortillas",
-            "quantity": 4,
-            "description": "Small"
-        },
-        {
-            "name": "limes",
-            "quantity": 2
-        }
+        { "name": "cherry tomatoes", "quantity": 160, "unit": "g" },
+        { "name": "mango", "quantity": 1, "description": "Small" },
+        { "name": "Avocado", "quantity": 0.5 },
+        { "name": "spring onions", "quantity": 2 },
+        { "name": "salmon fillets", "quantity": 2, "description": "skin on, scaled, pin-boned" },
+        { "name": "cajun seasoning", "quantity": 2, "unit": "tsp" },
+        { "name": "tortillas", "quantity": 4, "description": "Small" },
+        { "name": "limes", "quantity": 2 }
     ],
     "methods": [
         "Quarter the cherry tomatoes. Destone, peel and roughly chop the mango. Scoop out the avocado and finely slice. Trim and finely slice the spring onions.",

@@ -2,29 +2,11 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Lemony courgette linguine",
     "ingredients": [
-        {
-            "name": "linguine pasta",
-            "quantity": 150,
-            "unit": "g"
-        },
-        {
-            "name": "courgettes",
-            "quantity": 2
-        },
-        {
-            "name": "mint",
-            "quantity": 15,
-            "unit": "g"
-        },
-        {
-            "name": "parmesan cheese",
-            "quantity": 30,
-            "unit": "g"
-        },
-        {
-            "name": "lemon",
-            "quantity": 1
-        }
+        { "name": "linguine pasta", "quantity": 150, "unit": "g" },
+        { "name": "courgettes", "quantity": 2 },
+        { "name": "mint", "quantity": 15, "unit": "g" },
+        { "name": "parmesan cheese", "quantity": 30, "unit": "g" },
+        { "name": "lemon", "quantity": 1 }
     ],
     "methods": [
         "Cook the pasta in a pan of boiling salted water according to the packet instructions, then drain, reserving a mugful of cooking water.",

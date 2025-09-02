@@ -2,58 +2,17 @@
     "$schema": "../../schemas/recipe.json",
     "title": "Chicken souvlaki",
     "ingredients": [
-        {
-            "name": "chicken thighs",
-            "quantity": 12,
-            "description": "Boneless, skinless"
-        },
-        {
-            "name": "olive oil",
-            "quantity": 4,
-            "unit": "tbsp"
-        },
-        {
-            "name": "dried oregano",
-            "quantity": 2,
-            "unit": "tsp"
-        },
-        {
-            "name": "dried mint",
-            "quantity": 1,
-            "unit": "tsp"
-        },
-        {
-            "name": "groupd cumin",
-            "quantity": 1,
-            "unit": "tsp"
-        },
-        {
-            "name": "coriander",
-            "quantity": 1,
-            "unit": "tsp"
-        },
-        {
-            "name": "sweet paprika",
-            "quantity": 1,
-            "unit": "tsp"
-        },
-        {
-            "name": "lemon",
-            "quantity": 1,
-            "description": "Juice and zest, plus 1 lemon cut into wedges to serve"
-        },
-        {
-            "name": "garlic cloves",
-            "quantity": 4,
-            "description": "Crushed"
-        },
-        {
-            "name": "pitta wraps",
-            "quantity": 4
-        },
-        {
-            "name": "Tzatziki"
-        }
+        { "name": "chicken thighs", "quantity": 12, "description": "Boneless, skinless" },
+        { "name": "olive oil", "quantity": 4, "unit": "tbsp" },
+        { "name": "dried oregano", "quantity": 2, "unit": "tsp" },
+        { "name": "dried mint", "quantity": 1, "unit": "tsp" },
+        { "name": "groupd cumin", "quantity": 1, "unit": "tsp" },
+        { "name": "coriander", "quantity": 1, "unit": "tsp" },
+        { "name": "sweet paprika", "quantity": 1, "unit": "tsp" },
+        { "name": "lemon", "quantity": 1, "description": "Juice and zest, plus 1 lemon cut into wedges to serve" },
+        { "name": "garlic cloves", "quantity": 4, "description": "Crushed" },
+        { "name": "pitta wraps", "quantity": 4 },
+        { "name": "Tzatziki" }
     ],
     "methods": [
         "Tip the chicken into a large bowl and add the marinade ingredients, along with 1 tsp salt and plenty of black pepper. Mix well, ensuring each thigh is well coated. Cover and chill for at least 3 hrs, or up to 48 hrs if you have time.",
