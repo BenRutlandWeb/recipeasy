@@ -1,0 +1,28 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Chicken & chorizo jambalaya",
+  "ingredients": [
+    { "name": "olive oil", "quantity": 1, "unit": "tbsp" },
+    { "name": "chicken breast", "quantity": 2, "description": "Chopped" },
+    { "name": "onion", "quantity": 1, "description": "Diced" },
+    { "name": "red pepper", "quantity": 1, "description": "Thinly sliced" },
+    { "name": "garlic cloves", "quantity": 2, "description": "Crushed" },
+    { "name": "chorizo", "quantity": 75, "unit": "g", "description": "Sliced" },
+    { "name": "Cajun seasoning", "quantity": 1, "unit": "tbsp" },
+    { "name": "long grain rice", "quantity": 250, "unit": "g" },
+    { "name": "plum tomatoes", "quantity": 400, "unit": "g" },
+    { "name": "chicken stock", "quantity": 350, "unit": "ml" }
+  ],
+  "methods": [
+    "Heat the olive oil in a large frying pan with a lid and brown the chicken for 5-8 mins until golden.",
+    "Remove and set aside. Tip in the diced onion and cook for 3-4 mins until soft.",
+    "Add the pepper, garlic cloves, chorizo and Cajun seasoning, and cook for 5 mins more.",
+    "Stir the chicken back in with the long grain rice, add the plum tomatoes and chicken stock. Cover and simmer for 20-25 mins until the rice is tender."
+  ],
+  "keywords": ["Dinner", "Meat"],
+  "image": "/recipeasy/chicken-and-chorizo-jambalaya.jpg",
+  "description": "A healthy Cajun-inspired rice pot recipe that's bursting with spicy Spanish sausage, sweet peppers and tomatoes.",
+  "serves": 4,
+  "prepTime": 10,
+  "cookTime": 45
+}

@@ -44,8 +44,6 @@ function buildSearchIndex() {
     });
   });
 
-  //const reduced = reduceWords(output);
-
   fs.writeFileSync(
     path.resolve(__dirname, "./data/recipes-search.json"),
     JSON.stringify(output, null, 2)
@@ -82,7 +80,7 @@ export default function indexRecipes() {
   return {
     name: "recipes-manifest",
     buildStart() {
-      watcher = watch("./data/recipes/*.json");
+      watcher = watch(path.resolve(__dirname, "./data/recipes"));
 
       watcher.on("add", (file) => {
         buildListings();
