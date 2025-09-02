@@ -82,7 +82,7 @@ export default function indexRecipes() {
   return {
     name: "recipes-manifest",
     buildStart() {
-      watcher = watch(__dirname, "./data/recipes/*.json");
+      watcher = watch("./data/recipes/*.json");
 
       watcher.on("add", (file) => {
         buildListings();
