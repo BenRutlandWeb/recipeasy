@@ -1,0 +1,41 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Prawn pasta with rocket",
+  "ingredients": [
+    { "name": "olive oil", "quantity": 5, "unit": "tbsp" },
+    { "name": "garlic cloves", "quantity": 2, "description": "Finely sliced" },
+    { "name": "pine nuts", "quantity": 50, "unit": "g" },
+    {
+      "name": "red chilli pepper",
+      "quantity": 1,
+      "description": "Finely sliced and deseeded"
+    },
+    {
+      "name": "Prawns",
+      "quantity": 300,
+      "unit": "g",
+      "description": "Raw, peeled, with heads and tails removed"
+    },
+    { "name": "white wine", "quantity": 75, "unit": "ml" },
+    {
+      "name": "basil",
+      "quantity": 3,
+      "unit": "tbsp",
+      "description": "Finely sliced"
+    },
+    { "name": "linguine pasta", "quantity": 300, "unit": "g" },
+    { "name": "rocket leaves", "quantity": 100, "unit": "g" }
+  ],
+  "methods": [
+    "Heat the olive oil in a large frying pan and shallow-fry the garlic, pine nuts and chilli for about 20 seconds, then add the prawns and cook for about 1 minute.",
+    "Add the wine and basil, season with salt and simmer over a high heat for about 2 minutes. Remove the pan from the heat.",
+    "Meanwhile, cook the pasta in a large pan of boiling salted water until al dente. Drain and add to the frying pan.",
+    "Return the frying pan to a high heat and immediately add in the rocket leaves, mix well for about 1 minute to allow the rocket to soften slightly and the pasta to absorb the flavour. Serve immediately."
+  ],
+  "keywords": ["Dinner", "Seafood", "Italian"],
+  "image": "/recipeasy/prawn-pasta-with-rocket.jpg",
+  "description": "",
+  "serves": 4,
+  "prepTime": 5,
+  "cookTime": 20
+}

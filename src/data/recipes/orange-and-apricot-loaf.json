@@ -1,0 +1,34 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Orange and apricot loaf",
+  "ingredients": [
+    { "name": "butter", "quantity": 175, "unit": "g" },
+    { "name": "caster sugar", "quantity": 175, "unit": "g" },
+    { "name": "self-raising flour", "quantity": 175, "unit": "g" },
+    { "name": "eggs", "quantity": 3 },
+    { "name": "orange", "quantity": 1, "description": "Zest and juice" },
+    { "name": "ground almonds", "quantity": 35, "unit": "g" },
+    { "name": "dessicated coconut", "quantity": 35, "unit": "g" },
+    {
+      "name": "dried apricots",
+      "quantity": 125,
+      "unit": "g",
+      "description": "Chopped"
+    },
+    { "name": "Icing sugar", "description": "To dust" }
+  ],
+  "methods": [
+    "Preheat the oven to 170C/fan 150C/gas mark 3. Grease a 900g (2lb) loaf tin and line the base and two long sides with baking paper.",
+    "Place the butter, sugar, flour, eggs and the orange rind and juice in a bowl. Beat with an electric whisk until thoroughly combined.",
+    "Toss together the ground almonds and apricots and fold into the mixture.",
+    "Spoon the mixture into the prepared tin and bake for 50 minutes - 1 hour 10 minutes until risen and golden and a skewer inserted into the centre comes out clean.",
+    "Cool for 10 minutes then turn out onto a wire rack and leave to cool completely. Serve dusted with icing sugar and decorated with the extra orange zest."
+  ],
+  "keywords": ["Dessert", "Baking", "Vegetarian"],
+  "image": "/recipeasy/orange-and-apricot-loaf.jpg",
+  "description": "",
+  "serves": 12,
+  "prepTime": 20,
+  "cookTime": 60,
+  "diet": ["vegetarian"]
+}

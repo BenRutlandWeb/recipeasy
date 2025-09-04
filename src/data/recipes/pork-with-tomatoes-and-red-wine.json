@@ -1,0 +1,38 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Pork with tomatoes and red wine",
+  "ingredients": [
+    {
+      "name": "pork fillet",
+      "quantity": 350,
+      "unit": "g",
+      "description": "Cut into strips"
+    },
+    { "name": "onion", "quantity": 1, "description": "Chopped" },
+    { "name": "chopped tomatoes", "quantity": 400, "unit": "g" },
+    { "name": "red wine", "quantity": 150, "unit": "ml" },
+    { "name": "tomato puree", "quantity": 1, "unit": "tbsp" },
+    { "name": "vegetable stock", "quantity": 150, "unit": "ml" },
+    { "name": "Italian mixed herbs", "quantity": 1, "unit": "tsp" },
+    {
+      "name": "chestnut mushrooms",
+      "quantity": 225,
+      "unit": "g",
+      "description": "Halved"
+    },
+    { "name": "courgettes", "quantity": 2, "description": "Sliced thickly" },
+    { "name": "cornflour", "quantity": 2, "unit": "tsp" }
+  ],
+  "methods": [
+    "Dry-fry the pork and onion for 5 minutes, then stir in the canned tomatoes, red wine, tomato purée, stock, herbs, mushrooms, courgettes and sage.",
+    "Bring to the boil, then cover and simmer for 15 minutes.",
+    "Blend the cornflour to a paste with just enough water and stir in to the pork mixture.",
+    "Simmer uncovered, for 1-2 minutes to thicken the sauce. Season to taste. Serve."
+  ],
+  "keywords": ["Dinner", "Meat", "Italian"],
+  "image": "/recipeasy/pork-with-tomatoes-and-red-wine.jpg",
+  "description": "Serve with rice and fresh vegetables.",
+  "serves": 4,
+  "prepTime": 10,
+  "cookTime": 20
+}

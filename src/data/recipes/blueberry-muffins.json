@@ -1,0 +1,26 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Blueberry muffins",
+  "ingredients": [
+    { "name": "eggs", "quantity": 2 },
+    { "name": "vegetable oil", "quantity": 125, "unit": "ml" },
+    { "name": "milk", "quantity": 250, "unit": "ml" },
+    { "name": "golden caster sugar", "quantity": 250, "unit": "g" },
+    { "name": "self-raising flour", "quantity": 400, "unit": "g" },
+    { "name": "salt", "quantity": 1, "unit": "tsp" },
+    { "name": "blueberries", "quantity": 150, "unit": "g" }
+  ],
+  "methods": [
+    "Heat oven to 200C/180C fan/gas 6. Line 2 muffin trays with paper muffin cases. In a large bowl beat the eggs lightly with a handheld electric mixer for 1 min.",
+    "Add the vegetable oil and semi-skimmed milk and beat until just combined then add golden caster sugar and whisk until you have a smooth batter.",
+    "Sift in self-raising flour and salt then mix until just smooth. Be careful not to over-mix the batter as this will make the muffins tough. Stir in the blueberries.",
+    "Fill the muffin cases two-thirds full and bake for 20-25 mins, until risen, firm to the touch and a skewer inserted in the middle comes out clean.",
+    "Leave the muffins in the tin to cool for a few mins and transfer to a wire rack to cool completely."
+  ],
+  "keywords": ["Breakfast", "Dessert", "Baking", "Vegetarian", "Gluten free"],
+  "image": "/recipeasy/blueberry-muffins.jpg",
+  "description": "",
+  "serves": 12,
+  "prepTime": 20,
+  "cookTime": 25
+}

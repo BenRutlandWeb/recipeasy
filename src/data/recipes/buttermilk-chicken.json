@@ -1,0 +1,27 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Buttermilk chicken",
+  "ingredients": [
+    { "name": "chicken breasts", "quantity": 4 },
+    { "name": "milk", "quantity": 300, "unit": "ml" },
+    { "name": "salt", "quantity": 2, "unit": "tsp" },
+    { "name": "black pepper", "quantity": 2, "unit": "tsp" },
+    { "name": "garlic powder", "quantity": 2, "unit": "tsp" },
+    { "name": "cayenne pepper", "quantity": 1, "unit": "tsp" },
+    { "name": "hot sauce", "quantity": 3, "unit": "tbsp" },
+    { "name": "flour", "quantity": 300, "unit": "g" },
+    { "name": "smoked paprika", "quantity": 1, "unit": "tsp" }
+  ],
+  "methods": [
+    "Start by combining the milk, half of the salt, black pepper, garlic powder, cayenne pepper and all of the hot sauce in a large bowl.",
+    "Marinate the chicken for minimum of 30 mins. Meanwhile, combine the flour, remaining salt, black pepper, garlic powder and cayenne pepper, and the paprika in another bowl.",
+    "Once the chicken is marinated, dip in the dry mix and coat. Do this 2 or 3 times.",
+    "Oil the air-fryer and fry the chicken for 15-20 mins until cooked and crispy."
+  ],
+  "keywords": ["Dinner", "Meat"],
+  "image": "/recipeasy/buttermilk-chicken.jpg",
+  "description": "",
+  "serves": 4,
+  "prepTime": 40,
+  "cookTime": 20
+}
