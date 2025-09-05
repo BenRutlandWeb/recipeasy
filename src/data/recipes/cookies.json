@@ -1,8 +1,8 @@
 {
   "$schema": "../../schemas/recipe.json",
-  "title": "Millie's cookies",
+  "title": "Cookies",
   "description": "These delicious cookies are easy to cook and taste as good as the real Millies cookies, with a crisp outer layer and a gooey centre these treats are best eaten warm but last well...if they last that long!!!",
-  "image": "/recipeasy/millies-cookies.jpg",
+  "image": "/recipeasy/cookies.jpg",
   "serves": 12,
   "prepTime": 5,
   "cookTime": 10,

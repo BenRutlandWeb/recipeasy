@@ -1,0 +1,55 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Gambas al ajillo",
+  "description": "Felicity Cloake’s perfect gambas al ajillo, or garlic prawns. This recipe is for a squidgy, saucy prawn dish served with bread.",
+  "image": "/recipeasy/gambas-al-ajillo.jpg",
+  "serves": 4,
+  "prepTime": 5,
+  "cookTime": 15,
+  "keywords": ["Spanish food", "Shellfish", "Seafood", "Tapa", "Starter"],
+  "ingredients": [
+    {
+      "name": "raw shell-on king prawns",
+      "quantity": 8
+    },
+    {
+      "name": "garlic cloves",
+      "quantity": 4
+    },
+    {
+      "name": "olive oil",
+      "quantity": 120,
+      "unit": "ml"
+    },
+    {
+      "name": "small dried chillies",
+      "quantity": 4,
+      "description": "or 1 tsp cayenne pepper or paprika, or ½ tsp chilli flakes"
+    },
+    {
+      "name": "sherry vinegar",
+      "quantity": 1,
+      "unit": "tsp",
+      "description": "or lemon juice"
+    },
+    {
+      "name": "chopped flat-leaf parsley",
+      "quantity": 1,
+      "unit": "tbsp"
+    },
+    {
+      "name": "salt"
+    },
+    {
+      "name": "pepper"
+    }
+  ],
+  "methods": [
+    "Using a small sharp knife, shell the prawns, leaving just the very end of the tails on. Sprinkle the meat with a pinch of salt and set aside.",
+    "Peel the garlic and squash two of the cloves with the flat of a large knife. Heat the oil in a frying pan over a medium-low heat, then add the squashed garlic and the prawn shells and heads.",
+    "Fry, stirring frequently, for about 10 minutes, until the shells are a deep pink, making sure the garlic doesn’t burn. Meanwhile, finely slice the remaining garlic.",
+    "Pass the oil through a sieve and discard the solids. Return the oil to the pan over a medium-high heat and add the chillies.",
+    "Fry for a minute or so, then add the prawns. Cook for a minute more, then add the garlic and cook, stirring, for a further minute – the prawns should be just cooked through.",
+    "Stir the vinegar into the prawn head bowl, then stir this mix into the pan, along with the parsley. Season and serve at once with plenty of bread."
+  ]
+}
