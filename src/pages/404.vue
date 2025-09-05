@@ -5,7 +5,9 @@
         <RecipeasyLogo />
       </AppBarLink>
       <AppBarTitle>Page not found</AppBarTitle>
-      <DarkModeToggle />
+      <ClientOnly>
+        <DarkModeToggle />
+      </ClientOnly>
     </template>
     <p>The page you were looking for cannot be found.</p>
   </Layout>

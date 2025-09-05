@@ -1,4 +1,8 @@
-import { createRouter, createWebHistory } from "vue-router";
+import {
+  createRouter,
+  createWebHistory,
+  createMemoryHistory,
+} from "vue-router";
 import { useStorage } from "@/composables/useStorage";
 
 const recipes = import.meta.glob("@/data/recipes/*.json", { eager: true });
@@ -10,7 +14,7 @@ const recipeRoutes = Object.entries(recipes).map(
       .pop()
       .replace(/\.json$/, "");
     return {
-      path: `/recipes/${slug}`,
+      path: `/recipeasy/recipes/${slug}`,
       name: `recipes-${slug}`,
       component: () => import("@/pages/recipe.vue"),
       props: { recipe: { slug, ...recipe } },
@@ -25,24 +29,26 @@ const recipeRoutes = Object.entries(recipes).map(
 const routes = [
   ...recipeRoutes,
   {
-    path: "/",
+    path: "/recipeasy/",
     component: () => import("@/pages/index.vue"),
     name: "home",
   },
   {
-    path: "/search",
+    path: "/recipeasy/search",
     component: () => import("@/pages/search.vue"),
     name: "search",
   },
   {
-    path: "/:pathMatch(.*)*",
+    path: "/recipeasy/:pathMatch(.*)*",
     name: "404",
     component: () => import("@/pages/404.vue"),
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: import.meta.env.SSR
+    ? createMemoryHistory(import.meta.env.BASE_URL)
+    : createWebHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior(to, from, savedPosition) {
     return savedPosition || { left: 0, top: 0 };

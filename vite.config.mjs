@@ -7,6 +7,9 @@ import IndexRecipes from "./src/IndexRecipes";
 
 export default {
   base: "/recipeasy/",
+  ssg: {
+    base: "/recipeasy/",
+  },
   plugins: [
     vue({
       pagesDir: "src/pages",

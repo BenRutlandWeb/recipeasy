@@ -4,7 +4,9 @@
   <AppBarLink :to="{ name: 'search' }" aria-label="Search">
     <BaseIcon icon="search" />
   </AppBarLink>
-  <DarkModeToggle />
+  <ClientOnly>
+    <DarkModeToggle />
+  </ClientOnly>
 </template>
 
 <script setup>

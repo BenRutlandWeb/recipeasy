@@ -1,15 +1,16 @@
 import "@/app.css";
 import { registerSW } from "virtual:pwa-register";
-import { createApp } from "vue";
-import router from "@/router";
+import { ViteSSG } from "vite-ssg";
 import App from "@/App.vue";
+import router from "@/router";
 
-const app = createApp(App);
-
-app.use(router);
-
-app.mount("#app");
-
-if (import.meta.env.PROD) {
-  registerSW();
-}
+export const createApp = ViteSSG(
+  App,
+  { routes: router.options.routes },
+  ({ app, router }) => {
+    // Any custom setups like adding stores, etc.
+    if (!import.meta.env.SSR && import.meta.env.PROD) {
+      registerSW();
+    }
+  }
+);

@@ -1,51 +1,70 @@
-import { computed, ref, watch } from "vue";
+import { ref, watch, onMounted, computed } from "vue";
 
 export function useStorage(key) {
-    const stored = localStorage.getItem(key);
+  const all = ref([]);
 
-    const all = ref(stored ? JSON.parse(stored) : []);
+  onMounted(() => {
+    // This code only runs in the browser, after the component is mounted.
+    if (typeof window !== "undefined" && window.localStorage) {
+      const stored = localStorage.getItem(key);
+      if (stored) {
+        try {
+          all.value = JSON.parse(stored);
+        } catch (e) {
+          console.error("Failed to parse localStorage value", e);
+        }
+      }
+    }
 
+    // The watcher is set up here, so it only runs on the client.
     watch(
-        all,
-        (val) => {
+      all,
+      (val) => {
+        if (typeof window !== "undefined" && window.localStorage) {
+          try {
             localStorage.setItem(key, JSON.stringify(val));
-        },
-        { deep: true }
+          } catch (e) {
+            console.error("Failed to save to localStorage", e);
+          }
+        }
+      },
+      { deep: true }
     );
+  });
 
-    function has(item) {
-        return computed(() => all.value.includes(item));
+  function has(item) {
+    return computed(() => all.value.includes(item));
+  }
+
+  function toggle(item) {
+    if (all.value.includes(item)) {
+      remove(item);
+    } else {
+      add(item);
     }
+  }
 
-    function toggle(item) {
-        if (all.value.includes(item)) {
-            remove(item);
-        } else {
-            add(item);
-        }
+  function add(item) {
+    all.value.unshift(item);
+  }
+
+  function addUnique(item) {
+    if (!all.value.includes(item)) {
+      add(item);
     }
+  }
 
-    function add(item) {
-        all.value.unshift(item);
-    }
+  function remove(item) {
+    all.value.splice(all.value.indexOf(item), 1);
+  }
 
-    function addUnique(item) {
-        if (!all.value.includes(item)) {
-            add(item);
-        }
-    }
+  function trim(count) {
+    all.value = all.value.slice(0, count);
+  }
 
-    function remove(item) {
-        all.value.splice(all.value.indexOf(item), 1);
-    }
+  function clear() {
+    all.value = [];
+  }
 
-    function trim(count) {
-        all.value = all.value.slice(0, count);
-    }
-
-    function clear() {
-        all.value = [];
-    }
-
-    return { all, has, trim, toggle, add, addUnique, remove, clear };
+  return { all, has, trim, toggle, add, addUnique, remove, clear };
 }
