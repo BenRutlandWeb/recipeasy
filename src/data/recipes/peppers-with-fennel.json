@@ -5,7 +5,7 @@
   "serves": 6,
   "prepTime": 10,
   "cookTime": 40,
-  "image": "peppers-with-fennel.jpg",
+  "image": "peppers-with-fennel.webp",
   "keywords": ["Dinner", "Vegetarian", "Vegan"],
   "ingredients": [
     { "name": "red peppers", "quantity": 3 },

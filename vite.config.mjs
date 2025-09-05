@@ -3,9 +3,12 @@ import { VitePWA } from "vite-plugin-pwa";
 import components from "unplugin-vue-components/vite";
 import path from "path";
 import manifest from "./src/assets/manifest.json";
-import viteImagemin from "vite-plugin-imagemin";
+//import viteImagemin from "vite-plugin-imagemin";
+import viteImagemin from "@vheemstra/vite-plugin-imagemin";
+import imageminMozjpeg from "imagemin-mozjpeg";
 import imageminWebp from "imagemin-webp";
 import IndexRecipes from "./src/IndexRecipes";
+import GenerateWebp from "./src/GenerateWebp";
 
 export default {
   base: "/recipeasy/",
@@ -24,16 +27,19 @@ export default {
       extensions: ["vue"],
       include: [/\.vue$/, /\.vue\?vue/],
     }),
+    GenerateWebp(),
+    /*
     viteImagemin({
-      webp: {
-        quality: 75, // WebP quality (0–100)
+      plugins: {
+        jpg: imageminMozjpeg(),
       },
-      plugins: [
-        imageminWebp({
-          quality: 75, // You can tweak quality as needed
-        }),
-      ],
+      makeWebp: {
+        plugins: {
+          jpg: imageminWebp(),
+        },
+      },
     }),
+    */
     IndexRecipes(),
   ],
   resolve: {

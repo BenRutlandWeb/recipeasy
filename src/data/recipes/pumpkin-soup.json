@@ -2,7 +2,7 @@
   "$schema": "../../schemas/recipe.json",
   "title": "Pumpkin soup",
   "description": "Whip up this easy pumpkin soup as a starter for a dinner party or a light supper when you need a bit of comfort – it has a lovely silky texture.",
-  "image": "pumpkin-soup.jpg",
+  "image": "pumpkin-soup.webp",
   "serves": 6,
   "prepTime": 20,
   "cookTime": 25,

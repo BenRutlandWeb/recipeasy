@@ -2,7 +2,7 @@
   "$schema": "../../schemas/recipe.json",
   "title": "Chocolate brownies",
   "description": "A super easy brownie recipe for a squidgy chocolate bake. Watch our foolproof recipe video to help you get a perfect traybake every time.",
-  "image": "chocolate-brownies.jpg",
+  "image": "chocolate-brownies.webp",
   "serves": 16,
   "prepTime": 25,
   "cookTime": 30,
