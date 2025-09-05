@@ -19,7 +19,7 @@ const props = defineProps({
       loading="lazy"
       class="block w-16 rounded-l dark:filter dark:brightness-75 dark:contrast-110"
     />
-    <h3 class="truncate-2 text-base font-bold py-2 px-4">
+    <h3 class="line-clamp-2 text-base font-bold py-2 px-4">
       {{ recipe.title }}
     </h3>
   </RouterLink>

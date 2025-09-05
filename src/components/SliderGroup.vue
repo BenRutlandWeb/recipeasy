@@ -1,7 +1,14 @@
 <template>
-  <component :is="tag" class="slider-group flex overflow-auto px-6 pb-8 -mx-6">
+  <component
+    :is="tag"
+    class="[scrollbar-width:none] flex gap-6 overflow-auto px-6 pb-8 -mx-6 snap-x snap-mandatory"
+  >
     <template v-for="item in items">
-      <li :key="item" class="slider-item" v-if="item">
+      <li
+        :key="item"
+        class="snap-start scroll-ms-6 flex-[0_0_min(360px,36vw)]"
+        v-if="item"
+      >
         <slot :item="item">{{ item }}</slot>
       </li>
     </template>
@@ -19,15 +26,3 @@ const props = defineProps({
   },
 });
 </script>
-
-<style scoped>
-.slider-group {
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-}
-.slider-item {
-  scroll-snap-align: start;
-  scroll-margin-inline-start: 1.5rem;
-  flex: 0 0 min(360px, 36vw);
-}
-</style>
