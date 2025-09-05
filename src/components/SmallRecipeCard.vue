@@ -1,10 +1,20 @@
+<script setup>
+import { getImageUrl } from "@/utils/image";
+
+const props = defineProps({
+  recipe: {
+    type: Object,
+  },
+});
+</script>
+
 <template>
   <RouterLink
     :to="{ name: 'recipes-' + recipe.slug }"
     class="flex items-center rounded shadow dark:bg-gray-850"
   >
     <img
-      :src="recipe.image"
+      :src="getImageUrl(recipe.image)"
       :alt="recipe.title"
       width="360"
       height="360"
@@ -16,11 +26,3 @@
     </h3>
   </RouterLink>
 </template>
-
-<script setup>
-const props = defineProps({
-  recipe: {
-    type: Object,
-  },
-});
-</script>

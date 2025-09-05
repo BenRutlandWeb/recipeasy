@@ -1,29 +1,37 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Sausage stuffed peppers",
-    "ingredients": [
-        { "name": "red peppers", "quantity": 2, "description": "Cut lengthways and deseeded" },
-        { "name": "red onion", "quantity": 1, "description": "Finely chopped" },
-        { "name": "garlic cloves", "quantity": 2, "description": "Finely chopped" },
-        { "name": "pork sausages", "quantity": 3, "description": "Removed from the skin" },
-        { "name": "chopped tomatoes", "quantity": 200, "unit": "g" },
-        { "name": "long grain rice", "quantity": 80, "unit": "g" },
-        { "name": "chilli powder", "quantity": 1, "unit": "tsp" },
-        { "name": "paprika", "quantity": 1, "unit": "tsp" },
-        { "name": "olive oil", "quantity": 1, "unit": "tbsp" }
-    ],
-    "methods": [
-        "Heat the oven to 160°C and cook the rice according to the packet instructions.",
-        "Boil the pepper halves for 2-3 minutes and set aside.",
-        "Heat the oil and fry the onion and garlic until soft. Meanwhile, mix the sausage meat with the chilli powder and paprika and fry until brown.",
-        "Add the chopped tomatoes and cooked rice, mix thoroughly, and then stuff the peppers with the mixture.",
-        "Put the stuffed peppers in a covered casserole dish and cook in the over for 15-20 minutes.",
-        "Serve the stuffed peppers with a green salad."
-    ],
-    "keywords": ["Dinner", "Meat"],
-    "image": "/recipeasy/sausage-stuffed-peppers.jpg",
-    "description": "",
-    "serves": 2,
-    "prepTime": 5,
-    "cookTime": 30
+  "$schema": "../../schemas/recipe.json",
+  "title": "Sausage stuffed peppers",
+  "ingredients": [
+    {
+      "name": "red peppers",
+      "quantity": 2,
+      "description": "Cut lengthways and deseeded"
+    },
+    { "name": "red onion", "quantity": 1, "description": "Finely chopped" },
+    { "name": "garlic cloves", "quantity": 2, "description": "Finely chopped" },
+    {
+      "name": "pork sausages",
+      "quantity": 3,
+      "description": "Removed from the skin"
+    },
+    { "name": "chopped tomatoes", "quantity": 200, "unit": "g" },
+    { "name": "long grain rice", "quantity": 80, "unit": "g" },
+    { "name": "chilli powder", "quantity": 1, "unit": "tsp" },
+    { "name": "paprika", "quantity": 1, "unit": "tsp" },
+    { "name": "olive oil", "quantity": 1, "unit": "tbsp" }
+  ],
+  "methods": [
+    "Heat the oven to 160°C and cook the rice according to the packet instructions.",
+    "Boil the pepper halves for 2-3 minutes and set aside.",
+    "Heat the oil and fry the onion and garlic until soft. Meanwhile, mix the sausage meat with the chilli powder and paprika and fry until brown.",
+    "Add the chopped tomatoes and cooked rice, mix thoroughly, and then stuff the peppers with the mixture.",
+    "Put the stuffed peppers in a covered casserole dish and cook in the over for 15-20 minutes.",
+    "Serve the stuffed peppers with a green salad."
+  ],
+  "keywords": ["Dinner", "Meat"],
+  "image": "sausage-stuffed-peppers.jpg",
+  "description": "",
+  "serves": 2,
+  "prepTime": 5,
+  "cookTime": 30
 }

@@ -1,28 +1,33 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Chilli con carne",
-    "ingredients": [
-        { "name": "onion", "quantity": 2, "description": "Finely chopped" },
-        { "name": "red pepper", "quantity": 1, "description": "Chopped" },
-        { "name": "minced beef", "quantity": 500, "unit": "g" },
-        { "name": "kidney beans", "quantity": 400, "unit": "g", "description": "Drained" },
-        { "name": "chopped tomatoes", "quantity": 400, "unit": "g" },
-        { "name": "tomato puree", "quantity": 3, "unit": "tbsp" },
-        { "name": "chilli peppers", "quantity": 2, "description": "Finely sliced" },
-        { "name": "chilli powder", "quantity": 3, "unit": "tsp" },
-        { "name": "long grain rice", "quantity": 300, "unit": "g" }
-    ],
-    "methods": [
-        "On a medium heat, fry the onions and red pepper in a tbsp of olive oil for 5 minutes or until soft. Add the mince and fry until browned.",
-        "Stir in the kidney beans, chopped tomatoes, chilli powder, chilli peppers and tomato puree. Leave to simmer for 30 minutes, stirring occasionally.",
-        "Turn the heat down to medium-low. Meanwhile, cook the rice according to the packet instructions.",
-        "Serve the chilli on a bed of rice, or alternatively, you can serve over a baked potato or nachos."
-    ],
-    "keywords": ["Dinner", "Tex-Mex", "Meat"],
-    "image": "/recipeasy/chilli-con-carne.jpg",
-    "description": "",
-    "serves": 4,
-    "prepTime": 5,
-    "cookTime": 60,
-    "spiceLevel": 2
+  "$schema": "../../schemas/recipe.json",
+  "title": "Chilli con carne",
+  "ingredients": [
+    { "name": "onion", "quantity": 2, "description": "Finely chopped" },
+    { "name": "red pepper", "quantity": 1, "description": "Chopped" },
+    { "name": "minced beef", "quantity": 500, "unit": "g" },
+    {
+      "name": "kidney beans",
+      "quantity": 400,
+      "unit": "g",
+      "description": "Drained"
+    },
+    { "name": "chopped tomatoes", "quantity": 400, "unit": "g" },
+    { "name": "tomato puree", "quantity": 3, "unit": "tbsp" },
+    { "name": "chilli peppers", "quantity": 2, "description": "Finely sliced" },
+    { "name": "chilli powder", "quantity": 3, "unit": "tsp" },
+    { "name": "long grain rice", "quantity": 300, "unit": "g" }
+  ],
+  "methods": [
+    "On a medium heat, fry the onions and red pepper in a tbsp of olive oil for 5 minutes or until soft. Add the mince and fry until browned.",
+    "Stir in the kidney beans, chopped tomatoes, chilli powder, chilli peppers and tomato puree. Leave to simmer for 30 minutes, stirring occasionally.",
+    "Turn the heat down to medium-low. Meanwhile, cook the rice according to the packet instructions.",
+    "Serve the chilli on a bed of rice, or alternatively, you can serve over a baked potato or nachos."
+  ],
+  "keywords": ["Dinner", "Tex-Mex", "Meat"],
+  "image": "chilli-con-carne.jpg",
+  "description": "",
+  "serves": 4,
+  "prepTime": 5,
+  "cookTime": 60,
+  "spiceLevel": 2
 }

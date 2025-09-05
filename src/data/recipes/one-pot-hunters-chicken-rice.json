@@ -1,32 +1,42 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "One-pot hunters chicken and rice",
-    "ingredients": [
-        { "name": "chicken breast", "quantity": 500, "unit": "g", "description": "Diced" },
-        { "name": "bacon", "quantity": 150, "unit": "g", "description": "Diced" },
-        { "name": "onion", "quantity": 1, "description": "Diced" },
-        { "name": "garlic cloves", "quantity": 2, "description": "Finely chopped" },
-        { "name": "BBQ seasoning", "quantity": 1, "unit": "tbsp" },
-        { "name": "smoked paprika", "quantity": 1, "unit": "tbsp" },
-        { "name": "tomato puree", "quantity": 1, "unit": "tbsp" },
-        { "name": "BBQ sauce", "quantity": 1, "unit": "tbsp" },
-        { "name": "basmati rice", "quantity": 250, "unit": "g" },
-        { "name": "chicken stock", "quantity": 600, "unit": "ml" },
-        { "name": "cheese", "quantity": 120, "unit": "g", "description": "Cheddar or Red Leicester" },
-        { "name": "Parsley", "description": "To serve" }
-    ],
-    "methods": [
-        "Fry the chicken, bacon and the seasoning in a large pan.",
-        "Add the onion and cook until soft.",
-        "Add the garlic, tomato puree and BBQ sauce and cook for a few minutes.",
-        "Add the rice and chicken stock, place a lid on the pan and cook on a low heat for 20 mins.",
-        "Sprinkle over the cheese and place under the grill until golden and bubbling.",
-        "Drizzle over more BBQ sauce and parsley and serve."
-    ],
-    "keywords": ["Dinner", "Meat"],
-    "image": "/recipeasy/one-pot-hunters-chicken-rice.jpg",
-    "description": "",
-    "serves": 4,
-    "prepTime": 10,
-    "cookTime": 45
+  "$schema": "../../schemas/recipe.json",
+  "title": "One-pot hunters chicken and rice",
+  "ingredients": [
+    {
+      "name": "chicken breast",
+      "quantity": 500,
+      "unit": "g",
+      "description": "Diced"
+    },
+    { "name": "bacon", "quantity": 150, "unit": "g", "description": "Diced" },
+    { "name": "onion", "quantity": 1, "description": "Diced" },
+    { "name": "garlic cloves", "quantity": 2, "description": "Finely chopped" },
+    { "name": "BBQ seasoning", "quantity": 1, "unit": "tbsp" },
+    { "name": "smoked paprika", "quantity": 1, "unit": "tbsp" },
+    { "name": "tomato puree", "quantity": 1, "unit": "tbsp" },
+    { "name": "BBQ sauce", "quantity": 1, "unit": "tbsp" },
+    { "name": "basmati rice", "quantity": 250, "unit": "g" },
+    { "name": "chicken stock", "quantity": 600, "unit": "ml" },
+    {
+      "name": "cheese",
+      "quantity": 120,
+      "unit": "g",
+      "description": "Cheddar or Red Leicester"
+    },
+    { "name": "Parsley", "description": "To serve" }
+  ],
+  "methods": [
+    "Fry the chicken, bacon and the seasoning in a large pan.",
+    "Add the onion and cook until soft.",
+    "Add the garlic, tomato puree and BBQ sauce and cook for a few minutes.",
+    "Add the rice and chicken stock, place a lid on the pan and cook on a low heat for 20 mins.",
+    "Sprinkle over the cheese and place under the grill until golden and bubbling.",
+    "Drizzle over more BBQ sauce and parsley and serve."
+  ],
+  "keywords": ["Dinner", "Meat"],
+  "image": "one-pot-hunters-chicken-rice.jpg",
+  "description": "",
+  "serves": 4,
+  "prepTime": 10,
+  "cookTime": 45
 }

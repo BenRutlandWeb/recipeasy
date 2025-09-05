@@ -1,29 +1,34 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Plum crumble",
-    "description": "Use two types of sugar and ground almonds for the perfect crunchy crumble topping, layered on top of cinnamon-spiced plums.",
-    "serves": 6,
-    "prepTime": 15,
-    "cookTime": 40,
-    "image": "/recipeasy/plum-crumble.jpg",
-    "keywords": ["Dessert", "Vegetarian"],
-    "ingredients": [
-        { "name": "plums", "quantity": 800, "unit": "g", "description": "Halved and stoned" },
-        { "name": "light brown sugar", "quantity": 50, "unit": "g" },
-        { "name": "orange", "quantity": 1, "description": "Zested" },
-        { "name": "ground cinnamon", "quantity": 1, "unit": "tsp" },
-        { "name": "plain flour", "quantity": 250, "unit": "g" },
-        { "name": "butter", "quantity": 150, "unit": "g" },
-        { "name": "caster sugar", "quantity": 80, "unit": "g" },
-        { "name": "demerara sugar", "quantity": 80, "unit": "g" },
-        { "name": "ground almonds", "quantity": 50, "unit": "g" }
-    ],
-    "methods": [
-        "Heat the oven to 200C/180C fan/gas 6. Put the plums into the base of a shallow gratin dish about 28cm long.",
-        "Mix together the sugar, orange zest, cinnamon and 1tsp flour and sprinkle over the plums. Trickle over 2 tbsp water.",
-        "Rub the butter into the flour using your hands and then stir in the other ingredients.",
-        "Scatter the crumble over the plums and bake in the oven for 30-40 mins until golden brown.",
-        "Leave for about 15 mins before serving with custard or cream."
-    ],
-    "diet": ["vegetarian"]
+  "$schema": "../../schemas/recipe.json",
+  "title": "Plum crumble",
+  "description": "Use two types of sugar and ground almonds for the perfect crunchy crumble topping, layered on top of cinnamon-spiced plums.",
+  "serves": 6,
+  "prepTime": 15,
+  "cookTime": 40,
+  "image": "plum-crumble.jpg",
+  "keywords": ["Dessert", "Vegetarian"],
+  "ingredients": [
+    {
+      "name": "plums",
+      "quantity": 800,
+      "unit": "g",
+      "description": "Halved and stoned"
+    },
+    { "name": "light brown sugar", "quantity": 50, "unit": "g" },
+    { "name": "orange", "quantity": 1, "description": "Zested" },
+    { "name": "ground cinnamon", "quantity": 1, "unit": "tsp" },
+    { "name": "plain flour", "quantity": 250, "unit": "g" },
+    { "name": "butter", "quantity": 150, "unit": "g" },
+    { "name": "caster sugar", "quantity": 80, "unit": "g" },
+    { "name": "demerara sugar", "quantity": 80, "unit": "g" },
+    { "name": "ground almonds", "quantity": 50, "unit": "g" }
+  ],
+  "methods": [
+    "Heat the oven to 200C/180C fan/gas 6. Put the plums into the base of a shallow gratin dish about 28cm long.",
+    "Mix together the sugar, orange zest, cinnamon and 1tsp flour and sprinkle over the plums. Trickle over 2 tbsp water.",
+    "Rub the butter into the flour using your hands and then stir in the other ingredients.",
+    "Scatter the crumble over the plums and bake in the oven for 30-40 mins until golden brown.",
+    "Leave for about 15 mins before serving with custard or cream."
+  ],
+  "diet": ["vegetarian"]
 }

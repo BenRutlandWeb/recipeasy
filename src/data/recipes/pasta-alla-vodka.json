@@ -1,31 +1,36 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Pasta alla vodka",
-    "ingredients": [
-        { "name": "olive oil", "quantity": 2, "unit": "tbsp" },
-        { "name": "onion", "quantity": 0.5, "description": "Finely chopped" },
-        { "name": "garlic cloves", "quantity": 3, "description": "Crushed" },
-        { "name": "chilli flakes", "quantity": 0.25, "unit": "tsp" },
-        { "name": "tomato puree", "quantity": 100, "unit": "g" },
-        { "name": "vodka", "quantity": 5, "unit": "tbsp" },
-        { "name": "double cream", "quantity": 100, "unit": "ml" },
-        { "name": "penne pasta", "quantity": 150, "unit": "g" },
-        { "name": "parmesan cheese", "quantity": 30, "unit": "g", "description": "Finely grated to serve" },
-        { "name": "Basil", "description": "A few sprigs to serve" }
-    ],
-    "methods": [
-        "Heat the oil in a large frying pan or casserole dish. Add the onion and a large pinch of salt and gently fry over a low heat for 10 mins or until softened and translucent.",
-        "Add the garlic and chilli flakes and cook for 30 seconds. Stir through the tomato puree, cook for 2 mins, then stir through the vodka and cook for 3 mins.",
-        "Quickly stir through the cream to combine, then remove from the heat.",
-        "Cook the pasta in salted water following pack instructions. Drain and reserve 150ml cooking water.",
-        "Add roughly 50ml of the water to the tomato sauce, then tip in the pasta and cheese, tossing everything together over a low heat until well coated and glossy.",
-        "Season to taste, then serve with a sprinkling of the extra parmesan, a good grinding of black pepper and the basil leaves scattered over the top."
-    ],
-    "keywords": ["Dinner", "Italian", "Vegetarian"],
-    "image": "/recipeasy/pasta-alla-vodka.jpg",
-    "description": "Sit back and tuck into a big bowl of pasta alla vodka, a creamy tomato pasta with - as you can guess - vodka, which balances out the intense flavours.",
-    "serves": 2,
-    "prepTime": 5,
-    "cookTime": 25,
-    "diet": ["vegetarian"]
+  "$schema": "../../schemas/recipe.json",
+  "title": "Pasta alla vodka",
+  "ingredients": [
+    { "name": "olive oil", "quantity": 2, "unit": "tbsp" },
+    { "name": "onion", "quantity": 0.5, "description": "Finely chopped" },
+    { "name": "garlic cloves", "quantity": 3, "description": "Crushed" },
+    { "name": "chilli flakes", "quantity": 0.25, "unit": "tsp" },
+    { "name": "tomato puree", "quantity": 100, "unit": "g" },
+    { "name": "vodka", "quantity": 5, "unit": "tbsp" },
+    { "name": "double cream", "quantity": 100, "unit": "ml" },
+    { "name": "penne pasta", "quantity": 150, "unit": "g" },
+    {
+      "name": "parmesan cheese",
+      "quantity": 30,
+      "unit": "g",
+      "description": "Finely grated to serve"
+    },
+    { "name": "Basil", "description": "A few sprigs to serve" }
+  ],
+  "methods": [
+    "Heat the oil in a large frying pan or casserole dish. Add the onion and a large pinch of salt and gently fry over a low heat for 10 mins or until softened and translucent.",
+    "Add the garlic and chilli flakes and cook for 30 seconds. Stir through the tomato puree, cook for 2 mins, then stir through the vodka and cook for 3 mins.",
+    "Quickly stir through the cream to combine, then remove from the heat.",
+    "Cook the pasta in salted water following pack instructions. Drain and reserve 150ml cooking water.",
+    "Add roughly 50ml of the water to the tomato sauce, then tip in the pasta and cheese, tossing everything together over a low heat until well coated and glossy.",
+    "Season to taste, then serve with a sprinkling of the extra parmesan, a good grinding of black pepper and the basil leaves scattered over the top."
+  ],
+  "keywords": ["Dinner", "Italian", "Vegetarian"],
+  "image": "pasta-alla-vodka.jpg",
+  "description": "Sit back and tuck into a big bowl of pasta alla vodka, a creamy tomato pasta with - as you can guess - vodka, which balances out the intense flavours.",
+  "serves": 2,
+  "prepTime": 5,
+  "cookTime": 25,
+  "diet": ["vegetarian"]
 }

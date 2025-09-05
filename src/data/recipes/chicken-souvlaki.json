@@ -1,30 +1,38 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Chicken souvlaki",
-    "ingredients": [
-        { "name": "chicken thighs", "quantity": 12, "description": "Boneless, skinless" },
-        { "name": "olive oil", "quantity": 4, "unit": "tbsp" },
-        { "name": "dried oregano", "quantity": 2, "unit": "tsp" },
-        { "name": "dried mint", "quantity": 1, "unit": "tsp" },
-        { "name": "groupd cumin", "quantity": 1, "unit": "tsp" },
-        { "name": "coriander", "quantity": 1, "unit": "tsp" },
-        { "name": "sweet paprika", "quantity": 1, "unit": "tsp" },
-        { "name": "lemon", "quantity": 1, "description": "Juice and zest, plus 1 lemon cut into wedges to serve" },
-        { "name": "garlic cloves", "quantity": 4, "description": "Crushed" },
-        { "name": "pitta wraps", "quantity": 4 },
-        { "name": "Tzatziki" }
-    ],
-    "methods": [
-        "Tip the chicken into a large bowl and add the marinade ingredients, along with 1 tsp salt and plenty of black pepper. Mix well, ensuring each thigh is well coated. Cover and chill for at least 3 hrs, or up to 48 hrs if you have time.",
-        "Heat the grill to its highest setting. Line a roasting tin with foil and find metal skewers long enough to sit across the top with a little space underneath. Take one thigh and thread it over 2 skewers, so it has a skewer through either side. Thread another piece of chicken on top, leaving a slight gap between each piece; you should fit 6 thighs on each pair of skewers. Position the skewers on top of the roasting tin and set aside while you finish the pittas.",
-        "Heat the pitta wraps as per the packet instructions and keep warm in the bottom of the oven while you cook the chicken.",
-        "Put the chicken under the hot grill and cook for 15-20 mins, brushing with oil and any juices from the bottom of the tin regularly, and turning halfway through cooking. Once cooked, remove from the oven and rest for 5 mins. Alternatively you can cook the chicken skewers on the barbecue.",
-        "Cut through each pair of skewers to make seperate kebabs and serve in the warm bread, with lettuce, tomato, red onion, lemon wedges and tzatziki."
-    ],
-    "keywords": ["Dinner", "Meat", "Greek"],
-    "image": "/recipeasy/chicken-souvlaki.jpg",
-    "description": "<mark>Marinate the chicken for as long as possible</mark> to soak up all the flavour and make it really tender. Serve with warm bread, salad and tzatziki.",
-    "serves": 4,
-    "prepTime": 45,
-    "cookTime": 40
+  "$schema": "../../schemas/recipe.json",
+  "title": "Chicken souvlaki",
+  "ingredients": [
+    {
+      "name": "chicken thighs",
+      "quantity": 12,
+      "description": "Boneless, skinless"
+    },
+    { "name": "olive oil", "quantity": 4, "unit": "tbsp" },
+    { "name": "dried oregano", "quantity": 2, "unit": "tsp" },
+    { "name": "dried mint", "quantity": 1, "unit": "tsp" },
+    { "name": "groupd cumin", "quantity": 1, "unit": "tsp" },
+    { "name": "coriander", "quantity": 1, "unit": "tsp" },
+    { "name": "sweet paprika", "quantity": 1, "unit": "tsp" },
+    {
+      "name": "lemon",
+      "quantity": 1,
+      "description": "Juice and zest, plus 1 lemon cut into wedges to serve"
+    },
+    { "name": "garlic cloves", "quantity": 4, "description": "Crushed" },
+    { "name": "pitta wraps", "quantity": 4 },
+    { "name": "Tzatziki" }
+  ],
+  "methods": [
+    "Tip the chicken into a large bowl and add the marinade ingredients, along with 1 tsp salt and plenty of black pepper. Mix well, ensuring each thigh is well coated. Cover and chill for at least 3 hrs, or up to 48 hrs if you have time.",
+    "Heat the grill to its highest setting. Line a roasting tin with foil and find metal skewers long enough to sit across the top with a little space underneath. Take one thigh and thread it over 2 skewers, so it has a skewer through either side. Thread another piece of chicken on top, leaving a slight gap between each piece; you should fit 6 thighs on each pair of skewers. Position the skewers on top of the roasting tin and set aside while you finish the pittas.",
+    "Heat the pitta wraps as per the packet instructions and keep warm in the bottom of the oven while you cook the chicken.",
+    "Put the chicken under the hot grill and cook for 15-20 mins, brushing with oil and any juices from the bottom of the tin regularly, and turning halfway through cooking. Once cooked, remove from the oven and rest for 5 mins. Alternatively you can cook the chicken skewers on the barbecue.",
+    "Cut through each pair of skewers to make seperate kebabs and serve in the warm bread, with lettuce, tomato, red onion, lemon wedges and tzatziki."
+  ],
+  "keywords": ["Dinner", "Meat", "Greek"],
+  "image": "chicken-souvlaki.jpg",
+  "description": "<mark>Marinate the chicken for as long as possible</mark> to soak up all the flavour and make it really tender. Serve with warm bread, salad and tzatziki.",
+  "serves": 4,
+  "prepTime": 45,
+  "cookTime": 40
 }

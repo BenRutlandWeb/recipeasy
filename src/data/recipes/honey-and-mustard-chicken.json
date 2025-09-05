@@ -1,26 +1,40 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Honey and mustard chicken",
-    "description": "Chicken breast fillets marinated in honey, Dijon mustard, olive oil and balsamic vinegar, served with pasta and sun-dried tomatoes.",
-    "serves": 4,
-    "prepTime": 20,
-    "cookTime": 20,
-    "image": "/recipeasy/honey-and-mustard-chicken.jpg",
-    "keywords": ["Dinner", "Italian", "Meat"],
-    "ingredients": [
-        { "name": "Dijon mustard", "quantity": 3, "unit": "tbsp" },
-        { "name": "extra virgin olive oil", "quantity": 1, "unit": "tbsp", "description": "Plus extra for frying" },
-        { "name": "balsamic vinegar", "quantity": 1, "unit": "tbsp" },
-        { "name": "clear honey", "quantity": 1, "unit": "tbsp" },
-        { "name": "chicken breast fillets", "quantity": 550, "unit": "g", "description": "Cut into long strips" },
-        { "name": "penne pasta", "quantity": 300, "unit": "g" },
-        { "name": "sun-dried tomatoes", "quantity": 10, "description": "Cut into small pieces" }
-    ],
-    "methods": [
-        "Combine the honey, mustard, olive oil and balsamic vinegar in a bowl, mixing until smooth.",
-        "Coat the chicken breast fillets with the marinade, and leave in the fridge for 30 minutes or more.",
-        "Heat some oil in a large pan or wok. Add the chicken and marinade to the pan and cook until the chicken is golden brown.",
-        "In the meantime, cook the pasta according to the packet instructions. With 2 minutes to go, add the sun-dried tomatoes to the chicken.",
-        "When the pasta is cooked, drain and stir into the chicken. Serve with a salad."
-    ]
+  "$schema": "../../schemas/recipe.json",
+  "title": "Honey and mustard chicken",
+  "description": "Chicken breast fillets marinated in honey, Dijon mustard, olive oil and balsamic vinegar, served with pasta and sun-dried tomatoes.",
+  "serves": 4,
+  "prepTime": 20,
+  "cookTime": 20,
+  "image": "honey-and-mustard-chicken.jpg",
+  "keywords": ["Dinner", "Italian", "Meat"],
+  "ingredients": [
+    { "name": "Dijon mustard", "quantity": 3, "unit": "tbsp" },
+    {
+      "name": "extra virgin olive oil",
+      "quantity": 1,
+      "unit": "tbsp",
+      "description": "Plus extra for frying"
+    },
+    { "name": "balsamic vinegar", "quantity": 1, "unit": "tbsp" },
+    { "name": "clear honey", "quantity": 1, "unit": "tbsp" },
+    {
+      "name": "chicken breast fillets",
+      "quantity": 550,
+      "unit": "g",
+      "description": "Cut into long strips"
+    },
+    { "name": "penne pasta", "quantity": 300, "unit": "g" },
+    {
+      "name": "sun-dried tomatoes",
+      "quantity": 10,
+      "description": "Cut into small pieces"
+    }
+  ],
+  "methods": [
+    "Combine the honey, mustard, olive oil and balsamic vinegar in a bowl, mixing until smooth.",
+    "Coat the chicken breast fillets with the marinade, and leave in the fridge for 30 minutes or more.",
+    "Heat some oil in a large pan or wok. Add the chicken and marinade to the pan and cook until the chicken is golden brown.",
+    "In the meantime, cook the pasta according to the packet instructions. With 2 minutes to go, add the sun-dried tomatoes to the chicken.",
+    "When the pasta is cooked, drain and stir into the chicken. Serve with a salad."
+  ]
 }

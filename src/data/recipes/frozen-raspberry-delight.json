@@ -1,25 +1,25 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Frozen raspberry delight",
-    "ingredients": [
-        { "name": "swiss roll", "quantity": 1 },
-        { "name": "brandy", "quantity": 3, "unit": "tbsp" },
-        { "name": "raspberry yogurt", "quantity": 300, "unit": "ml" },
-        { "name": "raspberries", "quantity": 100, "unit": "g" },
-        { "name": "double cream", "quantity": 300, "unit": "ml" }
-    ],
-    "methods": [
-        "Slice the Swiss roll thinly and use to line the base and sides of a 900ml pudding basin.",
-        "Carefully spoon over the brandy.",
-        "In a bowl, mix together the yogurt and raspberries.",
-        "Whip the cream until thick and fold into the yogurt mixture. 5. Pour over the Swiss roll and freeze for 2 hours or until firm.",
-        "Dip the basin briefly in warm water to help turn out the pudding.",
-        "Decorate with piped whipped cream and serve immediately."
-    ],
-    "keywords": ["Dessert"],
-    "image": "/recipeasy/frozen-raspberry-delight.jpg",
-    "description": "",
-    "serves": 4,
-    "prepTime": 10,
-    "cookTime": 120
+  "$schema": "../../schemas/recipe.json",
+  "title": "Frozen raspberry delight",
+  "ingredients": [
+    { "name": "swiss roll", "quantity": 1 },
+    { "name": "brandy", "quantity": 3, "unit": "tbsp" },
+    { "name": "raspberry yogurt", "quantity": 300, "unit": "ml" },
+    { "name": "raspberries", "quantity": 100, "unit": "g" },
+    { "name": "double cream", "quantity": 300, "unit": "ml" }
+  ],
+  "methods": [
+    "Slice the Swiss roll thinly and use to line the base and sides of a 900ml pudding basin.",
+    "Carefully spoon over the brandy.",
+    "In a bowl, mix together the yogurt and raspberries.",
+    "Whip the cream until thick and fold into the yogurt mixture. 5. Pour over the Swiss roll and freeze for 2 hours or until firm.",
+    "Dip the basin briefly in warm water to help turn out the pudding.",
+    "Decorate with piped whipped cream and serve immediately."
+  ],
+  "keywords": ["Dessert"],
+  "image": "frozen-raspberry-delight.jpg",
+  "description": "",
+  "serves": 4,
+  "prepTime": 10,
+  "cookTime": 120
 }

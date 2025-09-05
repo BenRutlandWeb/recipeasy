@@ -1,29 +1,43 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Creamy salmon pasta",
-    "ingredients": [
-        { "name": "salmon fillets", "quantity": 2 },
-        { "name": "olive oil", "quantity": 1, "unit": "tbsp" },
-        { "name": "penne pasta", "quantity": 175, "unit": "g" },
-        { "name": "garlic clove", "quantity": 1, "description": "Crushed" },
-        { "name": "shallots", "quantity": 2, "description": "Or 1 small onion, finely chopped" },
-        { "name": "white wine", "quantity": 100, "unit": "ml" },
-        { "name": "double cream", "quantity": 200, "unit": "ml", "description": "Or crème fraîche" },
-        { "name": "lemon", "quantity": 0.25, "description": "Zested and juiced" },
-        { "name": "dill", "quantity": 10, "unit": "g", "description": "Finely chopped" }
-    ],
-    "methods": [
-        "Heat the oven to 180C, place the salmon on a baking tray, drizzle with oil and roast for 12 mins.",
-        "While the salmon is cooking, boil the pasta for 10 mins until al dente, then drain, reserving 100ml of the pasta water.",
-        "Heat the oil on a medium heat in a wide frying pan and fry the shallots for 6 mins until softened. Add the garlic and fry for a minute more until fragrant.",
-        "Add the wine, bubble for a few minutes until reduced by half, then add the cream and season well. Bring to a very gentle simmer.",
-        "Flake the cooked salmon into big chunky pieces, leaving the skin behind. Add to the sauce with the cooked pasta.",
-        "Add the lemon zest, a squeeze of the juice and most of the dill. Toss gently to keep the salmon in big pieces. Serve with a green salad."
-    ],
-    "keywords": ["Dinner", "Fish", "Italian"],
-    "image": "/recipeasy/creamy-salmon-pasta.jpg",
-    "description": "Indulge in this creamy salmon dish for two. It's comforting and filling, and ready in just 30 minutes. Serve with a green salad.",
-    "serves": 2,
-    "prepTime": 15,
-    "cookTime": 15
+  "$schema": "../../schemas/recipe.json",
+  "title": "Creamy salmon pasta",
+  "ingredients": [
+    { "name": "salmon fillets", "quantity": 2 },
+    { "name": "olive oil", "quantity": 1, "unit": "tbsp" },
+    { "name": "penne pasta", "quantity": 175, "unit": "g" },
+    { "name": "garlic clove", "quantity": 1, "description": "Crushed" },
+    {
+      "name": "shallots",
+      "quantity": 2,
+      "description": "Or 1 small onion, finely chopped"
+    },
+    { "name": "white wine", "quantity": 100, "unit": "ml" },
+    {
+      "name": "double cream",
+      "quantity": 200,
+      "unit": "ml",
+      "description": "Or crème fraîche"
+    },
+    { "name": "lemon", "quantity": 0.25, "description": "Zested and juiced" },
+    {
+      "name": "dill",
+      "quantity": 10,
+      "unit": "g",
+      "description": "Finely chopped"
+    }
+  ],
+  "methods": [
+    "Heat the oven to 180C, place the salmon on a baking tray, drizzle with oil and roast for 12 mins.",
+    "While the salmon is cooking, boil the pasta for 10 mins until al dente, then drain, reserving 100ml of the pasta water.",
+    "Heat the oil on a medium heat in a wide frying pan and fry the shallots for 6 mins until softened. Add the garlic and fry for a minute more until fragrant.",
+    "Add the wine, bubble for a few minutes until reduced by half, then add the cream and season well. Bring to a very gentle simmer.",
+    "Flake the cooked salmon into big chunky pieces, leaving the skin behind. Add to the sauce with the cooked pasta.",
+    "Add the lemon zest, a squeeze of the juice and most of the dill. Toss gently to keep the salmon in big pieces. Serve with a green salad."
+  ],
+  "keywords": ["Dinner", "Fish", "Italian"],
+  "image": "creamy-salmon-pasta.jpg",
+  "description": "Indulge in this creamy salmon dish for two. It's comforting and filling, and ready in just 30 minutes. Serve with a green salad.",
+  "serves": 2,
+  "prepTime": 15,
+  "cookTime": 15
 }

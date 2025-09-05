@@ -1,27 +1,37 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Pork with lemon and pine nuts",
-    "ingredients": [
-        { "name": "pork fillet", "quantity": 500, "unit": "g" },
-        { "name": "parsley", "quantity": 15, "unit": "g", "description": "Coarsly chopped" },
-        { "name": "plain flour", "quantity": 15, "unit": "g", "description": "Seasoned with salt and pepper" },
-        { "name": "pine nuts", "quantity": 25, "unit": "g" },
-        { "name": "lemon", "quantity": 1, "description": "Zest and juice" },
-        { "name": "honey", "quantity": 1, "unit": "tbsp" },
-        { "name": "tagliatelle pasta", "quantity": 300, "unit": "g" }
-    ],
-    "methods": [
-        "Cut the pork into 2cm thick slices. Toss in seasoned flour to coat very lightly and shake of the excess.",
-        "Heat 1 tbsp of olive oil in a large frying pan and fry the pork in a single layer for a few minutes on each side or until browned. Remove from the pan and keep warm.",
-        "Add another tbsp of oil to the pan and fry the pine nuts until lightly browned.",
-        "Stir in the lemon zest, juice and honey. Bubble and stir briefly to make a sauce.",
-        "Return the pork to the pan and add the parsley. Continue to cook for another few minutes to heat through.",
-        "Serve with buttered papperdelle or tagliatelle."
-    ],
-    "keywords": ["Dinner", "Meat", "Italian"],
-    "image": "/recipeasy/pork-with-lemon-and-pine-nuts.jpg",
-    "description": "",
-    "serves": 4,
-    "prepTime": 5,
-    "cookTime": 15
+  "$schema": "../../schemas/recipe.json",
+  "title": "Pork with lemon and pine nuts",
+  "ingredients": [
+    { "name": "pork fillet", "quantity": 500, "unit": "g" },
+    {
+      "name": "parsley",
+      "quantity": 15,
+      "unit": "g",
+      "description": "Coarsly chopped"
+    },
+    {
+      "name": "plain flour",
+      "quantity": 15,
+      "unit": "g",
+      "description": "Seasoned with salt and pepper"
+    },
+    { "name": "pine nuts", "quantity": 25, "unit": "g" },
+    { "name": "lemon", "quantity": 1, "description": "Zest and juice" },
+    { "name": "honey", "quantity": 1, "unit": "tbsp" },
+    { "name": "tagliatelle pasta", "quantity": 300, "unit": "g" }
+  ],
+  "methods": [
+    "Cut the pork into 2cm thick slices. Toss in seasoned flour to coat very lightly and shake of the excess.",
+    "Heat 1 tbsp of olive oil in a large frying pan and fry the pork in a single layer for a few minutes on each side or until browned. Remove from the pan and keep warm.",
+    "Add another tbsp of oil to the pan and fry the pine nuts until lightly browned.",
+    "Stir in the lemon zest, juice and honey. Bubble and stir briefly to make a sauce.",
+    "Return the pork to the pan and add the parsley. Continue to cook for another few minutes to heat through.",
+    "Serve with buttered papperdelle or tagliatelle."
+  ],
+  "keywords": ["Dinner", "Meat", "Italian"],
+  "image": "pork-with-lemon-and-pine-nuts.jpg",
+  "description": "",
+  "serves": 4,
+  "prepTime": 5,
+  "cookTime": 15
 }

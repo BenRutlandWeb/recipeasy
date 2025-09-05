@@ -1,31 +1,49 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Massaman curry",
-    "ingredients": [
-        { "name": "massaman curry paste", "quantity": 1, "unit": "tbsp" },
-        { "name": "fish sauce", "quantity": 1, "unit": "tbsp" },
-        { "name": "palm sugar", "quantity": 0.5, "unit": "tbsp" },
-        { "name": "coconut milk", "quantity": 250, "unit": "ml", "description": "Mixed with the same amount of water" },
-        { "name": "roasted peanuts", "quantity": 2, "unit": "tbsp", "description": "Roughly chopped" },
-        { "name": "bay leaves", "quantity": 2 },
-        { "name": "onion", "quantity": 0.25, "description": "Roughly chopped" },
-        { "name": "tomato", "quantity": 0.5, "description": "Halved or quartered" },
-        { "name": "potato", "quantity": 0.5, "description": "Cut into large chunks" },
-        { "name": "chicken breast", "quantity": 1, "description": "Cut into large pieces" },
-        { "name": "jasmine rice", "quantity": 150, "unit": "g" }
-    ],
-    "methods": [
-        "Add the massaman curry paste to a pan, stir until fragrant. Mix the coconut milk and water together",
-        "Add half of the coconut milk, stir until well combined, bring to a boil.",
-        "Add the roasted peanuts and bay leaves, then add the meat, boil until the meat is cooked and tender.",
-        "Pour in the remaining coconut milk. Reduce the heat and add a pinch of salt, the fish sauce and palm sugar and stir until dissolved.",
-        "Add the potatoes and onions, increase the heat and add the tomatoes, boiling for about 1 minute.",
-        "Turn off the heat, serve in a bowl with rice."
-    ],
-    "keywords": ["Dinner", "Meat", "Thai"],
-    "image": "/recipeasy/massaman-curry.jpg",
-    "description": "",
-    "serves": 2,
-    "prepTime": 5,
-    "cookTime": 15
+  "$schema": "../../schemas/recipe.json",
+  "title": "Massaman curry",
+  "ingredients": [
+    { "name": "massaman curry paste", "quantity": 1, "unit": "tbsp" },
+    { "name": "fish sauce", "quantity": 1, "unit": "tbsp" },
+    { "name": "palm sugar", "quantity": 0.5, "unit": "tbsp" },
+    {
+      "name": "coconut milk",
+      "quantity": 250,
+      "unit": "ml",
+      "description": "Mixed with the same amount of water"
+    },
+    {
+      "name": "roasted peanuts",
+      "quantity": 2,
+      "unit": "tbsp",
+      "description": "Roughly chopped"
+    },
+    { "name": "bay leaves", "quantity": 2 },
+    { "name": "onion", "quantity": 0.25, "description": "Roughly chopped" },
+    { "name": "tomato", "quantity": 0.5, "description": "Halved or quartered" },
+    {
+      "name": "potato",
+      "quantity": 0.5,
+      "description": "Cut into large chunks"
+    },
+    {
+      "name": "chicken breast",
+      "quantity": 1,
+      "description": "Cut into large pieces"
+    },
+    { "name": "jasmine rice", "quantity": 150, "unit": "g" }
+  ],
+  "methods": [
+    "Add the massaman curry paste to a pan, stir until fragrant. Mix the coconut milk and water together",
+    "Add half of the coconut milk, stir until well combined, bring to a boil.",
+    "Add the roasted peanuts and bay leaves, then add the meat, boil until the meat is cooked and tender.",
+    "Pour in the remaining coconut milk. Reduce the heat and add a pinch of salt, the fish sauce and palm sugar and stir until dissolved.",
+    "Add the potatoes and onions, increase the heat and add the tomatoes, boiling for about 1 minute.",
+    "Turn off the heat, serve in a bowl with rice."
+  ],
+  "keywords": ["Dinner", "Meat", "Thai"],
+  "image": "massaman-curry.jpg",
+  "description": "",
+  "serves": 2,
+  "prepTime": 5,
+  "cookTime": 15
 }
