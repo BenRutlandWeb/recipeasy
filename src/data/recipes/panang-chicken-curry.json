@@ -1,0 +1,134 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Panang chicken curry",
+  "description": "This classic Thai curry features a sweet, salty and zesty sauce, with many layers of rich flavour and spice.",
+  "image": "/recipeasy/panang-chicken-curry.jpg",
+  "serves": 2,
+  "prepTime": 20,
+  "cookTime": 15,
+  "keywords": ["Meat", "Dinner", "Thai"],
+  "spiceLevel": 3,
+  "ingredients": [
+    {
+      "name": "coconut milk",
+      "quantity": 400,
+      "unit": "ml",
+      "description": "can (don’t shake to combine)"
+    },
+    {
+      "name": "panang curry paste",
+      "quantity": 2,
+      "unit": "tbsp"
+    },
+    {
+      "name": "chicken breast",
+      "quantity": 200,
+      "unit": "g",
+      "description": "thinly sliced"
+    },
+    {
+      "name": "French beans",
+      "quantity": 100,
+      "unit": "g",
+      "description": "halved"
+    },
+    {
+      "name": "fish sauce",
+      "quantity": 3,
+      "unit": "tbsp"
+    },
+    {
+      "name": "palm sugar",
+      "quantity": 2,
+      "unit": "tbsp",
+      "description": "or brown sugar"
+    },
+    {
+      "name": "makrut lime leaves",
+      "quantity": 2,
+      "description": "central woody stem removed, finely shredded"
+    },
+    {
+      "name": "Thai basil leaves",
+      "description": "handful"
+    },
+    {
+      "name": "cooked jasmine rice",
+      "description": "to serve"
+    },
+    {
+      "name": "red chilli",
+      "quantity": 0.5,
+      "description": "large, thinly sliced, to serve"
+    },
+    {
+      "name": "dried red chillies",
+      "quantity": 4,
+      "description": "large, sliced"
+    },
+    {
+      "name": "fresh red chillies",
+      "quantity": 6,
+      "description": "large, sliced"
+    },
+    {
+      "name": "shrimp paste",
+      "quantity": 1,
+      "unit": "tsp",
+      "description": "(or miso paste)"
+    },
+    {
+      "name": "garlic cloves",
+      "quantity": 4,
+      "description": "chopped"
+    },
+    {
+      "name": "galangal",
+      "quantity": 1,
+      "unit": "tbsp",
+      "description": "finely sliced"
+    },
+    {
+      "name": "lemongrass",
+      "quantity": 1,
+      "unit": "tbsp",
+      "description": "finely sliced"
+    },
+    {
+      "name": "limes",
+      "quantity": 2,
+      "description": "zested (around 1 tsp zest)"
+    },
+    {
+      "name": "ground white pepper",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "ground coriander",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "ground cumin",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "ground nutmeg",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "peanuts",
+      "quantity": 2,
+      "unit": "tbsp"
+    }
+  ],
+  "methods": [
+    "First, make the curry paste. Use a pestle and mortar to pound together the dried and fresh chillies, shrimp paste, garlic, galangal, lemongrass, lime zest, white pepper, coriander, cumin, nutmeg and peanuts, plus 1 tsp salt. You should have a rough paste. Alternatively, add all the ingredients to a food processor along with 2-3 tbsp of coconut milk and pulse until you have a paste. Store in a lidded jar in the fridge. Will keep for up to two weeks.",
+    "Add 2-3 tbsp of the thick part of the coconut milk into a saucepan over a medium-high heat. When the coconut milk starts bubbling, add 1-2 tbsp of the curry paste and stir well for about 1 min, until fragrant.",
+    "Stir in the chicken and let it cook for about 3-4 mins until beginning to brown all over. Follow with the French beans and stir well.",
+    "Season with the fish sauce and sugar, then add the rest of coconut milk. Mix well, add half the makrut lime leaves and simmer for 3-5 mins until the chicken is cooked through. Taste and add more sugar or fish sauce if necessary – it should be salty and nutty, and the sweetness should come through. Add the Thai basil leaves, give it a quick mix and take off the heat. Serve with steamed jasmine rice, garnished with the sliced chilli and the rest of the makrut lime leaves."
+  ]
+}

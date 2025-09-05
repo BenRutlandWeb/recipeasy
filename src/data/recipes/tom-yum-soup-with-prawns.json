@@ -1,0 +1,92 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Tom yum soup with prawns",
+  "description": "Enjoy an impressive homemade Thai tom yum soup that's healthy and easy to make – it's vibrant, fresh and full of flavour.",
+  "image": "/recipeasy/tom-yum-soup-with-prawns.jpg",
+  "serves": 2,
+  "prepTime": 10,
+  "cookTime": 30,
+  "keywords": ["Seafood", "Thai", "Dinner"],
+  "spiceLevel": 2,
+  "ingredients": [
+    {
+      "name": "onions",
+      "quantity": 200,
+      "unit": "g",
+      "description": "roughly chopped"
+    },
+    {
+      "name": "tomatoes",
+      "quantity": 150,
+      "unit": "g",
+      "description": "roughly chopped"
+    },
+    {
+      "name": "red chilli",
+      "quantity": 20,
+      "unit": "g",
+      "description": "sliced"
+    },
+    {
+      "name": "galangal",
+      "quantity": 15,
+      "unit": "g",
+      "description": "peeled and sliced"
+    },
+    {
+      "name": "lemongrass stalks",
+      "quantity": 2,
+      "description": "bashed"
+    },
+    {
+      "name": "whole raw king prawns",
+      "quantity": 270,
+      "unit": "g",
+      "description": "peeled and deveined, heads removed and reserved"
+    },
+    {
+      "name": "chicken stock cube",
+      "quantity": 1
+    },
+    {
+      "name": "oyster mushrooms",
+      "quantity": 120,
+      "unit": "g",
+      "description": "sliced"
+    },
+    {
+      "name": "lime leaves",
+      "quantity": 8
+    },
+    {
+      "name": "fish sauce",
+      "quantity": 5,
+      "unit": "tsp"
+    },
+    {
+      "name": "lime juice",
+      "quantity": 5,
+      "unit": "tsp"
+    },
+    {
+      "name": "Thai coconut milk",
+      "quantity": 70,
+      "unit": "ml"
+    },
+    {
+      "name": "Thai chilli jam",
+      "quantity": 1,
+      "unit": "tbsp",
+      "description": "(optional)"
+    },
+    {
+      "name": "coriander",
+      "description": "small handful, roughly chopped (optional)"
+    }
+  ],
+  "methods": [
+    "Pour 1.3 litres water into a large saucepan over a high heat. Add the onion, tomato, chilli, galangal, lemongrass, prawn heads and chicken stock cube. Stir and bring to a boil, then reduce the heat to medium and simmer for 20 mins until the liquid has reduced.",
+    "Carefully strain the hot broth into a large heatproof bowl or jug, then discard the prawn heads. Return the strained veg and herb mixture to the saucepan and pour over the broth. Stir through the mushrooms and lime leaves, then cook for 3 mins until the mushrooms are tender.",
+    "Add 1 tbsp sugar, the fish sauce, lime juice, coconut milk and prawns. Bring to the boil and cook until the prawns are cooked through, about 1-2 mins. Remove from the heat. Remove the lemongrass, then stir in the Thai chilli jam, if using. Scatter over the coriander to finish, if you like, and serve."
+  ]
+}

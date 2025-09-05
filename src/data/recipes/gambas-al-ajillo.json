@@ -6,7 +6,7 @@
   "serves": 4,
   "prepTime": 5,
   "cookTime": 15,
-  "keywords": ["Spanish food", "Shellfish", "Seafood", "Tapa", "Starter"],
+  "keywords": ["Spanish", "Seafood", "Starter"],
   "ingredients": [
     {
       "name": "raw shell-on king prawns",
