@@ -1,7 +1,6 @@
 <script setup>
 import { init } from "@/composables/useRecipe";
 import { formatMinutes } from "@/utils/time";
-import { getImageUrl } from "@/utils/image";
 
 const props = defineProps({
   recipe: {
@@ -20,7 +19,7 @@ init(props.recipe.serves);
 
     <div class="grid gap-6">
       <RecipeImage
-        :src="getImageUrl(recipe.image)"
+        :src="recipe.image"
         :alt="recipe.title"
         :slug="recipe.slug"
       />

@@ -5,7 +5,7 @@
   "serves": 6,
   "prepTime": 15,
   "cookTime": 40,
-  "image": "plum-crumble.webp",
+  "image": "/recipeasy/plum-crumble.webp",
   "keywords": ["Dessert", "Vegetarian"],
   "ingredients": [
     {

@@ -14,7 +14,7 @@
     "Serve with your favourite toppings."
   ],
   "keywords": ["Breakfast", "Dessert", "Vegetarian"],
-  "image": "pancakes.webp",
+  "image": "/recipeasy/pancakes.webp",
   "description": "",
   "serves": 2,
   "prepTime": 5,

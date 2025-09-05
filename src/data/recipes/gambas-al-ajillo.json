@@ -2,7 +2,7 @@
   "$schema": "../../schemas/recipe.json",
   "title": "Gambas al ajillo",
   "description": "Felicity Cloake’s perfect gambas al ajillo, or garlic prawns. This recipe is for a squidgy, saucy prawn dish served with bread.",
-  "image": "gambas-al-ajillo.webp",
+  "image": "/recipeasy/gambas-al-ajillo.webp",
   "serves": 4,
   "prepTime": 5,
   "cookTime": 15,

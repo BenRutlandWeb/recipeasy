@@ -2,7 +2,7 @@
   "$schema": "../../schemas/recipe.json",
   "title": "Tom yum soup with prawns",
   "description": "Enjoy an impressive homemade Thai tom yum soup that's healthy and easy to make – it's vibrant, fresh and full of flavour.",
-  "image": "tom-yum-soup-with-prawns.webp",
+  "image": "/recipeasy/tom-yum-soup-with-prawns.webp",
   "serves": 2,
   "prepTime": 10,
   "cookTime": 30,

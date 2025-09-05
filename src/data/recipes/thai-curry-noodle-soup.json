@@ -2,7 +2,7 @@
   "$schema": "../../schemas/recipe.json",
   "title": "Thai curry noodle soup",
   "description": "Make this speedy, spicy and healthy noodle soup using whatever veg you have in the fridge. Filling and flavour-packed, it's ideal for busy weeknights.",
-  "image": "thai-curry-noodle-soup.webp",
+  "image": "/recipeasy/thai-curry-noodle-soup.webp",
   "serves": 2,
   "prepTime": 5,
   "cookTime": 15,

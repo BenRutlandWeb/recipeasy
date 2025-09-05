@@ -1,6 +1,4 @@
 <script setup>
-import { getImageUrl } from "@/utils/image";
-
 const props = defineProps({
   recipe: {
     type: Object,
@@ -14,7 +12,7 @@ const props = defineProps({
     class="block h-full shadow rounded dark:shadow-xl dark:bg-gray-850 relative"
   >
     <img
-      :src="getImageUrl(recipe.image)"
+      :src="recipe.image"
       :alt="recipe.title"
       width="640"
       height="360"

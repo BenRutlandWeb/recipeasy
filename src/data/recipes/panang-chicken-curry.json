@@ -2,7 +2,7 @@
   "$schema": "../../schemas/recipe.json",
   "title": "Panang chicken curry",
   "description": "This classic Thai curry features a sweet, salty and zesty sauce, with many layers of rich flavour and spice.",
-  "image": "panang-chicken-curry.webp",
+  "image": "/recipeasy/panang-chicken-curry.webp",
   "serves": 2,
   "prepTime": 20,
   "cookTime": 15,

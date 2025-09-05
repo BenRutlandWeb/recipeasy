@@ -5,7 +5,7 @@
   "serves": 4,
   "prepTime": 15,
   "cookTime": 20,
-  "image": "fish-mappas.webp",
+  "image": "/recipeasy/fish-mappas.webp",
   "keywords": ["Fish", "Dinner", "Indian"],
   "ingredients": [
     { "name": "basmati rice", "quantity": 300, "unit": "g" },

@@ -5,7 +5,7 @@
   "serves": 4,
   "prepTime": 20,
   "cookTime": 20,
-  "image": "honey-and-mustard-chicken.webp",
+  "image": "/recipeasy/honey-and-mustard-chicken.webp",
   "keywords": ["Dinner", "Italian", "Meat"],
   "ingredients": [
     { "name": "Dijon mustard", "quantity": 3, "unit": "tbsp" },
