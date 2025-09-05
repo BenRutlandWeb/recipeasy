@@ -1,0 +1,61 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Millie's cookies",
+  "description": "These delicious cookies are easy to cook and taste as good as the real Millies cookies, with a crisp outer layer and a gooey centre these treats are best eaten warm but last well...if they last that long!!!",
+  "image": "/recipeasy/millies-cookies.jpg",
+  "serves": 12,
+  "prepTime": 5,
+  "cookTime": 10,
+  "keywords": ["Sweet treats", "Baking", "Cookies"],
+  "ingredients": [
+    {
+      "name": "butter",
+      "quantity": 125,
+      "unit": "g",
+      "description": "softened"
+    },
+    {
+      "name": "light brown soft sugar",
+      "quantity": 100,
+      "unit": "g"
+    },
+    {
+      "name": "caster sugar",
+      "quantity": 125,
+      "unit": "g"
+    },
+    {
+      "name": "egg",
+      "quantity": 1,
+      "description": "lightly beaten"
+    },
+    {
+      "name": "vanilla extract",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "name": "self-raising flour",
+      "quantity": 225,
+      "unit": "g"
+    },
+    {
+      "name": "salt",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "name": "chocolate chips",
+      "quantity": 200,
+      "unit": "g"
+    }
+  ],
+  "methods": [
+    "Preheat the oven to 180°C, gas mark 4.",
+    "Cream butter and sugars, once creamed, combine in the egg and vanilla.",
+    "Sift in the flour and salt, then the chocolate chips.",
+    "Roll into walnut size balls, for a more homemade look, or roll into a long, thick sausage shape and slice to make neater looking cookies.",
+    "Place on ungreased baking paper. If you want to have the real Millies experience then bake for just 7 minutes, till the cookies are just setting - the cookies will be really doughy and delicious. Otherwise cook for 10 minutes until just golden round the edges.",
+    "Take out of the oven and leave to harden for a minute before transferring to a wire cooling rack. These are great warm, and they also store well, if they don't all get eaten straight away!"
+  ]
+}

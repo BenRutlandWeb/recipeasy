@@ -1,26 +1,26 @@
 {
-    "$id": "ingredient.json",
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Ingredient",
-    "type": "object",
-    "required": ["name"],
-    "properties": {
-        "name": {
-            "type": "string",
-            "description": "Name of the ingredient"
-        },
-        "quantity": {
-            "type": ["number", "string"],
-            "description": "Amount of the ingredient",
-            "default": 1
-        },
-        "unit": {
-            "$ref": "unit.json"
-        },
-        "description": {
-            "type": "string",
-            "description": "Additional information such as prep or serving suggestions"
-        }
+  "$id": "ingredient.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ingredient",
+  "type": "object",
+  "required": ["name"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the ingredient"
     },
-    "additionalProperties": false
+    "quantity": {
+      "type": "number",
+      "description": "Amount of the ingredient",
+      "default": 1
+    },
+    "unit": {
+      "$ref": "unit.json"
+    },
+    "description": {
+      "type": "string",
+      "description": "Additional information such as prep or serving suggestions"
+    }
+  },
+  "additionalProperties": false
 }
