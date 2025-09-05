@@ -18,11 +18,7 @@ init(props.recipe.serves);
     </template>
 
     <div class="grid gap-6">
-      <RecipeImage
-        :src="recipe.image"
-        :alt="recipe.title"
-        :slug="recipe.slug"
-      />
+      <RecipeImage :src="recipe.image" :slug="recipe.slug" />
       <RecipeActionButtons />
       <RecipeChips :chips="recipe.keywords" />
     </div>

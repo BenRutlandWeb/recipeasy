@@ -13,7 +13,7 @@ const props = defineProps({
   >
     <img
       :src="recipe.image"
-      :alt="recipe.title"
+      alt=""
       width="640"
       height="360"
       loading="lazy"

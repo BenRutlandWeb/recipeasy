@@ -1,7 +1,7 @@
 <template>
   <img
     :src="src"
-    :alt="alt"
+    alt=""
     loading="lazy"
     width="360"
     height="360"
@@ -12,6 +12,5 @@
 <script setup>
 const props = defineProps({
   src: String,
-  alt: String,
 });
 </script>
