@@ -1,6 +1,6 @@
 {
     "$schema": "../../schemas/recipe.json",
-    "title": "Cucumber in vinegar and chili sauce",
+    "title": "Cucumber in vinegar and chilli sauce",
     "ingredients": [
         { "name": "cucumber", "quantity": 150, "unit": "g", "description": "Roughly chopped" },
         { "name": "garlic cloves", "quantity": 3, "description": "Crushed" },
@@ -13,15 +13,15 @@
         { "name": "light soy sauce", "quantity": 2, "unit": "tbsp" },
         { "name": "salt", "quantity": 0.5, "unit": "tsp" },
         { "name": "sugar", "quantity": 1, "unit": "tbsp" },
-        { "name": "chili oil", "quantity": 1, "unit": "tbsp" },
+        { "name": "chilli oil", "quantity": 1, "unit": "tbsp" },
         { "name": "Sesame oil", "description": "A few drops" }
     ],
     "methods": [
-        "In a bowl mix together the dark rice vinegar, light soy sauce, salt, sugar and chili oil.",
+        "In a bowl mix together the dark rice vinegar, light soy sauce, salt, sugar and chilli oil.",
         "Add in the garlic and a few drops of sesame oil then add the cucumber. Top with the deep-fried peanuts."
     ],
-    "keywords": ["Dinner", "Vegetarian", "Chinese"],
-    "image": "/recipeasy/cucumber-in-vinegar-and-chili-sauce.webp",
+    "keywords": ["Dinner", "Vegetarian", "Chinese", "Asian"],
+    "image": "/recipeasy/cucumber-in-vinegar-and-chilli-sauce.webp",
     "description": "",
     "serves": 2,
     "prepTime": 5,

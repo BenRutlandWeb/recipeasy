@@ -29,13 +29,10 @@ import { computed } from "vue";
 import { useRoute } from "vue-router";
 import recipes from "@/data/recipes.json";
 import searchIndex from "@/data/recipes-search.json";
+import recipesList from "@/data/recipes-list.json";
 
 const route = useRoute();
-const query = computed(() => route.query.q || "");
-
-const recipesArray = Object.entries(recipes).map(([slug, recipe]) => {
-    return { slug, ...recipe };
-});
+const query = computed(() => (route.query.q || "").trim());
 
 function search() {
     const searchWords = query.value
@@ -43,37 +40,50 @@ function search() {
         .split(/[^a-zA-Z]+/)
         .filter(Boolean);
 
-    const tempSlugs = {};
+    if (searchWords.length === 0) return [];
 
-    Object.entries(searchIndex).forEach(([keyword, _slugs]) => {
-        searchWords.forEach((q) => {
+    // Map each query word to a Set of matching Recipe IDs
+    const wordMatches = searchWords.map((q) => {
+        const matchedIds = new Set();
+
+        // Check index keys for substring matches (e.g., query "chick" matches index key "chicken")
+        for (const [keyword, ids] of Object.entries(searchIndex)) {
             if (keyword.includes(q)) {
-                if (!tempSlugs[q]) {
-                    tempSlugs[q] = new Set();
-                }
-                _slugs.forEach((s) => tempSlugs[q].add(s));
-            } else {
-                if (!tempSlugs[q]) {
-                    tempSlugs[q] = new Set();
-                }
+                ids.forEach((id) => matchedIds.add(id));
             }
-        });
+        }
+
+        return matchedIds;
     });
 
-    if (Object.keys(tempSlugs).length === 0) {
+    // If any typed word yields zero matches, the AND query fails entirely
+    if (wordMatches.some((set) => set.size === 0)) {
         return [];
     }
 
-    return Object.values(tempSlugs)
-        .map((s) => [...s])
-        .reduce((accumulator, currentArray) => {
-            return accumulator.filter((item) => currentArray.includes(item));
-        });
+    // Intersect sets (recipes must match ALL query terms)
+    // Optimization: Start intersecting with the smallest set first
+    wordMatches.sort((a, b) => a.size - b.size);
+
+    let intersectedIds = Array.from(wordMatches[0]);
+
+    for (let i = 1; i < wordMatches.length; i++) {
+        const currentSet = wordMatches[i];
+        intersectedIds = intersectedIds.filter((id) => currentSet.has(id));
+    }
+
+    return intersectedIds;
 }
 
 const queriedRecipes = computed(() => {
-    const slugs = search();
+    const matchedIds = search();
 
-    return slugs.map((slug) => recipesArray.find((r) => r.slug === slug));
+    // O(1) direct lookup: ID -> Slug -> Recipe metadata
+    return matchedIds
+        .map((id) => {
+            const slug = recipesList[id];
+            return recipes[slug] ? { slug, ...recipes[slug] } : null;
+        })
+        .filter(Boolean);
 });
 </script>

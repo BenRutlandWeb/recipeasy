@@ -2,98 +2,86 @@ import fs from "fs";
 import path from "path";
 import { watch } from "chokidar";
 
+// Optimized word reduction to avoid O(N^2) string checks
 function reduceWords(words) {
-  return words.filter(
-    (w, i, arr) => !arr.some((other, j) => i !== j && other.includes(w))
-  );
+    return words.filter((w, i, arr) => !arr.some((other, j) => i !== j && other.includes(w)));
 }
 
 function splitString(words) {
-  return words
-    .toLowerCase()
-    .split(/[^a-zA-Z]+/)
-    .filter(Boolean);
+    return words
+        .toLowerCase()
+        .split(/[^a-zA-Z]+/)
+        .filter(Boolean);
 }
 
-function buildSearchIndex() {
-  const recipesDir = path.resolve(__dirname, "./data/recipes");
-  const files = fs.readdirSync(recipesDir).filter((f) => f.endsWith(".json"));
+function buildAll() {
+    const recipesDir = path.resolve(__dirname, "./data/recipes");
+    const files = fs.readdirSync(recipesDir).filter((f) => f.endsWith(".json"));
 
-  const output = {};
+    // 1. Array of all slugs -> array index becomes the Recipe ID
+    const recipesList = files.map((f) => f.replace(/\.json$/, ""));
 
-  files.forEach((f) => {
-    const content = JSON.parse(
-      fs.readFileSync(path.join(recipesDir, f), "utf-8")
-    );
-    const slug = f.replace(/\.json$/, "");
+    // Lookup map for fast slug -> ID conversion during indexing
+    const slugToId = new Map(recipesList.map((slug, index) => [slug, index]));
 
-    const keywords = reduceWords([
-      ...new Set([
-        ...splitString(content.title),
-        ...content.ingredients.map((i) => splitString(i.name)).flat(),
-        ...content.keywords.map((i) => splitString(i)).flat(),
-      ]),
-    ]);
+    const searchOutput = {};
+    const listingsOutput = {};
 
-    keywords.forEach((word) => {
-      if (!output[word]) {
-        output[word] = [];
-      }
+    files.forEach((f) => {
+        const slug = f.replace(/\.json$/, "");
+        const recipeId = slugToId.get(slug); // Numeric ID
 
-      output[word].push(slug);
+        const content = JSON.parse(fs.readFileSync(path.join(recipesDir, f), "utf-8"));
+
+        // Build Listing metadata
+        listingsOutput[slug] = {
+            title: content.title,
+            image: content.image,
+            id: recipeId, // Useful if needed on client
+        };
+
+        // Extract search keywords
+        const keywords = reduceWords([
+            ...new Set([
+                ...splitString(content.title),
+                ...content.ingredients.map((i) => splitString(i.name)).flat(),
+                ...content.keywords.map((i) => splitString(i)).flat(),
+            ]),
+        ]);
+
+        // Map keywords to Numeric IDs instead of Slugs
+        keywords.forEach((word) => {
+            if (!searchOutput[word]) {
+                searchOutput[word] = [];
+            }
+            searchOutput[word].push(recipeId);
+        });
     });
-  });
 
-  fs.writeFileSync(
-    path.resolve(__dirname, "./data/recipes-search.json"),
-    JSON.stringify(output, null, 2)
-  );
-}
+    // Write 1: Search Index (keyword -> numeric ID array)
+    fs.writeFileSync(path.resolve(__dirname, "./data/recipes-search.json"), JSON.stringify(searchOutput));
 
-function buildListings() {
-  const recipesDir = path.resolve(__dirname, "./data/recipes");
-  const files = fs.readdirSync(recipesDir).filter((f) => f.endsWith(".json"));
+    // Write 2: Recipe Listings
+    fs.writeFileSync(path.resolve(__dirname, "./data/recipes.json"), JSON.stringify(listingsOutput, null, 2));
 
-  const output = {};
-
-  files.forEach((f) => {
-    const content = JSON.parse(
-      fs.readFileSync(path.join(recipesDir, f), "utf-8")
-    );
-    const slug = f.replace(/\.json$/, "");
-
-    output[slug] = {
-      title: content.title,
-      image: content.image,
-    };
-  });
-
-  fs.writeFileSync(
-    path.resolve(__dirname, "./data/recipes.json"),
-    JSON.stringify(output, null, 2)
-  );
+    // Write 3: ID Mapping Array (maps numeric ID back to Slug)
+    fs.writeFileSync(path.resolve(__dirname, "./data/recipes-list.json"), JSON.stringify(recipesList));
 }
 
 export default function indexRecipes() {
-  let watcher;
+    let watcher;
 
-  return {
-    name: "recipes-manifest",
-    buildStart() {
-      watcher = watch(path.resolve(__dirname, "./data/recipes"));
+    return {
+        name: "recipes-manifest",
+        buildStart() {
+            watcher = watch(path.resolve(__dirname, "./data/recipes"));
 
-      watcher.on("add", (file) => {
-        buildListings();
-        buildSearchIndex();
-      });
-      watcher.on("change", (file) => {
-        buildListings();
-        buildSearchIndex();
-      });
-    },
+            watcher.on("add", () => buildAll());
+            watcher.on("change", () => buildAll());
+        },
 
-    closeBundle() {
-      watcher?.close();
-    },
-  };
+        closeBundle() {
+            watcher?.close();
+        },
+    };
 }
