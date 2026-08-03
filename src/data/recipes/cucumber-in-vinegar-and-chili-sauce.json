@@ -14,7 +14,7 @@
         { "name": "salt", "quantity": 0.5, "unit": "tsp" },
         { "name": "sugar", "quantity": 1, "unit": "tbsp" },
         { "name": "chili oil", "quantity": 1, "unit": "tbsp" },
-        { "name": "sesame oil", "description": "A few drops" }
+        { "name": "Sesame oil", "description": "A few drops" }
     ],
     "methods": [
         "In a bowl mix together the dark rice vinegar, light soy sauce, salt, sugar and chili oil.",
@@ -26,5 +26,5 @@
     "serves": 2,
     "prepTime": 5,
     "cookTime": 5,
-    "spiceLevel": 3
+    "spiceLevel": 1
 }

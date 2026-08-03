@@ -5,10 +5,10 @@
         { "name": "aubergine", "quantity": 250, "unit": "g", "description": "Cut into 4cm long pieces" },
         { "name": "red pepper", "quantity": 1, "description": "Cut into long pieces" },
         { "name": "green pepper", "quantity": 1, "description": "Cut into long pieces" },
-        { "name": "garlic", "quantity": 4, "description": "Crushed" },
+        { "name": "garlic cloves", "quantity": 4, "description": "Crushed" },
         { "name": "spring onions", "quantity": 2, "description": "Cut into 2cm pieces" },
-        { "name": "Chili bean paste", "quantity": 1, "unit": "tbsp" },
-        { "name": "oil", "quantity": 2, "unit": "tbsp" },
+        { "name": "chili bean paste", "quantity": 1, "unit": "tbsp" },
+        { "name": "vegetable oil", "quantity": 2, "unit": "tbsp" },
         { "name": "oyster sauce", "quantity": 2, "unit": "tsp" },
         { "name": "salt", "quantity": 0.5, "unit": "tsp" },
         { "name": "sugar", "quantity": 0.5, "unit": "tsp" }
