@@ -9,7 +9,7 @@
         { "name": "carrots", "quantity": 20, "unit": "g", "description": "Cut into cubes" },
         { "name": "garlic cloves", "quantity": 2, "description": "Crushed" },
         { "name": "ginger", "quantity": 1, "description": "Small piece, minced" },
-        { "name": "dried chilies", "quantity": 10, "description": "Cut into 2cm pieces" },
+        { "name": "dried chillies", "quantity": 10, "description": "Cut into 2cm pieces" },
         { "name": "spring onions", "quantity": 2, "description": "Cut into 1cm pieces" },
         { "name": "deep-fried peanuts", "quantity": 20, "unit": "g" },
         { "name": "rice wine", "quantity": 1, "unit": "tsp" },
@@ -25,12 +25,12 @@
     "methods": [
         "In a bowl, mix together the rice wine, egg white, 1/2 tablespoon oil, corn starch and salt. Marinade the chicken in the sauce for 5 minutes.",
         "Heat a wok with the remaining oil, and stir fry the chicken until almost cooked through, then remove to a plate.",
-        "Lower the heat and fry the garlic, ginger and dried chilies.",
+        "Lower the heat and fry the garlic, ginger and dried chillies.",
         "Add the peppers, cucumber and carrot and fry for 3-4 minutes, then add a little water.",
         "Mix together the soy sauce, oyster sauce, chicken stock, a pinch of salt and a pinch of sugar, then add to the wok along with the chicken and fry untilt he chicken is cooked.",
         "Add spring onion and peanuts, a few drops of sesame oil and season with white pepper before serving."
     ],
-    "keywords": ["Dinner", "Meat", "Chinese"],
+    "keywords": ["Dinner", "Meat", "Chinese", "Asian"],
     "image": "/recipeasy/gong-bao-chicken.webp",
     "description": "",
     "serves": 2,
