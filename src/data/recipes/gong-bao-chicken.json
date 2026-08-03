@@ -1,0 +1,40 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Gong bao chicken",
+    "ingredients": [
+        { "name": "chicken", "quantity": 250, "unit": "g", "description": "Cut into cubes" },
+        { "name": "red peppers", "quantity": 2, "description": "Cut into cubes" },
+        { "name": "green peppers", "quantity": 2, "description": "Cut into cubes" },
+        { "name": "cucumber", "quantity": 20, "unit": "g", "description": "Remove seeds and cut into cubes" },
+        { "name": "carrots", "quantity": 20, "unit": "g", "description": "Cut into cubes" },
+        { "name": "garlic cloves", "quantity": 2, "description": "Crushed" },
+        { "name": "ginger", "quantity": 1, "description": "Small piece, minced" },
+        { "name": "dried chilies", "quantity": 10, "description": "Cut into 2cm pieces" },
+        { "name": "spring onions", "quantity": 2, "description": "Cut into 1cm pieces" },
+        { "name": "deep-fried peanuts", "quantity": 20, "unit": "g" },
+        { "name": "rice wine", "quantity": 1, "unit": "tsp" },
+        { "name": "egg white", "quantity": 1 },
+        { "name": "vegetable oil", "quantity": 3.5, "unit": "tbsp" },
+        { "name": "corn starch", "quantity": 1, "unit": "tsp" },
+        { "name": "salt", "quantity": 0.25, "unit": "tsp" },
+        { "name": "soy sauce", "quantity": 2, "unit": "tsp" },
+        { "name": "oyster sauce", "quantity": 2, "unit": "tsp" },
+        { "name": "chicken stock", "quantity": 0.5, "unit": "tsp" },
+        { "name": "Sesame oil", "description": "A few drops" }
+    ],
+    "methods": [
+        "In a bowl, mix together the rice wine, egg white, 1/2 tablespoon oil, corn starch and salt. Marinade the chicken in the sauce for 5 minutes.",
+        "Heat a wok with the remaining oil, and stir fry the chicken until almost cooked through, then remove to a plate.",
+        "Lower the heat and fry the garlic, ginger and dried chilies.",
+        "Add the peppers, cucumber and carrot and fry for 3-4 minutes, then add a little water.",
+        "Mix together the soy sauce, oyster sauce, chicken stock, a pinch of salt and a pinch of sugar, then add to the wok along with the chicken and fry untilt he chicken is cooked.",
+        "Add spring onion and peanuts, a few drops of sesame oil and season with white pepper before serving."
+    ],
+    "keywords": ["Dinner", "Meat", "Chinese"],
+    "image": "/recipeasy/gong-bao-chicken.webp",
+    "description": "",
+    "serves": 2,
+    "prepTime": 10,
+    "cookTime": 20,
+    "spiceLevel": 3
+}
