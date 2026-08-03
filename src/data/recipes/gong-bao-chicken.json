@@ -6,7 +6,7 @@
         { "name": "red peppers", "quantity": 2, "description": "Cut into cubes" },
         { "name": "green peppers", "quantity": 2, "description": "Cut into cubes" },
         { "name": "cucumber", "quantity": 20, "unit": "g", "description": "Remove seeds and cut into cubes" },
-        { "name": "carrot", "quantity": 20, "unit": "g", "description": "Cut into cubes" },
+        { "name": "carrots", "quantity": 20, "unit": "g", "description": "Cut into cubes" },
         { "name": "garlic cloves", "quantity": 2, "description": "Crushed" },
         { "name": "ginger", "quantity": 1, "description": "Small piece, minced" },
         { "name": "dried chilies", "quantity": 10, "description": "Cut into 2cm pieces" },
