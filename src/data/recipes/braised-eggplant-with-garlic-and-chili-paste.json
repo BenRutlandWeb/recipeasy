@@ -1,0 +1,31 @@
+{
+    "$schema": "../../schemas/recipe.json",
+    "title": "Braised eggplant with garlic and chili paste",
+    "ingredients": [
+        { "name": "aubergine", "quantity": 250, "unit": "g", "description": "Cut into 4cm long pieces" },
+        { "name": "red pepper", "quantity": 1, "description": "Cut into long pieces" },
+        { "name": "green pepper", "quantity": 1, "description": "Cut into long pieces" },
+        { "name": "garlic", "quantity": 4, "description": "Crushed" },
+        { "name": "spring onions", "quantity": 2, "description": "Cut into 2cm pieces" },
+        { "name": "Chili bean paste", "quantity": 1, "unit": "tbsp" },
+        { "name": "oil", "quantity": 2, "unit": "tbsp" },
+        { "name": "oyster sauce", "quantity": 2, "unit": "tsp" },
+        { "name": "salt", "quantity": 0.5, "unit": "tsp" },
+        { "name": "sugar", "quantity": 0.5, "unit": "tsp" }
+    ],
+    "methods": [
+        "Put the aubergine into a bowl of salty water for 5 minutes before drying.",
+        "Heat a wok and stir-fry the aubergine until it's completely dry. Add in most of the oil and fry until browning and soft. Remove to a plate.",
+        "Lower the heat and fry the garlic and chili bean paste in a little more oil",
+        "Add the aubergine back in to the wok with a little water.",
+        "Season the aubergine with the oyster sauce, salt and sugar.",
+        "When the aubergine is soft and the water has evaporated, add the spring onion and season with white pepper and sesame oil. Serve."
+    ],
+    "keywords": ["Dinner", "Vegetarian", "Chinese"],
+    "image": "/recipeasy/braised-eggplant-with-garlic-and-chili-paste.webp",
+    "description": "",
+    "serves": 2,
+    "prepTime": 15,
+    "cookTime": 15,
+    "spiceLevel": 0
+}
