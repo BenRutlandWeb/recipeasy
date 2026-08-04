@@ -1,15 +1,15 @@
 <script setup>
 const props = defineProps({
-    title: {
-        type: String,
-    },
+  title: {
+    type: String,
+  },
 });
 </script>
 
 <template>
-    <AppBarLink :to="{ name: 'home' }" aria-label="Go home">
-        <BaseIcon icon="arrow_back" />
-    </AppBarLink>
-    <AppBarTitle>{{ title }}</AppBarTitle>
-    <DarkModeToggle />
+  <AppBarLink :to="{ name: 'home' }" aria-label="Go home">
+    <BaseIcon icon="arrow_back" />
+  </AppBarLink>
+  <AppBarTitle>{{ title }}</AppBarTitle>
+  <DarkModeToggle />
 </template>

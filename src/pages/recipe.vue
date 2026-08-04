@@ -1,8 +1,8 @@
 <script setup>
-import { computed } from "vue";
-import { init } from "@/composables/useRecipe";
-import { formatMinutes } from "@/utils/time";
-import recipes from "@/data/recipes.json";
+import { computed } from 'vue';
+import { init } from '@/composables/useRecipe';
+import { formatMinutes } from '@/utils/time';
+import recipes from '@/data/recipes.json';
 
 const props = defineProps({
   recipe: {
@@ -13,7 +13,7 @@ const props = defineProps({
 init(props.recipe.serves);
 
 const idToSlug = Object.fromEntries(
-  Object.entries(recipes).map(([slug, recipe]) => [recipe.id, slug]),
+  Object.entries(recipes).map(([slug, recipe]) => [recipe.id, slug])
 );
 
 const relatedRecipes = computed(() => {
@@ -91,18 +91,15 @@ const relatedRecipes = computed(() => {
         </li>
       </ol>
     </div>
-      <template v-if="relatedRecipes.length">
-        <div class="grid gap-6 md:col-span-3">
+    <template v-if="relatedRecipes.length">
+      <div class="grid gap-6 md:col-span-3">
         <h2 class="text-xl font-semibold mt-8">Related recipes</h2>
-        <ListGroup
-          :items="relatedRecipes"
-          class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
-        >
+        <ListGroup :items="relatedRecipes" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <template #default="{ item }">
             <SmallRecipeCard :recipe="item" />
           </template>
         </ListGroup>
-        </div>
-      </template>
-    </RecipeLayout>
+      </div>
+    </template>
+  </RecipeLayout>
 </template>

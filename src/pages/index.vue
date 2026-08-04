@@ -1,9 +1,9 @@
 <script setup>
-import recipes from "@/data/recipes.json";
-import { useStorage } from "@/composables/useStorage";
+import recipes from '@/data/recipes.json';
+import { useStorage } from '@/composables/useStorage';
 
-const { all: favourited } = useStorage("favourites");
-const { all: recent } = useStorage("recent");
+const { all: favourited } = useStorage('favourites');
+const { all: recent } = useStorage('recent');
 
 const recipesArray = Object.entries(recipes).map(([slug, recipe]) => {
   return { slug, ...recipe };
@@ -43,10 +43,7 @@ const recentlyViewedRecipes = recent.value.map((slug) => {
     </template>
 
     <h2 class="text-xl font-semibold">All recipes</h2>
-    <ListGroup
-      :items="recipesArray"
-      class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
-    >
+    <ListGroup :items="recipesArray" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       <template #default="{ item }">
         <SmallRecipeCard :recipe="item" />
       </template>

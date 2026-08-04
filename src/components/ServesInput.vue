@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import { useRecipe } from "@/composables/useRecipe";
+import { useRecipe } from '@/composables/useRecipe';
 
 const { serves } = useRecipe();
 

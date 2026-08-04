@@ -1,37 +1,37 @@
 {
-    "$schema": "../../schemas/recipe.json",
-    "title": "Pork and vegetable dumplings",
-    "ingredients": [
-        { "name": "pork mince", "quantity": 100, "unit": "g" },
-        { "name": "mushrooms", "quantity": 30, "unit": "g", "description": "Finely chopped" },
-        { "name": "carrots", "quantity": 10, "unit": "g", "description": "Finely chopped" },
-        { "name": "chives", "quantity": 20, "unit": "g", "description": "Finely chopped" },
+  "$schema": "../../schemas/recipe.json",
+  "title": "Pork and vegetable dumplings",
+  "ingredients": [
+    { "name": "pork mince", "quantity": 100, "unit": "g" },
+    { "name": "mushrooms", "quantity": 30, "unit": "g", "description": "Finely chopped" },
+    { "name": "carrots", "quantity": 10, "unit": "g", "description": "Finely chopped" },
+    { "name": "chives", "quantity": 20, "unit": "g", "description": "Finely chopped" },
 
-        { "name": "plain flour", "quantity": 120, "unit": "g" },
-        { "name": "water", "quantity": 60, "unit": "ml" },
-        { "name": "salt", "quantity": 1, "unit": "tsp" },
+    { "name": "plain flour", "quantity": 120, "unit": "g" },
+    { "name": "water", "quantity": 60, "unit": "ml" },
+    { "name": "salt", "quantity": 1, "unit": "tsp" },
 
-        { "name": "corn starch", "quantity": 1, "unit": "tsp" },
-        { "name": "white pepper", "quantity": 0.25, "unit": "tsp" },
-        { "name": "oyster sauce", "quantity": 1, "unit": "tsp" },
-        { "name": "chicken stock", "quantity": 1, "unit": "tsp" },
-        { "name": "Sesame oil", "description": "A few drops" },
-        { "name": "vegetable oil", "quantity": 1, "unit": "tbsp" }
-    ],
-    "methods": [
-        "Mix together the flour, water and half the salt into a dough. Knead the dough for 5 minutes then leave to  prove for 10 minutes.",
-        "Knead the dough again until smooth, prove for another 10 minutes, then knead for a third time before rolling out thin dumpling wrappers.",
-        "Meanwhile, in a bowl, mix together the pork, mushrooms, carrots and chives.",
-        "Add a splash of water, the corn starch, white pepper, the remaining salt, oyster sauce, chicken stock sesame oil and vegetable oil and mix together.",
-        "Stuff 1 tablespoon of the pork mixture into a dumpling wrapper, seal with a bit of water and pleat the edges of the dumpling.",
-        "Put the dumplings into a bamboo steamer in batches an cook for 10 minutes.",
-        "Serve the dumplings with dark vinegar, soy sauce and chilli sauce."
-    ],
-    "keywords": ["Dinner", "Meat", "Chinese", "Asian"],
-    "image": "/recipeasy/pork-and-vegetable-dumplings.webp",
-    "description": "",
-    "serves": 2,
-    "prepTime": 45,
-    "cookTime": 20,
-    "spiceLevel": 0
+    { "name": "corn starch", "quantity": 1, "unit": "tsp" },
+    { "name": "white pepper", "quantity": 0.25, "unit": "tsp" },
+    { "name": "oyster sauce", "quantity": 1, "unit": "tsp" },
+    { "name": "chicken stock", "quantity": 1, "unit": "tsp" },
+    { "name": "Sesame oil", "description": "A few drops" },
+    { "name": "vegetable oil", "quantity": 1, "unit": "tbsp" }
+  ],
+  "methods": [
+    "Mix together the flour, water and half the salt into a dough. Knead the dough for 5 minutes then leave to  prove for 10 minutes.",
+    "Knead the dough again until smooth, prove for another 10 minutes, then knead for a third time before rolling out thin dumpling wrappers.",
+    "Meanwhile, in a bowl, mix together the pork, mushrooms, carrots and chives.",
+    "Add a splash of water, the corn starch, white pepper, the remaining salt, oyster sauce, chicken stock sesame oil and vegetable oil and mix together.",
+    "Stuff 1 tablespoon of the pork mixture into a dumpling wrapper, seal with a bit of water and pleat the edges of the dumpling.",
+    "Put the dumplings into a bamboo steamer in batches an cook for 10 minutes.",
+    "Serve the dumplings with dark vinegar, soy sauce and chilli sauce."
+  ],
+  "keywords": ["Dinner", "Meat", "Chinese", "Asian"],
+  "image": "/recipeasy/pork-and-vegetable-dumplings.webp",
+  "description": "",
+  "serves": 2,
+  "prepTime": 45,
+  "cookTime": 20,
+  "spiceLevel": 0
 }

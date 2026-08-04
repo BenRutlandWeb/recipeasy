@@ -1,10 +1,5 @@
 <template>
-  <svg
-    viewBox="0 0 200 200"
-    width="24"
-    height="24"
-    class="w-6 h-6 dark:filter dark:brightness-150"
-  >
+  <svg viewBox="0 0 200 200" width="24" height="24" class="w-6 h-6 dark:filter dark:brightness-150">
     <linearGradient id="rlg" y2="100%">
       <stop stop-color="#d71d4c" />
       <stop offset="100%" stop-color="#7143b1" />
