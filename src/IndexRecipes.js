@@ -17,12 +17,8 @@ function splitString(words) {
 function buildAll() {
     const recipesDir = path.resolve(__dirname, "./data/recipes");
     const files = fs.readdirSync(recipesDir).filter((f) => f.endsWith(".json"));
-
-    // 1. Array of all slugs -> array index becomes the Recipe ID
-    const recipesList = files.map((f) => f.replace(/\.json$/, ""));
-
-    // Lookup map for fast slug -> ID conversion during indexing
-    const slugToId = new Map(recipesList.map((slug, index) => [slug, index]));
+    const slugs = files.map((f) => f.replace(/\.json$/, ""));
+    const slugToId = new Map(slugs.map((slug, index) => [slug, index]));
 
     const searchOutput = {};
     const listingsOutput = {};
@@ -64,8 +60,6 @@ function buildAll() {
     // Write 2: Recipe Listings
     fs.writeFileSync(path.resolve(__dirname, "./data/recipes.json"), JSON.stringify(listingsOutput, null, 2));
 
-    // Write 3: ID Mapping Array (maps numeric ID back to Slug)
-    fs.writeFileSync(path.resolve(__dirname, "./data/recipes-list.json"), JSON.stringify(recipesList));
 }
 
 export default function indexRecipes() {

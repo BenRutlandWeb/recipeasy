@@ -3,6 +3,5 @@ node_modules
 dist
 dist-ssr
 *.local
-/src/data/recipes-list.json
 /src/data/recipes-search.json
 /src/data/recipes.json
