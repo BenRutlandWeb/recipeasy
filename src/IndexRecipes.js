@@ -19,6 +19,7 @@ function buildAll() {
     const files = fs.readdirSync(recipesDir).filter((f) => f.endsWith(".json"));
     const slugs = files.map((f) => f.replace(/\.json$/, ""));
     const slugToId = new Map(slugs.map((slug, index) => [slug, index]));
+    const recipeKeywordsById = new Map();
 
     const searchOutput = {};
     const listingsOutput = {};
@@ -33,7 +34,7 @@ function buildAll() {
         listingsOutput[slug] = {
             title: content.title,
             image: content.image,
-            id: recipeId, // Useful if needed on client
+            id: recipeId,
         };
 
         // Extract search keywords
@@ -44,6 +45,7 @@ function buildAll() {
                 ...content.keywords.map((i) => splitString(i)).flat(),
             ]),
         ]);
+        recipeKeywordsById.set(recipeId, keywords);
 
         // Map keywords to Numeric IDs instead of Slugs
         keywords.forEach((word) => {
@@ -52,6 +54,31 @@ function buildAll() {
             }
             searchOutput[word].push(recipeId);
         });
+    });
+
+    // Reuse the existing token search index to generate related recipes by shared token score.
+    slugs.forEach((slug, recipeId) => {
+        const keywords = recipeKeywordsById.get(recipeId) || [];
+        const candidateScores = new Map();
+
+        keywords.forEach((word) => {
+            const matches = searchOutput[word] || [];
+            const weight = matches.length > 0 ? 1 / matches.length : 0;
+
+            matches.forEach((candidateId) => {
+                if (candidateId === recipeId) {
+                    return;
+                }
+                candidateScores.set(candidateId, (candidateScores.get(candidateId) || 0) + weight);
+            });
+        });
+
+        const relatedIds = [...candidateScores.entries()]
+            .sort((a, b) => b[1] - a[1] || a[0] - b[0])
+            .slice(0, 6)
+            .map(([candidateId]) => candidateId);
+
+        listingsOutput[slug].related = relatedIds;
     });
 
     // Write 1: Search Index (keyword -> numeric ID array)
