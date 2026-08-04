@@ -1,4 +1,5 @@
 <script setup>
+import { computed } from 'vue';
 import recipes from '@/data/recipes.json';
 import { useStorage } from '@/composables/useStorage';
 
@@ -9,12 +10,12 @@ const recipesArray = Object.entries(recipes).map(([slug, recipe]) => {
   return { slug, ...recipe };
 });
 
-const favouritedRecipes = favourited.value.map((slug) => {
-  return recipesArray.find((r) => r.slug === slug);
+const favouritedRecipes = computed(() => {
+  return favourited.value.map((slug) => recipesArray.find((r) => r.slug === slug)).filter(Boolean);
 });
 
-const recentlyViewedRecipes = recent.value.map((slug) => {
-  return recipesArray.find((r) => r.slug === slug);
+const recentlyViewedRecipes = computed(() => {
+  return recent.value.map((slug) => recipesArray.find((r) => r.slug === slug)).filter(Boolean);
 });
 </script>
 

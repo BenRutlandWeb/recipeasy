@@ -1,18 +1,18 @@
 <script setup>
-import { ref } from 'vue';
+import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 import { useStorage } from '@/composables/useStorage';
 
-const { toggle, has } = useStorage('favourites');
+const { all: favourites, toggle } = useStorage('favourites');
 
 const route = useRoute();
 
-const slug = route.meta.slug;
+const slug = computed(() => route.meta.slug);
 
-const favourited = has(slug);
+const favourited = computed(() => favourites.value.includes(slug.value));
 
 function toggleFavourite() {
-  toggle(slug);
+  toggle(slug.value);
 }
 </script>
 
