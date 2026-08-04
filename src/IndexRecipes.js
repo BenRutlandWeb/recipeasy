@@ -17,12 +17,9 @@ function splitString(words) {
 function buildAll() {
     const recipesDir = path.resolve(__dirname, "./data/recipes");
     const files = fs.readdirSync(recipesDir).filter((f) => f.endsWith(".json"));
-
-    // 1. Array of all slugs -> array index becomes the Recipe ID
-    const recipesList = files.map((f) => f.replace(/\.json$/, ""));
-
-    // Lookup map for fast slug -> ID conversion during indexing
-    const slugToId = new Map(recipesList.map((slug, index) => [slug, index]));
+    const slugs = files.map((f) => f.replace(/\.json$/, ""));
+    const slugToId = new Map(slugs.map((slug, index) => [slug, index]));
+    const recipeKeywordsById = new Map();
 
     const searchOutput = {};
     const listingsOutput = {};
@@ -37,7 +34,7 @@ function buildAll() {
         listingsOutput[slug] = {
             title: content.title,
             image: content.image,
-            id: recipeId, // Useful if needed on client
+            id: recipeId,
         };
 
         // Extract search keywords
@@ -48,6 +45,7 @@ function buildAll() {
                 ...content.keywords.map((i) => splitString(i)).flat(),
             ]),
         ]);
+        recipeKeywordsById.set(recipeId, keywords);
 
         // Map keywords to Numeric IDs instead of Slugs
         keywords.forEach((word) => {
@@ -58,14 +56,37 @@ function buildAll() {
         });
     });
 
+    // Reuse the existing token search index to generate related recipes by shared token score.
+    slugs.forEach((slug, recipeId) => {
+        const keywords = recipeKeywordsById.get(recipeId) || [];
+        const candidateScores = new Map();
+
+        keywords.forEach((word) => {
+            const matches = searchOutput[word] || [];
+            const weight = matches.length > 0 ? 1 / matches.length : 0;
+
+            matches.forEach((candidateId) => {
+                if (candidateId === recipeId) {
+                    return;
+                }
+                candidateScores.set(candidateId, (candidateScores.get(candidateId) || 0) + weight);
+            });
+        });
+
+        const relatedIds = [...candidateScores.entries()]
+            .sort((a, b) => b[1] - a[1] || a[0] - b[0])
+            .slice(0, 6)
+            .map(([candidateId]) => candidateId);
+
+        listingsOutput[slug].related = relatedIds;
+    });
+
     // Write 1: Search Index (keyword -> numeric ID array)
     fs.writeFileSync(path.resolve(__dirname, "./data/recipes-search.json"), JSON.stringify(searchOutput));
 
     // Write 2: Recipe Listings
     fs.writeFileSync(path.resolve(__dirname, "./data/recipes.json"), JSON.stringify(listingsOutput, null, 2));
 
-    // Write 3: ID Mapping Array (maps numeric ID back to Slug)
-    fs.writeFileSync(path.resolve(__dirname, "./data/recipes-list.json"), JSON.stringify(recipesList));
 }
 
 export default function indexRecipes() {

@@ -29,10 +29,12 @@ import { computed } from "vue";
 import { useRoute } from "vue-router";
 import recipes from "@/data/recipes.json";
 import searchIndex from "@/data/recipes-search.json";
-import recipesList from "@/data/recipes-list.json";
 
 const route = useRoute();
 const query = computed(() => (route.query.q || "").trim());
+const idToSlug = Object.fromEntries(
+    Object.entries(recipes).map(([slug, recipe]) => [recipe.id, slug])
+);
 
 function search() {
     const searchWords = query.value
@@ -81,7 +83,7 @@ const queriedRecipes = computed(() => {
     // O(1) direct lookup: ID -> Slug -> Recipe metadata
     return matchedIds
         .map((id) => {
-            const slug = recipesList[id];
+            const slug = idToSlug[id];
             return recipes[slug] ? { slug, ...recipes[slug] } : null;
         })
         .filter(Boolean);

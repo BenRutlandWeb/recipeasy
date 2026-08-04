@@ -1,6 +1,8 @@
 <script setup>
+import { computed } from "vue";
 import { init } from "@/composables/useRecipe";
 import { formatMinutes } from "@/utils/time";
+import recipes from "@/data/recipes.json";
 
 const props = defineProps({
   recipe: {
@@ -9,6 +11,21 @@ const props = defineProps({
 });
 
 init(props.recipe.serves);
+
+const idToSlug = Object.fromEntries(
+  Object.entries(recipes).map(([slug, recipe]) => [recipe.id, slug]),
+);
+
+const relatedRecipes = computed(() => {
+  const relatedIds = recipes[props.recipe?.slug]?.related || [];
+
+  return relatedIds
+    .map((id) => {
+      const slug = idToSlug[id];
+      return recipes[slug] ? { slug, ...recipes[slug] } : null;
+    })
+    .filter(Boolean);
+});
 </script>
 
 <template>
@@ -74,5 +91,18 @@ init(props.recipe.serves);
         </li>
       </ol>
     </div>
-  </RecipeLayout>
+      <template v-if="relatedRecipes.length">
+        <div class="grid gap-6 md:col-span-3">
+        <h2 class="text-xl font-semibold mt-8">Related recipes</h2>
+        <ListGroup
+          :items="relatedRecipes"
+          class="grid gap-6 md:grid-cols-2 lg:grid-cols-3"
+        >
+          <template #default="{ item }">
+            <SmallRecipeCard :recipe="item" />
+          </template>
+        </ListGroup>
+        </div>
+      </template>
+    </RecipeLayout>
 </template>
