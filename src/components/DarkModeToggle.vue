@@ -36,5 +36,5 @@ const icon = computed(() =>
   currentMode.value ? "brightness_7" : "brightness_4"
 );
 
-const isDarkMode = false;
+const isDarkMode = computed(() => currentMode.value);
 </script>
