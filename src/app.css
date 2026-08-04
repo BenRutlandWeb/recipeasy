@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @config '../tailwind.config.js';
 
@@ -11,32 +11,32 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-    *,
-    ::after,
-    ::before,
-    ::backdrop,
-    ::file-selector-button {
-        border-color: var(--color-gray-200, currentColor);
-    }
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
 
-    :root {
-        color-scheme: light dark;
-    }
+  :root {
+    color-scheme: light dark;
+  }
 }
 
 @layer components {
-    main ol {
-        counter-reset: step;
-    }
-    main ol li {
-        counter-increment: step;
-    }
-    main ol li::before {
-        @apply block text-3xl opacity-50;
-        content: counter(step) ".";
-    }
+  main ol {
+    counter-reset: step;
+  }
+  main ol li {
+    counter-increment: step;
+  }
+  main ol li::before {
+    @apply block text-3xl opacity-50;
+    content: counter(step) '.';
+  }
 
-    ::-webkit-search-cancel-button {
-        display: none;
-    }
+  ::-webkit-search-cancel-button {
+    display: none;
+  }
 }

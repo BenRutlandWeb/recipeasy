@@ -1,76 +1,76 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "title": "Recipe",
-    "type": "object",
-    "required": [
-        "title",
-        "description",
-        "serves",
-        "prepTime",
-        "cookTime",
-        "image",
-        "keywords",
-        "ingredients",
-        "methods"
-    ],
-    "properties": {
-        "$schema": {
-            "type": "string"
-        },
-        "title": {
-            "type": "string",
-            "description": "The title of the recipe"
-        },
-        "description": {
-            "type": "string",
-            "description": "A short description of the recipe"
-        },
-        "image": {
-            "type": "string",
-            "description": "An image path"
-        },
-        "serves": {
-            "type": "integer",
-            "description": "The number of servings"
-        },
-        "prepTime": {
-            "type": "integer",
-            "description": "Preparation time in minutes"
-        },
-        "cookTime": {
-            "type": "integer",
-            "description": "Cooking time in minutes"
-        },
-        "keywords": {
-            "type": "array",
-            "description": "List of keywords for categorizing the recipe. E.g. Dinner, Breakfast, Meat, Vegan. Avoid ingredients.",
-            "items": {
-                "type": "string"
-            }
-        },
-        "ingredients": {
-            "type": "array",
-            "description": "A list of ingredients",
-            "items": {
-                "$ref": "ingredient.json"
-            }
-        },
-        "methods": {
-            "type": "array",
-            "description": "Step-by-step instructions",
-            "items": {
-                "type": "string"
-            }
-        },
-        "diet": {
-            "$ref": "diet.json"
-        },
-        "spiceLevel": {
-            "type": "integer",
-            "minimum": 0,
-            "maximum": 3,
-            "default": 0
-        }
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Recipe",
+  "type": "object",
+  "required": [
+    "title",
+    "description",
+    "serves",
+    "prepTime",
+    "cookTime",
+    "image",
+    "keywords",
+    "ingredients",
+    "methods"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
     },
-    "additionalProperties": false
+    "title": {
+      "type": "string",
+      "description": "The title of the recipe"
+    },
+    "description": {
+      "type": "string",
+      "description": "A short description of the recipe"
+    },
+    "image": {
+      "type": "string",
+      "description": "An image path"
+    },
+    "serves": {
+      "type": "integer",
+      "description": "The number of servings"
+    },
+    "prepTime": {
+      "type": "integer",
+      "description": "Preparation time in minutes"
+    },
+    "cookTime": {
+      "type": "integer",
+      "description": "Cooking time in minutes"
+    },
+    "keywords": {
+      "type": "array",
+      "description": "List of keywords for categorizing the recipe. E.g. Dinner, Breakfast, Meat, Vegan. Avoid ingredients.",
+      "items": {
+        "type": "string"
+      }
+    },
+    "ingredients": {
+      "type": "array",
+      "description": "A list of ingredients",
+      "items": {
+        "$ref": "ingredient.json"
+      }
+    },
+    "methods": {
+      "type": "array",
+      "description": "Step-by-step instructions",
+      "items": {
+        "type": "string"
+      }
+    },
+    "diet": {
+      "$ref": "diet.json"
+    },
+    "spiceLevel": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3,
+      "default": 0
+    }
+  },
+  "additionalProperties": false
 }

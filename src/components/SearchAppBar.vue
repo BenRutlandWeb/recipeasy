@@ -2,9 +2,7 @@
   <AppBarButton @click="$router.back()" aria-label="Go home">
     <BaseIcon icon="arrow_back" />
   </AppBarButton>
-  <label for="app-search" class="sr-only">
-    Search by ingredient, dish, keyword...
-  </label>
+  <label for="app-search" class="sr-only"> Search by ingredient, dish, keyword... </label>
   <input
     type="search"
     id="app-search"
@@ -21,17 +19,17 @@
 </template>
 
 <script setup>
-import { onMounted, computed, ref } from "vue";
-import { useRouter, useRoute } from "vue-router";
+import { onMounted, computed, ref } from 'vue';
+import { useRouter, useRoute } from 'vue-router';
 
 const router = useRouter();
 const route = useRoute();
-const query = computed(() => route.query.q || "");
+const query = computed(() => route.query.q || '');
 const appSearch = ref(null);
 
 function search({ target }) {
   router.replace({
-    name: "search",
+    name: 'search',
     query: Object.assign({}, route.query, { q: target.value }),
   });
 }
