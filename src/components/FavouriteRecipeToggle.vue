@@ -1,25 +1,7 @@
-<script setup>
-import { computed } from 'vue';
-import { useRoute } from 'vue-router';
-import { useStorage } from '@/composables/useStorage';
-
-const { all: favourites, toggle } = useStorage('favourites');
-
-const route = useRoute();
-
-const slug = computed(() => route.meta.slug);
-
-const favourited = computed(() => favourites.value.includes(slug.value));
-
-function toggleFavourite() {
-  toggle(slug.value);
-}
-</script>
-
 <template>
   <button
     type="button"
-    role="switch"
+    role="checkbox"
     @click="toggleFavourite"
     aria-label="Toggle favourite"
     :aria-checked="favourited ? 'true' : 'false'"
@@ -30,3 +12,21 @@ function toggleFavourite() {
     />
   </button>
 </template>
+
+<script setup lang="ts">
+import { computed } from 'vue';
+import { useStorage } from '@/composables/useStorage';
+import BaseIcon from '@/components/BaseIcon.vue';
+
+const props = defineProps<{
+  slug: string;
+}>();
+
+const { all: favourites, toggle } = useStorage<string>('favourites');
+
+const favourited = computed(() => favourites.value.includes(props.slug));
+
+function toggleFavourite() {
+  toggle(props.slug);
+}
+</script>

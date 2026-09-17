@@ -1,9 +1,9 @@
 <template>
   <button
     type="button"
-    role="switch"
-    @click="checked = !checked"
-    aria-label="Toggle ingredient"
+    role="checkbox"
+    @click="onToggle"
+    aria-label="Mark step as complete"
     :aria-checked="checked ? 'true' : 'false'"
     class="w-full text-start grid items-center gap-2"
   >
@@ -16,8 +16,21 @@
   </button>
 </template>
 
-<script setup>
-import { ref } from 'vue';
+<script setup lang="ts">
+import { useRecipe } from '@/composables/useRecipe';
+import { useStorage } from '@/composables/useStorage';
+import BaseIcon from '@/components/BaseIcon.vue';
 
-const checked = ref(false);
+const props = defineProps<{
+  stepKey: string;
+}>();
+
+const { slug } = useRecipe();
+const { has, toggle } = useStorage<string>(`recipe-steps-${slug}`);
+
+const checked = has(props.stepKey);
+
+function onToggle() {
+  toggle(props.stepKey);
+}
 </script>

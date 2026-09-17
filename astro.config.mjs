@@ -16,7 +16,7 @@ export default defineConfig({
       name: 'Open Sans',
       cssVariable: '--font-open-sans',
       provider: fontProviders.fontsource(),
-      weights: [400, 600, 700],
+      weights: [400, 600],
       styles: ['normal'],
       fallbacks: ['Segoe UI', 'sans-serif'],
       display: 'optional',

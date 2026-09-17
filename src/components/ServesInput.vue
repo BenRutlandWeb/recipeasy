@@ -20,18 +20,15 @@
     </button>
   </span>
 </template>
-
 <script setup>
 import { useRecipe } from '@/composables/useRecipe';
-
+import BaseIcon from '@/components/BaseIcon.vue';
 const { serves } = useRecipe();
-
 function decrement() {
   if (serves.value > 1) {
     serves.value--;
   }
 }
-
 function increment() {
   serves.value++;
 }

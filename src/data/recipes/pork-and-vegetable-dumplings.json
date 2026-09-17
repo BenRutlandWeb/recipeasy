@@ -6,11 +6,9 @@
     { "name": "mushrooms", "quantity": 30, "unit": "g", "description": "Finely chopped" },
     { "name": "carrots", "quantity": 10, "unit": "g", "description": "Finely chopped" },
     { "name": "chives", "quantity": 20, "unit": "g", "description": "Finely chopped" },
-
     { "name": "plain flour", "quantity": 120, "unit": "g" },
     { "name": "water", "quantity": 60, "unit": "ml" },
     { "name": "salt", "quantity": 1, "unit": "tsp" },
-
     { "name": "corn starch", "quantity": 1, "unit": "tsp" },
     { "name": "white pepper", "quantity": 0.25, "unit": "tsp" },
     { "name": "oyster sauce", "quantity": 1, "unit": "tsp" },

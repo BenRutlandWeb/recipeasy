@@ -1,5 +1,5 @@
 {
-  "expires": 1788533615218,
+  "expires": 1790257439582,
   "version": "0.7.5",
   "data": [
     {
@@ -390,12 +390,12 @@
     {
       "id": "alan-sans",
       "family": "Alan Sans",
-      "subsets": ["latin", "latin-ext"],
+      "subsets": ["arabic", "latin", "latin-ext"],
       "weights": [300, 400, 500, 600, 700, 800, 900],
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": true,
-      "lastModified": "2025-11-20",
+      "lastModified": "2026-08-25",
       "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
@@ -1711,6 +1711,19 @@
       "defSubset": "latin",
       "variable": false,
       "lastModified": "2025-09-02",
+      "category": "sans-serif",
+      "license": "OFL-1.1",
+      "type": "google"
+    },
+    {
+      "id": "asap-sharp",
+      "family": "Asap Sharp",
+      "subsets": ["latin", "latin-ext", "vietnamese"],
+      "weights": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      "styles": ["italic", "normal"],
+      "defSubset": "latin",
+      "variable": true,
+      "lastModified": "2026-08-25",
       "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
@@ -4016,6 +4029,19 @@
       "variable": false,
       "lastModified": "2025-05-30",
       "category": "sans-serif",
+      "license": "OFL-1.1",
+      "type": "google"
+    },
+    {
+      "id": "caacupe-one",
+      "family": "Caacupe One",
+      "subsets": ["latin", "latin-ext"],
+      "weights": [400],
+      "styles": ["normal"],
+      "defSubset": "latin",
+      "variable": false,
+      "lastModified": "2026-08-25",
+      "category": "display",
       "license": "OFL-1.1",
       "type": "google"
     },
@@ -8490,7 +8516,7 @@
       "weights": [400],
       "styles": ["normal"],
       "defSubset": "latin",
-      "variable": false,
+      "variable": true,
       "lastModified": "2026-06-30",
       "category": "display",
       "license": "OFL-1.1",
@@ -8662,7 +8688,7 @@
       "weights": [200, 300, 400, 500, 600, 700, 800],
       "styles": ["normal"],
       "defSubset": "latin",
-      "variable": false,
+      "variable": true,
       "lastModified": "2026-07-09",
       "category": "sans-serif",
       "license": "OFL-1.1",
@@ -9693,7 +9719,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": false,
-      "lastModified": "2026-07-09",
+      "lastModified": "2026-08-25",
       "category": "monospace",
       "license": "OFL-1.1",
       "type": "google"
@@ -12819,7 +12845,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": false,
-      "lastModified": "2026-03-11",
+      "lastModified": "2026-08-25",
       "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
@@ -13387,7 +13413,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": false,
-      "lastModified": "2026-02-17",
+      "lastModified": "2026-08-25",
       "category": "handwriting",
       "license": "OFL-1.1",
       "type": "google"
@@ -13920,7 +13946,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": false,
-      "lastModified": "2026-08-13",
+      "lastModified": "2026-09-08",
       "category": "monospace",
       "license": "OFL-1.1",
       "type": "google"
@@ -13933,7 +13959,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": true,
-      "lastModified": "2026-08-13",
+      "lastModified": "2026-09-08",
       "category": "icons",
       "license": "OFL-1.1",
       "type": "google"
@@ -13946,7 +13972,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": true,
-      "lastModified": "2026-08-13",
+      "lastModified": "2026-09-08",
       "category": "icons",
       "license": "OFL-1.1",
       "type": "google"
@@ -13959,7 +13985,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": true,
-      "lastModified": "2026-08-13",
+      "lastModified": "2026-09-08",
       "category": "icons",
       "license": "OFL-1.1",
       "type": "google"
@@ -15129,7 +15155,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": true,
-      "lastModified": "2025-09-08",
+      "lastModified": "2026-08-25",
       "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
@@ -15618,7 +15644,7 @@
       "styles": ["normal"],
       "defSubset": "emoji",
       "variable": true,
-      "lastModified": "2025-11-26",
+      "lastModified": "2026-09-04",
       "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
@@ -15848,7 +15874,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": false,
-      "lastModified": "2025-08-26",
+      "lastModified": "2026-08-25",
       "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
@@ -16805,7 +16831,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": false,
-      "lastModified": "2026-01-20",
+      "lastModified": "2026-08-25",
       "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
@@ -18745,12 +18771,20 @@
     {
       "id": "onest",
       "family": "Onest",
-      "subsets": ["cyrillic", "cyrillic-ext", "latin", "latin-ext"],
+      "subsets": [
+        "cyrillic",
+        "cyrillic-ext",
+        "latin",
+        "latin-ext",
+        "math",
+        "symbols",
+        "vietnamese"
+      ],
       "weights": [100, 200, 300, 400, 500, 600, 700, 800, 900],
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": true,
-      "lastModified": "2025-09-10",
+      "lastModified": "2026-08-25",
       "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
@@ -21755,7 +21789,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": false,
-      "lastModified": "2025-09-10",
+      "lastModified": "2026-08-25",
       "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
@@ -23640,7 +23674,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": false,
-      "lastModified": "2025-06-25",
+      "lastModified": "2026-08-25",
       "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
@@ -23733,6 +23767,19 @@
       "variable": false,
       "lastModified": "2025-09-10",
       "category": "serif",
+      "license": "OFL-1.1",
+      "type": "google"
+    },
+    {
+      "id": "scoutie-sans",
+      "family": "Scoutie Sans",
+      "subsets": ["latin", "latin-ext", "vietnamese"],
+      "weights": [200, 300, 400, 500, 600, 700, 800],
+      "styles": ["italic", "normal"],
+      "defSubset": "latin",
+      "variable": true,
+      "lastModified": "2026-08-25",
+      "category": "sans-serif",
       "license": "OFL-1.1",
       "type": "google"
     },
@@ -26534,6 +26581,19 @@
       "type": "google"
     },
     {
+      "id": "valley-sans",
+      "family": "Valley Sans",
+      "subsets": ["latin", "latin-ext"],
+      "weights": [100, 200, 300, 400, 500, 600, 700, 800, 900],
+      "styles": ["italic", "normal"],
+      "defSubset": "latin",
+      "variable": true,
+      "lastModified": "2026-08-25",
+      "category": "sans-serif",
+      "license": "OFL-1.1",
+      "type": "google"
+    },
+    {
       "id": "vampiro-one",
       "family": "Vampiro One",
       "subsets": ["latin", "latin-ext"],
@@ -27586,7 +27646,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": false,
-      "lastModified": "2026-06-30",
+      "lastModified": "2026-08-25",
       "category": "handwriting",
       "license": "OFL-1.1",
       "type": "google"
@@ -27599,7 +27659,7 @@
       "styles": ["normal"],
       "defSubset": "latin",
       "variable": false,
-      "lastModified": "2026-06-30",
+      "lastModified": "2026-08-25",
       "category": "handwriting",
       "license": "OFL-1.1",
       "type": "google"

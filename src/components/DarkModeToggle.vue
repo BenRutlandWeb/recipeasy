@@ -9,19 +9,34 @@
   </AppBarButton>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { onMounted, ref, watch, computed } from 'vue';
+import AppBarButton from '@/components/AppBarButton.vue';
+import BaseIcon from '@/components/BaseIcon.vue';
 
-const currentMode = ref(localStorage.getItem('prefers-color-scheme') == 'dark');
+const currentMode = ref(false);
 
-const el = document.documentElement;
+function getInitialDarkMode() {
+  const stored = localStorage.getItem('prefers-color-scheme');
 
-function updateState(dark) {
-  const newScheme = dark ? 'dark' : 'no-preference';
-  el.setAttribute('data-prefers-color-scheme', newScheme);
+  if (stored === 'dark') {
+    return true;
+  }
+
+  if (stored === 'light') {
+    return false;
+  }
+
+  return window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
+function updateState(dark: boolean) {
+  const el = document.documentElement;
+  const scheme = dark ? 'dark' : 'light';
+  el.setAttribute('data-prefers-color-scheme', scheme);
   el.classList.toggle('dark', dark);
   el.classList.toggle('light', !dark);
-  localStorage.setItem('prefers-color-scheme', newScheme);
+  localStorage.setItem('prefers-color-scheme', scheme);
 }
 
 function toggle() {
@@ -30,9 +45,11 @@ function toggle() {
 
 watch(currentMode, updateState);
 
-onMounted(() => updateState(currentMode.value));
+onMounted(() => {
+  currentMode.value = getInitialDarkMode();
+  updateState(currentMode.value);
+});
 
 const icon = computed(() => (currentMode.value ? 'brightness_7' : 'brightness_4'));
-
 const isDarkMode = computed(() => currentMode.value);
 </script>

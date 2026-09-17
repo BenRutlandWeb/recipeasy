@@ -1,21 +1,22 @@
-<script setup>
-const props = defineProps({
-  recipe: {
-    type: Object,
-  },
-});
+<script setup lang="ts">
+import type { RecipeWithSlug } from '@/lib/recipes';
+defineProps<{
+  recipe: RecipeWithSlug;
+}>();
+const baseUrl = import.meta.env.BASE_URL;
 </script>
-
 <template>
-  <RouterLink
-    :to="{ name: 'recipes-' + recipe.slug }"
+  <a
+    :href="`${baseUrl}recipes/${recipe.slug}/`"
     class="block h-full shadow rounded dark:shadow-xl dark:bg-gray-850 relative"
   >
     <img
       :src="recipe.image"
-      alt=""
+      :alt="recipe.title"
       width="640"
       height="360"
+      loading="lazy"
+      decoding="async"
       class="block w-full h-auto aspect-square object-cover rounded-t dark:filter dark:brightness-75 dark:contrast-110"
     />
     <div class="p-2">
@@ -23,5 +24,5 @@ const props = defineProps({
         {{ recipe.title }}
       </h3>
     </div>
-  </RouterLink>
+  </a>
 </template>
