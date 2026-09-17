@@ -1,0 +1,21 @@
+---
+import { keywordToSlug } from '@/lib/recipes';
+interface Props {
+  chips: string[];
+}
+const { chips } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const sortedChips = [...chips].sort();
+---
+<div class="flex flex-wrap gap-2">
+  {
+    sortedChips.map((chip) => (
+      <a
+        href={`${base}browse/${keywordToSlug(chip)}/`}
+        class="chip rounded py-0.5 px-2 text-sm bg-gray-100 dark:bg-gray-800 capitalize"
+      >
+        {chip}
+      </a>
+    ))
+  }
+</div>

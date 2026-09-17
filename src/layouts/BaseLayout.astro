@@ -1,0 +1,119 @@
+---
+import { Font } from 'astro:assets';
+import '@/app.css';
+import AppFooter from '@/components/AppFooter.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  mainClass?: string;
+  image?: string;
+  canonicalUrl?: string;
+}
+
+const {
+  title = 'Recipeasy',
+  description = 'Recipeasy - the simplest way to manage your recipe book',
+  mainClass = '',
+  image,
+  canonicalUrl,
+} = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const site = Astro.site?.href ?? 'https://benrutlandweb.github.io';
+const ogImage = image ? new URL(image, site).href : undefined;
+const canonical = canonicalUrl ? new URL(canonicalUrl, site).href : undefined;
+
+const mainClasses = [
+  'mt-8 mb-32 w-full max-w-screen-lg mx-auto px-6 flex-1 grid gap-6 content-start',
+  mainClass,
+]
+  .filter(Boolean)
+  .join(' ');
+---
+
+<!doctype html>
+<html lang="en" class="bg-white dark:bg-gray-900">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7143b1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {canonical && <link rel="canonical" href={canonical} />}
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+    <link rel="icon" href={`${base}recipeasy-favicon.svg`} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={`${base}favicon-512.png`} />
+
+    <Font cssVariable="--font-open-sans" preload />
+
+    <script is:inline>
+      (function () {
+        var stored = localStorage.getItem('prefers-color-scheme');
+        var dark =
+          stored === 'dark' ||
+          (stored !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        var el = document.documentElement;
+        el.setAttribute('data-prefers-color-scheme', dark ? 'dark' : 'light');
+        el.classList.toggle('dark', dark);
+        el.classList.toggle('light', !dark);
+      })();
+    </script>
+
+    <script is:inline>
+      (function () {
+        window.__recipeasyStorage = window.__recipeasyStorage || {};
+        function readList(key) {
+          try {
+            var raw = localStorage.getItem(key);
+            return raw ? JSON.parse(raw) : [];
+          } catch {
+            return [];
+          }
+        }
+        window.__recipeasyStorage.favourites = readList('favourites');
+        window.__recipeasyStorage.recent = readList('recent');
+      })();
+    </script>
+
+    <slot name="head" />
+  </head>
+  <body class="min-h-dvh flex flex-col bg-white text-gray-700 dark:bg-gray-900 dark:text-gray-300 font-sans">
+    <header
+      class="sticky top-0 z-50 shadow bg-white border-b border-white dark:bg-gray-900 dark:border-gray-700"
+    >
+      <div
+        id="app-header-slot"
+        class="max-w-screen-lg mx-auto flex min-h-14 justify-between items-center"
+      >
+        <slot name="header" />
+      </div>
+    </header>
+
+    <main class={mainClasses}>
+      <slot />
+    </main>
+
+    <slot name="after-main" />
+
+    <AppFooter />
+  </body>
+</html>
+
+<script>
+  import { registerSW } from 'virtual:pwa-register';
+
+  if (import.meta.env.PROD) {
+    registerSW();
+  }
+</script>

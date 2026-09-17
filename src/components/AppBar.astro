@@ -1,0 +1,18 @@
+---
+import RecipeasyLogo from './RecipeasyLogo.astro';
+import AppBarTitle from './AppBarTitle.astro';
+import AppBarLink from './AppBarLink.astro';
+import BaseIcon from './BaseIcon.vue';
+import DarkModeToggle from './DarkModeToggle.vue';
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<RecipeasyLogo class="m-4" />
+<AppBarTitle>{title}</AppBarTitle>
+<AppBarLink href={`${base}search/`} aria-label="Search">
+  <BaseIcon icon="search" />
+</AppBarLink>
+<DarkModeToggle client:idle />

@@ -1,0 +1,20 @@
+---
+import AppBarLink from './AppBarLink.astro';
+import BaseIcon from './BaseIcon.vue';
+import DarkModeToggle from './DarkModeToggle.vue';
+
+const base = import.meta.env.BASE_URL;
+---
+<AppBarLink href={base} aria-label="Go home">
+  <BaseIcon icon="arrow_back" />
+</AppBarLink>
+<label for="app-search" class="sr-only">Search by ingredient, dish, keyword...</label>
+<input
+  type="search"
+  id="app-search"
+  placeholder="Ingredient, dish, keyword..."
+  autocomplete="off"
+  class="text-xl flex-1 placeholder-gray-500 focus:outline-none bg-transparent"
+/>
+<span id="app-search-clear" class="contents"></span>
+<DarkModeToggle client:idle />

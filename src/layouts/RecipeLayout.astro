@@ -1,0 +1,64 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import CookModeToggle from '@/components/CookModeToggle.vue';
+import type { Ingredient, Recipe } from '@/lib/recipes';
+
+interface Props {
+  title?: string;
+  description?: string;
+  recipe?: Recipe;
+  slug?: string;
+}
+
+const { title, description, recipe, slug } = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+const canonicalUrl = slug ? `${base}recipes/${slug}/` : undefined;
+const image = recipe?.image;
+
+const jsonLd = recipe
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'Recipe',
+      name: recipe.title,
+      description: recipe.description,
+      image: recipe.image,
+      recipeYield: `${recipe.serves} servings`,
+      prepTime: `PT${recipe.prepTime}M`,
+      cookTime: `PT${recipe.cookTime}M`,
+      totalTime: `PT${recipe.prepTime + recipe.cookTime}M`,
+      recipeIngredient: recipe.ingredients.map((ingredient: Ingredient) => {
+        const parts = [
+          ingredient.quantity?.toString(),
+          ingredient.unit,
+          ingredient.name,
+          ingredient.description,
+        ].filter(Boolean);
+
+        return parts.join(' ');
+      }),
+      recipeInstructions: recipe.methods.map((step: string) => ({
+        '@type': 'HowToStep',
+        text: step,
+      })),
+      keywords: recipe.keywords.join(', '),
+    }
+  : null;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={image}
+  canonicalUrl={canonicalUrl}
+  mainClass="md:grid-cols-3 md:items-start recipe-page"
+>
+  {
+    jsonLd && (
+      <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+    )
+  }
+  <slot name="header" slot="header" />
+  <slot />
+  <CookModeToggle client:idle slot="after-main" />
+</BaseLayout>

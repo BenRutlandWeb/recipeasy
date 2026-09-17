@@ -1,0 +1,39 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import AppBar from '@/components/AppBar.astro';
+import SmallRecipeCard from '@/components/SmallRecipeCard.vue';
+import {
+  getAllKeywords,
+  getRecipesByKeyword,
+  keywordToSlug,
+} from '@/lib/recipes';
+export function getStaticPaths() {
+  const keywords = getAllKeywords();
+  return keywords.map((keyword) => ({
+    params: { tag: keywordToSlug(keyword) },
+    props: { keyword },
+  }));
+}
+const { keyword } = Astro.props;
+const recipes = getRecipesByKeyword(keyword);
+const title = `${keyword} recipes — Recipeasy`;
+---
+<BaseLayout title={title} description={`Browse ${keyword.toLowerCase()} recipes on Recipeasy`}>
+  <AppBar title={keyword} slot="header" />
+  {
+    recipes.length > 0 ? (
+      <>
+        <p class="capitalize">{recipes.length} {keyword.toLowerCase()} recipes</p>
+        <ul class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {recipes.map((recipe) => (
+            <li>
+              <SmallRecipeCard recipe={recipe} />
+            </li>
+          ))}
+        </ul>
+      </>
+    ) : (
+      <p>No recipes found for this tag.</p>
+    )
+  }
+</BaseLayout>

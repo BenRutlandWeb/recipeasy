@@ -1,0 +1,18 @@
+---
+interface Props {
+  src: string;
+  alt: string;
+}
+
+const { src, alt } = Astro.props;
+---
+
+<img
+  src={src}
+  alt={alt}
+  width="640"
+  height="640"
+  decoding="async"
+  fetchpriority="high"
+  class="shadow block w-full rounded dark:filter dark:brightness-75 dark:contrast-110"
+/>

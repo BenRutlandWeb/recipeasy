@@ -1,0 +1,13 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import SearchAppBar from '@/components/SearchAppBar.astro';
+import SearchPage from '@/components/islands/SearchPage.vue';
+import { buildRecipeIndex, getCompactListings } from '@/lib/recipes';
+
+const { search: searchIndex } = buildRecipeIndex();
+const listings = getCompactListings();
+---
+<BaseLayout title="Search — Recipeasy">
+  <SearchAppBar slot="header" />
+  <SearchPage client:load searchIndex={searchIndex} listings={listings} />
+</BaseLayout>

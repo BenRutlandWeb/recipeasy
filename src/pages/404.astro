@@ -1,0 +1,16 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import AppBarLink from '@/components/AppBarLink.astro';
+import RecipeasyLogo from '@/components/RecipeasyLogo.astro';
+import AppBarTitle from '@/components/AppBarTitle.astro';
+import DarkModeToggle from '@/components/DarkModeToggle.vue';
+const base = import.meta.env.BASE_URL;
+---
+<BaseLayout title="Page not found - Recipeasy">
+  <AppBarLink slot="header" href={base} aria-label="Go home">
+    <RecipeasyLogo />
+  </AppBarLink>
+  <AppBarTitle slot="header">Page not found</AppBarTitle>
+  <DarkModeToggle slot="header" client:idle />
+  <p>The page you were looking for cannot be found.</p>
+</BaseLayout>
