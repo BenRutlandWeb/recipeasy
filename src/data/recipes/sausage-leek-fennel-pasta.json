@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schemas/recipe.json",
+  "title": "Sausage, leek and fennel pasta",
+  "ingredients": [
+    { "name": "olive oil", "quantity": 1, "unit": "tbsp" },
+    { "name": "sausages", "quantity": 6 },
+    { "name": "leeks", "quantity": 3, "description": "Thinly sliced" },
+    { "name": "pasta", "quantity": 400, "unit": "g" },
+    { "name": "garlic cloves", "quantity": 2, "description": "Crushed" },
+    { "name": "fennel seeds", "quantity": 1, "unit": "tsp" },
+    { "name": "wholegrain mustard", "quantity": 2, "unit": "tsp" },
+    { "name": "lemon zest", "quantity": 0.5 },
+    { "name": "Parmesan cheese", "description": "Finely grated to serve" }
+  ],
+  "methods": [
+    "Heat the oil in a large frying pan. Squeeze the sausages from their skins into the pan and break up into small pieces.",
+    "Cook over a medium-high heat for 8-10 mins until browned and crispy in places. Remove using a slotted spoon and set aside.",
+    "Add the leeks to the pan and season. Cook over a low heat for 10-12 mins until softened and just starting to caramelise. Meanwhile, cook the pasta following pack instructions. Drain, reserving 150ml of the cooking water.",
+    "Add the garlic and fennel seeds to the leeks and cook for 2 mins. Stir through the mustard and sausages, then pour in 100ml of the pasta water and let it bubble for 1 min.",
+    "Tip in the pasta, sprinkle over the lemon zest and toss everything together, adding a little more pasta water if needed.",
+    "Divide between plates and top with Parmesan and black pepper before serving."
+  ],
+  "keywords": ["Dinner", "Meat"],
+  "image": "/recipeasy/sausage-leek-fennel-pasta.webp",
+  "description": "This quick and easy pasta dish is sure to be a family favourite and it's ready in 30 minutes.",
+  "serves": 4,
+  "prepTime": 5,
+  "cookTime": 25
+}
