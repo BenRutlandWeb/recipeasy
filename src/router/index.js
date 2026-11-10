@@ -16,6 +16,7 @@ const recipeRoutes = Object.entries(recipes).map(([filepath, { default: recipe }
     meta: {
       slug,
       title: recipe.title,
+      description: recipe.description,
     },
   };
 });
@@ -38,6 +39,8 @@ const routes = [
     component: () => import('@/pages/404.vue'),
   },
 ];
+
+const DEFAULT_DESCRIPTION = 'Recipeasy - the simplest way to manage your recipe book';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -65,12 +68,17 @@ function updateRecentRecipes(route) {
   trim(10);
 }
 
-router.beforeEach((to, from, next) => {
-  if (to.meta?.title) {
-    document.title = to.meta.title + ' | Recipeasy';
-  } else {
-    document.title = 'Recipeasy';
+function updateMetaDescription(content) {
+  const el = document.querySelector('meta[name="description"]');
+  if (el) {
+    el.setAttribute('content', content);
   }
+}
+
+router.beforeEach((to, from, next) => {
+  document.title = to.meta?.title ? `${to.meta.title} | Recipeasy` : 'Recipeasy';
+
+  updateMetaDescription(to.meta?.description || to.meta?.title || DEFAULT_DESCRIPTION);
 
   updateRecentRecipes(to);
 
