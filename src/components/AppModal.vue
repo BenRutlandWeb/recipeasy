@@ -6,7 +6,7 @@
   >
     <div class="bg-white dark:bg-gray-850 m-auto w-full max-w-screen-sm rounded">
       <div class="flex justify-between gap-4 p-4">
-        <p class="font-bold">{{ title }}</p>
+        <p class="font-semibold">{{ title }}</p>
         <button type="button" @click="close" aria-label="Close">
           <BaseIcon icon="close" />
         </button>

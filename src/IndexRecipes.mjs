@@ -15,7 +15,7 @@ function splitString(words) {
 }
 
 function buildAll() {
-  const recipesDir = path.resolve(__dirname, './data/recipes');
+  const recipesDir = path.resolve(import.meta.dirname, './data/recipes');
   const files = fs.readdirSync(recipesDir).filter((f) => f.endsWith('.json'));
   const slugs = files.map((f) => f.replace(/\.json$/, ''));
   const slugToId = new Map(slugs.map((slug, index) => [slug, index]));
@@ -83,13 +83,13 @@ function buildAll() {
 
   // Write 1: Search Index (keyword -> numeric ID array)
   fs.writeFileSync(
-    path.resolve(__dirname, './data/recipes-search.json'),
+    path.resolve(import.meta.dirname, './data/recipes-search.json'),
     JSON.stringify(searchOutput)
   );
 
   // Write 2: Recipe Listings
   fs.writeFileSync(
-    path.resolve(__dirname, './data/recipes.json'),
+    path.resolve(import.meta.dirname, './data/recipes.json'),
     JSON.stringify(listingsOutput, null, 2)
   );
 }
@@ -100,7 +100,7 @@ export default function indexRecipes() {
   return {
     name: 'recipes-manifest',
     buildStart() {
-      watcher = watch(path.resolve(__dirname, './data/recipes'));
+      watcher = watch(path.resolve(import.meta.dirname, './data/recipes'));
 
       watcher.on('add', () => buildAll());
       watcher.on('change', () => buildAll());
