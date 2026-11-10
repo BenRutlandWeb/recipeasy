@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { watch } from 'chokidar';
 
 // Optimized word reduction to avoid O(N^2) string checks
@@ -100,7 +101,10 @@ export default function indexRecipes() {
   return {
     name: 'recipes-manifest',
     buildStart() {
-      watcher = watch(path.resolve(import.meta.dirname, './data/recipes'));
+      buildAll();
+      watcher = watch(path.resolve(import.meta.dirname, './data/recipes'), {
+        ignoreInitial: true,
+      });
 
       watcher.on('add', () => buildAll());
       watcher.on('change', () => buildAll());
@@ -110,4 +114,11 @@ export default function indexRecipes() {
       watcher?.close();
     },
   };
+}
+
+const isDirectRun =
+  process.argv[1] && path.resolve(fileURLToPath(import.meta.url)) === path.resolve(process.argv[1]);
+
+if (isDirectRun) {
+  buildAll();
 }

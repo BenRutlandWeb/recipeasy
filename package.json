@@ -7,8 +7,9 @@
     "serve": "vite preview",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "index-recipes": "node src/IndexRecipes.mjs",
     "fallow": "fallow dead-code --fail-on-issues --quiet",
-    "check": "npm run format:check && npm run fallow",
+    "check": "npm run index-recipes && npm run format:check && npm run fallow",
     "prepare": "husky"
   },
   "lint-staged": {
@@ -16,7 +17,6 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.5",
-    "@tailwindcss/vite": "^4.3.5",
     "@vitejs/plugin-vue": "^6.0.10",
     "chokidar": "^6.0.0",
     "fallow": "^3.42.0",
